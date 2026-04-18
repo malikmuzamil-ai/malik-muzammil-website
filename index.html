@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malik Muzamil - LinkedIn Brand Strategist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root { --org:#F4863F; --yel:#FFDE59; --blk:#0A0A0A; --cream:#F4F3EF; }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Poppins',sans-serif;background:var(--blk);color:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+    h1,h2,h3,h4,h5{font-family:'Space Grotesk',sans-serif;letter-spacing:-0.03em;}
+    .noise{position:relative;isolation:isolate;}
+    .noise::after{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='250' height='250' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");}
+    .btn-org{display:inline-flex;align-items:center;gap:8px;background:var(--org);color:#fff;
+      font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;padding:13px 26px;
+      border-radius:9px;text-decoration:none;
+      box-shadow:0 4px 18px rgba(244,134,63,0.38),0 1px 4px rgba(244,134,63,0.2);
+      transition:transform 0.22s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.22s ease;}
+    .btn-org:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(244,134,63,0.52);}
+    .btn-org:active{transform:translateY(0);}
+    .btn-out{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;
+      font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;padding:12px 26px;
+      border-radius:9px;border:1.5px solid rgba(255,255,255,0.24);text-decoration:none;
+      transition:transform 0.22s cubic-bezier(0.34,1.56,0.64,1),border-color 0.18s,background 0.18s;}
+    .btn-out:hover{transform:translateY(-2px);border-color:rgba(255,255,255,0.55);background:rgba(255,255,255,0.05);}
+    .btn-wht{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--org);
+      font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;padding:15px 34px;
+      border-radius:9px;text-decoration:none;box-shadow:0 6px 28px rgba(0,0,0,0.22);
+      transition:transform 0.22s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.22s ease;}
+    .btn-wht:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(0,0,0,0.32);}
+    .lbl{display:inline-flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;
+      font-size:11px;font-weight:700;letter-spacing:0.13em;text-transform:uppercase;color:var(--org);}
+    .lbl::before{display:none;}
+    .lift{transition:transform 0.28s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.28s ease;}
+    .lift:hover{transform:translateY(-4px);}
+    .navlnk{color:rgba(255,255,255,0.6);font-size:14px;font-weight:500;text-decoration:none;transition:color 0.18s;}
+    .navlnk:hover{color:#fff;}
+    .gridbg{background-image:linear-gradient(rgba(255,255,255,0.024) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(255,255,255,0.024) 1px,transparent 1px);background-size:72px 72px;}
+    .mq-outer{overflow:hidden;}
+    .mq-inner{display:flex;gap:0;animation:mq 32s linear infinite;white-space:nowrap;}
+    @keyframes mq{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+    @keyframes pdot{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.5;transform:scale(1.6);}}
+    .pdot{animation:pdot 2.2s ease-in-out infinite;}
+    .fi{opacity:0;transform:translateY(22px);transition:opacity 0.55s ease,transform 0.55s cubic-bezier(0.34,1.56,0.64,1);}
+    .fi.in{opacity:1;transform:translateY(0);}
+    .fi.d1{transition-delay:0.08s;}.fi.d2{transition-delay:0.16s;}.fi.d3{transition-delay:0.24s;}
+    ::-webkit-scrollbar{width:4px;}::-webkit-scrollbar-track{background:#000;}
+    ::-webkit-scrollbar-thumb{background:var(--org);border-radius:2px;}
+    @keyframes cardpop{0%{transform:scale(1);}40%{transform:scale(0.93);}70%{transform:scale(1.06);}100%{transform:scale(1);}}
+    .card-pop:active{animation:cardpop 0.38s cubic-bezier(0.34,1.56,0.64,1);}
+    .mq-logos .mq-inner{animation-duration:28s;}
+    .mq-rev .mq-inner{animation-direction:reverse;animation-duration:34s;}
+    @keyframes logoScroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+    .logo-track{display:flex;width:max-content;align-items:center;animation:logoScroll 30s linear infinite;will-change:transform;}
+    .logo-item{flex-shrink:0;display:flex;align-items:center;justify-content:center;margin:0 28px;}
+    .logo-item img{height:44px;width:auto;max-width:120px;object-fit:contain;display:block;border-radius:10px;}
+    @keyframes floatA{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
+    @keyframes floatB{0%,100%{transform:translateY(0);}50%{transform:translateY(-6px);}}
+    @keyframes floatC{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
+    .flt-a{animation:floatA 4s ease-in-out infinite;}
+    .flt-b{animation:floatB 5s ease-in-out infinite 0.8s;}
+    .flt-c{animation:floatC 3.5s ease-in-out infinite 1.4s;}
+    @keyframes numcountin{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
+    .num-in{animation:numcountin 0.6s cubic-bezier(0.34,1.56,0.64,1) forwards;}
+    .analytics-card{position:relative;overflow:hidden;border-radius:16px;cursor:pointer;}
+    .analytics-card .ht-overlay{position:absolute;inset:0;background:rgba(10,10,10,0.82);
+      display:flex;align-items:center;justify-content:center;opacity:0;
+      transition:opacity 0.28s ease;}
+    .analytics-card:hover .ht-overlay{opacity:1;}
+    .analytics-card .ht-label{font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:22px;
+      color:#fff;letter-spacing:-0.02em;text-align:center;}
+    .analytics-card .ht-label span{color:var(--org);}
+    .phase-card{transition:transform 0.32s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.32s ease,opacity 0.45s ease;}
+    .phase-card.slide-in{opacity:0;transform:translateY(32px);}
+    .phase-card.slide-in.in{opacity:1;transform:translateY(0);}
+    @media(max-width:900px){
+      .mob-hide{display:none!important;}
+      .two-col,.three-col,.four-col{grid-template-columns:1fr!important;}
+      .hero-r{display:none!important;}
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header id="hdr" style="position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(10,10,10,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(255,255,255,0.07);transition:background 0.3s;">
+  <div style="max-width:1160px;margin:0 auto;padding:0 24px;display:flex;align-items:center;
+    justify-content:space-between;height:68px;">
+    <a href="#" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+      <img src="./refrence scrrenshorts/Profile Picture (10).png"
+        style="width:34px;height:34px;border-radius:50%;object-fit:cover;
+        border:2px solid var(--org);" alt="Malik Muzamil">
+      <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;
+        font-size:18px;color:#fff;letter-spacing:-0.02em;">Malik Muzamil</span>
+    </a>
+    <nav class="mob-hide" style="display:flex;align-items:center;gap:32px;">
+      <a href="#process" class="navlnk">Process</a>
+      <a href="#results" class="navlnk">Results</a>
+      <a href="#testimonials" class="navlnk">Testimonials</a>
+      <a href="#faq" class="navlnk">FAQ</a>
+    </nav>
+    <a href="https://calendly.com/malikmuzammil/linkedin-discovery-call-1" class="btn-org"
+      style="font-size:13px;padding:10px 20px;">
+      Book a Call
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</header>
+
+
+<!-- HERO -->
+<section style="min-height:100vh;background:var(--blk);position:relative;
+  display:flex;align-items:center;overflow:hidden;" class="noise">
+  <div style="position:absolute;top:-160px;right:-80px;width:780px;height:780px;
+    background:radial-gradient(circle,rgba(244,134,63,0.14) 0%,transparent 62%);pointer-events:none;"></div>
+  <div style="position:absolute;bottom:-180px;left:-60px;width:580px;height:580px;
+    background:radial-gradient(circle,rgba(255,222,89,0.06) 0%,transparent 62%);pointer-events:none;"></div>
+  <div class="gridbg" style="position:absolute;inset:0;pointer-events:none;z-index:0;"></div>
+  <div style="max-width:1160px;margin:0 auto;padding:120px 24px 80px;position:relative;z-index:2;width:100%;">
+    <div style="display:grid;grid-template-columns:1fr 500px;gap:64px;align-items:center;">
+
+      <!-- Left copy -->
+      <div>
+        <div style="display:inline-flex;align-items:center;gap:8px;
+          background:rgba(244,134,63,0.1);border:1px solid rgba(244,134,63,0.2);
+          border-radius:100px;padding:7px 16px;margin-bottom:28px;">
+          <span class="pdot" style="display:block;width:6px;height:6px;background:var(--org);border-radius:50%;"></span>
+          <span style="font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:600;color:var(--org);">LinkedIn Brand Strategist</span>
+        </div>
+        <h1 style="font-size:clamp(36px,5vw,64px);font-weight:700;line-height:1.06;color:#fff;margin-bottom:24px;">
+          I help founders stop being<span style="color:var(--org);"> LinkedIn's</span><br>best-kept secret.
+        </h1>
+        <p style="font-size:17px;line-height:1.8;color:rgba(255,255,255,0.57);margin-bottom:38px;max-width:480px;">
+          You are good at what you do. Your LinkedIn just is not showing it.
+          I fix that with content that sounds like you, strategy that builds real authority,
+          and a system that brings clients to your inbox without you chasing them.
+        </p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:44px;">
+          <a href="https://calendly.com/malikmuzammil/linkedin-discovery-call-1" class="btn-org">
+            Let's Work Together
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#results" class="btn-out">See Client Results</a>
+        </div>
+        <div style="display:flex;align-items:center;gap:20px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.08);">
+          <div style="display:flex;">
+            <img src="./refrence scrrenshorts/Daniel.jpeg" alt="Daniel" style="width:32px;height:32px;border-radius:50%;border:2px solid var(--blk);object-fit:cover;z-index:4;margin-right:-8px;">
+            <img src="./refrence scrrenshorts/Usman.jpeg" alt="Usman" style="width:32px;height:32px;border-radius:50%;border:2px solid var(--blk);object-fit:cover;z-index:3;margin-right:-8px;">
+            <img src="./refrence scrrenshorts/Tatiana.jpeg" alt="Tatiana" style="width:32px;height:32px;border-radius:50%;border:2px solid var(--blk);object-fit:cover;z-index:2;margin-right:-8px;">
+            <img src="./refrence scrrenshorts/Caden.jpeg" alt="Caden" style="width:32px;height:32px;border-radius:50%;border:2px solid var(--blk);object-fit:cover;z-index:1;">
+          </div>
+          <div>
+            <div style="font-size:13px;color:rgba(255,255,255,0.5);">Trusted by <strong style="color:#fff;font-weight:600;">50+ founders</strong> across 8 industries</div>
+            <div style="font-size:11px;color:rgba(255,255,255,0.3);margin-top:3px;">2 Million+ impressions generated for clients</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Photo + animated floating stats -->
+      <div class="hero-r" style="position:relative;height:540px;">
+        <div style="position:absolute;top:0;right:0;width:340px;height:440px;
+          border-radius:24px;overflow:hidden;
+          box-shadow:0 40px 80px rgba(0,0,0,0.55),0 0 0 2px rgba(244,134,63,0.18),0 0 0 6px rgba(244,134,63,0.06);">
+          <img src="./refrence scrrenshorts/Profile Picture (10).png"
+            style="width:100%;height:100%;object-fit:cover;object-position:top center;" alt="Malik Muzamil">
+        </div>
+        <!-- Floating stat: leads (yellow/black) -->
+        <div class="lift flt-b" style="position:absolute;top:36px;left:-14px;
+          background:#FFDE59;border-radius:16px;padding:16px 20px;
+          box-shadow:0 12px 36px rgba(255,222,89,0.45),0 4px 12px rgba(0,0,0,0.3);">
+          <div style="font-size:9px;font-weight:700;letter-spacing:0.12em;color:rgba(0,0,0,0.45);text-transform:uppercase;margin-bottom:6px;">Leads / Month</div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:28px;color:#000;letter-spacing:-0.04em;line-height:1;">10+</div>
+          <div style="font-size:10px;font-weight:600;color:rgba(0,0,0,0.45);margin-top:4px;">qualified inbound</div>
+        </div>
+        <!-- Floating stat: growth (orange) -->
+        <div class="lift flt-c" style="position:absolute;bottom:56px;left:0;width:188px;
+          background:var(--org);border-radius:16px;padding:16px 18px;
+          box-shadow:0 12px 40px rgba(244,134,63,0.55),0 4px 12px rgba(0,0,0,0.3);">
+          <div style="font-size:9px;font-weight:700;letter-spacing:0.12em;color:rgba(255,255,255,0.6);text-transform:uppercase;margin-bottom:6px;">Impression Growth</div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:26px;color:#fff;letter-spacing:-0.04em;line-height:1;">+4,421%</div>
+          <div style="font-size:10px;color:rgba(255,255,255,0.7);margin-top:4px;">in 60 days ↑</div>
+        </div>
+        <!-- Floating stat: client impressions — centered in left free-zone between yellow & orange cards -->
+        <div class="lift flt-b" style="position:absolute;top:192px;left:-10px;width:162px;
+          background:#111;border:1px solid rgba(244,134,63,0.3);border-radius:16px;padding:14px 16px;
+          box-shadow:0 12px 40px rgba(244,134,63,0.22),0 4px 12px rgba(0,0,0,0.4);">
+          <div style="font-size:9px;font-weight:700;letter-spacing:0.12em;color:rgba(255,255,255,0.38);text-transform:uppercase;margin-bottom:6px;">Client Impressions</div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:22px;color:var(--org);letter-spacing:-0.04em;line-height:1;">2 Million+</div>
+          <div style="margin-top:6px;display:flex;align-items:center;gap:5px;">
+            <span style="font-size:10px;color:rgba(255,255,255,0.38);">across all clients</span>
+            <span style="font-size:11px;font-weight:700;color:var(--org);">↑</span>
+          </div>
+        </div>
+        <!-- Top badge -->
+        <div style="position:absolute;top:-12px;right:20px;
+          background:rgba(10,10,10,0.95);border:1px solid rgba(255,255,255,0.1);
+          border-radius:100px;padding:7px 14px;box-shadow:0 4px 20px rgba(0,0,0,0.4);
+          display:flex;align-items:center;gap:6px;">
+          <span style="width:6px;height:6px;background:#22c55e;border-radius:50%;flex-shrink:0;"></span>
+          <span style="font-size:12px;font-weight:600;font-family:'Space Grotesk',sans-serif;color:#fff;">Top 1% LinkedIn Reach</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- MARQUEE -->
+<div style="background:var(--org);overflow:hidden;padding:14px 0;">
+  <div class="mq-outer">
+    <div class="mq-inner">
+      <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:13px;color:#fff;padding:0 32px;">1.5M Impressions in 60 Days</span>
+      <span style="color:rgba(0,0,0,0.22);padding:0 4px;">|</span>
+      <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:13px;color:#fff;padding:0 32px;">461K Impressions in 90 Days</span>
+      <span style="color:rgba(0,0,0,0.22);padding:0 4px;">|</span>
+      <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:13px;color:#fff;padding:0 32px;">10+ Qualified Leads Every Month</span>
+      <span style="color:rgba(0,0,0,0.22);padding:0 4px;">|</span>
+      <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:13px;color:#fff;padding:0 32px;">Top 1% LinkedIn Reach Worldwide</span>
+      <span style="color:rgba(0,0,0,0.22);padding:0 4px;">|</span>
+      <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:13px;color:#fff;padding:0 32px;">+4,421% Impression Growth in 60 Days</span>
+      <span style="color:rgba(0,0,0,0.22);padding:0 4px;">|</span>
+      <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:13px;color:#fff;padding:0 32px;">1.5M Impressions in 60 Days</span>
+      <span style="color:rgba(0,0,0,0.22);padding:0 4px;">|</span>
+      <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:13px;color:#fff;padding:0 32px;">461K Impressions in 90 Days</span>
+      <span style="color:rgba(0,0,0,0.22);padding:0 4px;">|</span>
+      <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:13px;color:#fff;padding:0 32px;">10+ Qualified Leads Every Month</span>
+      <span style="color:rgba(0,0,0,0.22);padding:0 4px;">|</span>
+      <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:13px;color:#fff;padding:0 32px;">Top 1% LinkedIn Reach Worldwide</span>
+      <span style="color:rgba(0,0,0,0.22);padding:0 4px;">|</span>
+      <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:13px;color:#fff;padding:0 32px;">+4,421% Impression Growth in 60 Days</span>
+      <span style="color:rgba(0,0,0,0.22);padding:0 4px;">|</span>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- PAIN SECTION -->
+<section style="background:var(--cream);padding:96px 24px;position:relative;overflow:hidden;">
+  <div style="position:absolute;top:-200px;right:-200px;width:500px;height:500px;
+    border-radius:50%;border:1px solid rgba(244,134,63,0.1);pointer-events:none;"></div>
+  <div style="position:absolute;top:-150px;right:-150px;width:380px;height:380px;
+    border-radius:50%;border:1px solid rgba(244,134,63,0.07);pointer-events:none;"></div>
+  <div style="max-width:1160px;margin:0 auto;">
+    <div class="two-col fi" style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;">
+      <div>
+        <span class="lbl" style="margin-bottom:18px;display:flex;">Does this sound familiar?</span>
+        <h2 style="font-size:clamp(28px,3.8vw,50px);font-weight:700;line-height:1.12;color:#000;margin-bottom:20px;">
+          You're posting.<br>You're waiting.<br>Nothing's converting.
+        </h2>
+        <p style="font-size:16px;line-height:1.8;color:rgba(0,0,0,0.52);max-width:380px;margin-bottom:32px;">
+          This is not a content problem. It is a strategy problem.
+          And it is exactly what I spend every day fixing.
+        </p>
+        <a href="#process" class="btn-org">
+          See how I fix it
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <div class="lift" style="background:#fff;border-radius:12px;padding:18px 22px;
+          box-shadow:0 1px 12px rgba(0,0,0,0.06),0 1px 3px rgba(0,0,0,0.04);">
+          <p style="font-size:15px;font-weight:500;color:#111;line-height:1.5;">
+            You have been posting for months and nothing has moved in your pipeline.
+          </p>
+        </div>
+        <div class="lift" style="background:#fff;border-radius:12px;padding:18px 22px;
+          box-shadow:0 1px 12px rgba(0,0,0,0.06),0 1px 3px rgba(0,0,0,0.04);">
+          <p style="font-size:15px;font-weight:500;color:#111;line-height:1.5;">
+            You are sharper than the people getting all the attention. Their LinkedIn just looks the part.
+          </p>
+        </div>
+        <div class="lift" style="background:#fff;border-radius:12px;padding:18px 22px;
+          box-shadow:0 1px 12px rgba(0,0,0,0.06),0 1px 3px rgba(0,0,0,0.04);">
+          <p style="font-size:15px;font-weight:500;color:#111;line-height:1.5;">
+            Profile views come in but DMs do not. Your profile is not converting visitors into clients.
+          </p>
+        </div>
+        <div class="lift" style="background:#fff;border-radius:12px;padding:18px 22px;
+          box-shadow:0 1px 12px rgba(0,0,0,0.06),0 1px 3px rgba(0,0,0,0.04);">
+          <p style="font-size:15px;font-weight:500;color:#111;line-height:1.5;">
+            You still rely on referrals and outbound to keep the business alive.
+          </p>
+        </div>
+        <div class="lift" style="background:#fff;border-radius:12px;padding:18px 22px;
+          box-shadow:0 1px 12px rgba(0,0,0,0.06),0 1px 3px rgba(0,0,0,0.04);">
+          <p style="font-size:15px;font-weight:500;color:#111;line-height:1.5;">
+            Someone with half your experience landed the deal you wanted. Their LinkedIn did the selling.
+          </p>
+        </div>
+        <div class="lift" style="background:#fff;border-radius:12px;padding:18px 22px;
+          box-shadow:0 1px 12px rgba(0,0,0,0.06),0 1px 3px rgba(0,0,0,0.04);">
+          <p style="font-size:15px;font-weight:500;color:#111;line-height:1.5;">
+            You write something, post it, and have no idea if it actually worked or what to do differently next time.
+          </p>
+        </div>
+        <div style="background:#000;border-radius:12px;padding:18px 22px;">
+          <p style="font-size:15px;font-weight:600;color:#fff;font-family:'Space Grotesk',sans-serif;">
+            That changes when you have the right system behind you.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- LOGOS MARQUEE (full color, seamless, 4 sets) -->
+<div style="position:relative;background:#0d0d0d;border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);padding:22px 0 18px;overflow:hidden;">
+  <!-- orange radial texture -->
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(244,134,63,0.09) 0%,transparent 70%);pointer-events:none;"></div>
+  <div style="text-align:center;margin-bottom:16px;position:relative;z-index:1;">
+    <span style="font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.28);">Trusted by teams at</span>
+  </div>
+  <div style="overflow:hidden;position:relative;z-index:1;">
+    <div class="logo-track">
+      <!-- Sets 1–4: 4 identical copies so the track is always wider than any screen -->
+      <div class="logo-item"><img src="./refrence scrrenshorts/Cygnus.jpeg" alt="Cygnus"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/Elite.jpeg" alt="Elite"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/HK.jpeg" alt="HK"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/purely_personal_ai_logo (1).jpeg" alt="Purely Personal AI"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/Etchify.jpeg" alt="Etchify"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/Infinito.jpeg" alt="Infinito"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/Tayana.jpeg" alt="Tayana"></div>
+
+      <div class="logo-item"><img src="./refrence scrrenshorts/Cygnus.jpeg" alt="Cygnus"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/Elite.jpeg" alt="Elite"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/HK.jpeg" alt="HK"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/purely_personal_ai_logo (1).jpeg" alt="Purely Personal AI"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/Etchify.jpeg" alt="Etchify"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/Infinito.jpeg" alt="Infinito"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/Tayana.jpeg" alt="Tayana"></div>
+
+      <div class="logo-item"><img src="./refrence scrrenshorts/Cygnus.jpeg" alt="Cygnus"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/Elite.jpeg" alt="Elite"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/HK.jpeg" alt="HK"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/purely_personal_ai_logo (1).jpeg" alt="Purely Personal AI"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/Etchify.jpeg" alt="Etchify"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/Infinito.jpeg" alt="Infinito"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/Tayana.jpeg" alt="Tayana"></div>
+
+      <div class="logo-item"><img src="./refrence scrrenshorts/Cygnus.jpeg" alt="Cygnus"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/Elite.jpeg" alt="Elite"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/HK.jpeg" alt="HK"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/purely_personal_ai_logo (1).jpeg" alt="Purely Personal AI"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/Etchify.jpeg" alt="Etchify"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/Infinito.jpeg" alt="Infinito"></div>
+      <div class="logo-item"><img src="./refrence scrrenshorts/Tayana.jpeg" alt="Tayana"></div>
+    </div>
+  </div>
+  <!-- fade edges so logos dissolve in/out at screen edges -->
+  <div style="position:absolute;top:0;left:0;width:80px;height:100%;background:linear-gradient(to right,#0d0d0d,transparent);pointer-events:none;z-index:2;"></div>
+  <div style="position:absolute;top:0;right:0;width:80px;height:100%;background:linear-gradient(to left,#0d0d0d,transparent);pointer-events:none;z-index:2;"></div>
+</div>
+
+
+<!-- PROCESS (3 Phases) -->
+<section id="process" style="background:var(--blk);padding:96px 24px;position:relative;overflow:hidden;">
+  <div style="position:absolute;top:-60px;left:50%;transform:translateX(-50%);
+    width:800px;height:500px;background:radial-gradient(ellipse,rgba(244,134,63,0.06) 0%,transparent 70%);pointer-events:none;"></div>
+  <div class="gridbg" style="position:absolute;inset:0;pointer-events:none;"></div>
+  <div style="max-width:1160px;margin:0 auto;position:relative;z-index:2;">
+    <div style="text-align:center;margin-bottom:64px;" class="fi">
+      <span class="lbl" style="justify-content:center;margin-bottom:16px;">How I Work</span>
+      <h2 style="font-size:clamp(28px,3.8vw,50px);font-weight:700;line-height:1.12;color:#fff;margin-bottom:16px;">
+        Three phases. One outcome.
+      </h2>
+      <p style="font-size:17px;color:rgba(255,255,255,0.46);max-width:480px;margin:0 auto;line-height:1.75;">
+        Every client goes through this process. The results speak for themselves.
+      </p>
+    </div>
+    <div class="three-col" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+
+      <!-- Phase 01 -->
+      <div class="lift phase-card slide-in" style="background:rgba(255,255,255,0.028);border:1px solid rgba(255,255,255,0.08);
+        border-radius:20px;padding:36px;position:relative;overflow:hidden;transition-delay:0s;">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;
+          background:linear-gradient(90deg,var(--org),transparent);"></div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:52px;
+          color:rgba(244,134,63,0.1);letter-spacing:-0.05em;margin-bottom:4px;line-height:1;">01</div>
+        <div style="font-size:10px;font-weight:700;letter-spacing:0.13em;color:var(--org);
+          text-transform:uppercase;font-family:'Space Grotesk',sans-serif;margin-bottom:12px;">Phase One</div>
+        <h3 style="font-size:22px;font-weight:700;color:#fff;margin-bottom:14px;line-height:1.2;">Build Your Brand<br>Foundation &amp; Positioning</h3>
+        <p style="font-size:14px;color:rgba(255,255,255,0.5);line-height:1.78;">
+          We start by rebuilding your entire LinkedIn from the ground up. Profile, headline, positioning,
+          and the narrative that makes the right people stop and take notice.
+        </p>
+        <div style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.06);">
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.52);">
+              <div style="width:5px;height:5px;background:var(--org);border-radius:50%;flex-shrink:0;"></div>
+              Profile audit and full rewrite
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.52);">
+              <div style="width:5px;height:5px;background:var(--org);border-radius:50%;flex-shrink:0;"></div>
+              ICP and niche identification
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.52);">
+              <div style="width:5px;height:5px;background:var(--org);border-radius:50%;flex-shrink:0;"></div>
+              Messaging framework that separates you
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 02 -->
+      <div class="lift phase-card slide-in" style="background:rgba(244,134,63,0.06);border:1px solid rgba(244,134,63,0.22);
+        border-radius:20px;padding:36px;position:relative;overflow:hidden;
+        box-shadow:0 0 60px rgba(244,134,63,0.07);transition-delay:0.12s;">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:var(--org);"></div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:52px;
+          color:rgba(244,134,63,0.14);letter-spacing:-0.05em;margin-bottom:4px;line-height:1;">02</div>
+        <div style="font-size:10px;font-weight:700;letter-spacing:0.13em;color:var(--org);
+          text-transform:uppercase;font-family:'Space Grotesk',sans-serif;margin-bottom:12px;">Phase Two</div>
+        <h3 style="font-size:22px;font-weight:700;color:#fff;margin-bottom:14px;line-height:1.2;">Create Content<br>That Converts</h3>
+        <p style="font-size:14px;color:rgba(255,255,255,0.62);line-height:1.78;">
+          We build a content engine in your voice. Posts that build authority, spark conversations,
+          and turn your audience into warm inbound leads every single week.
+        </p>
+        <div style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(244,134,63,0.15);">
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.6);">
+              <div style="width:5px;height:5px;background:var(--org);border-radius:50%;flex-shrink:0;"></div>
+              Ghostwritten posts in your exact voice
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.6);">
+              <div style="width:5px;height:5px;background:var(--org);border-radius:50%;flex-shrink:0;"></div>
+              Content angle strategy built for authority
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.6);">
+              <div style="width:5px;height:5px;background:var(--org);border-radius:50%;flex-shrink:0;"></div>
+              Branded graphic design for every post
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 03 -->
+      <div class="lift phase-card slide-in" style="background:rgba(255,255,255,0.028);border:1px solid rgba(255,255,255,0.08);
+        border-radius:20px;padding:36px;position:relative;overflow:hidden;transition-delay:0.24s;">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;
+          background:linear-gradient(90deg,#FFDE59,transparent);"></div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:52px;
+          color:rgba(255,222,89,0.1);letter-spacing:-0.05em;margin-bottom:4px;line-height:1;">03</div>
+        <div style="font-size:10px;font-weight:700;letter-spacing:0.13em;color:#FFDE59;
+          text-transform:uppercase;font-family:'Space Grotesk',sans-serif;margin-bottom:12px;">Phase Three</div>
+        <h3 style="font-size:22px;font-weight:700;color:#fff;margin-bottom:14px;line-height:1.2;">Scale With<br>Outreach</h3>
+        <p style="font-size:14px;color:rgba(255,255,255,0.5);line-height:1.78;">
+          Once the content is working, we add strategic outreach to fill your pipeline faster.
+          Daily engagement, DM strategy, and tracking what converts so we can double down on it.
+        </p>
+        <div style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.06);">
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.52);">
+              <div style="width:5px;height:5px;background:#FFDE59;border-radius:50%;flex-shrink:0;"></div>
+              Daily engagement with 50+ target accounts
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.52);">
+              <div style="width:5px;height:5px;background:#FFDE59;border-radius:50%;flex-shrink:0;"></div>
+              DM outreach and pipeline strategy
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.52);">
+              <div style="width:5px;height:5px;background:#FFDE59;border-radius:50%;flex-shrink:0;"></div>
+              Weekly performance reports and optimisation
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- RESULTS (Case Studies) -->
+<section id="results" style="background:var(--cream);padding:96px 24px;">
+  <div style="max-width:1160px;margin:0 auto;">
+    <div style="margin-bottom:64px;" class="fi">
+      <span class="lbl" style="margin-bottom:16px;display:flex;">Client Work</span>
+      <h2 style="font-size:clamp(28px,3.8vw,50px);font-weight:700;line-height:1.12;color:#000;max-width:560px;">
+        What happens when LinkedIn actually works for you.
+      </h2>
+    </div>
+
+    <!-- Analytics Screenshots Grid -->
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-bottom:20px;" class="fi d1">
+      <div class="lift analytics-card" style="box-shadow:0 8px 40px rgba(0,0,0,0.18);">
+        <div style="background:#111;padding:14px 18px 10px;border-radius:16px 16px 0 0;border-bottom:1px solid rgba(255,255,255,0.06);">
+          <p style="font-family:'Space Grotesk',sans-serif;font-size:10px;font-weight:700;color:var(--org);letter-spacing:0.12em;text-transform:uppercase;">Daniel Paul &mdash; 90 Day Impressions</p>
+        </div>
+        <img src="./refrence scrrenshorts/Daniel Lat 90 Days Impession.png"
+          style="width:100%;display:block;object-fit:cover;border-radius:0 0 16px 16px;" alt="Daniel Paul 90 Day Impressions">
+        <div class="ht-overlay">
+          <div class="ht-label">461K<br><span>Impressions</span><br><small style="font-size:13px;font-weight:500;color:rgba(255,255,255,0.65);">in 90 days</small></div>
+        </div>
+      </div>
+      <div class="lift analytics-card" style="box-shadow:0 8px 40px rgba(0,0,0,0.18);">
+        <div style="background:#111;padding:14px 18px 10px;border-radius:16px 16px 0 0;border-bottom:1px solid rgba(255,255,255,0.06);">
+          <p style="font-family:'Space Grotesk',sans-serif;font-size:10px;font-weight:700;color:var(--org);letter-spacing:0.12em;text-transform:uppercase;">Daniel Paul &mdash; 90 Day Followers</p>
+        </div>
+        <img src="./refrence scrrenshorts/Daniel Last 90 Days.png"
+          style="width:100%;display:block;object-fit:cover;border-radius:0 0 16px 16px;" alt="Daniel Paul 90 Day Followers">
+        <div class="ht-overlay">
+          <div class="ht-label">21K+<br><span>Followers</span><br><small style="font-size:13px;font-weight:500;color:rgba(255,255,255,0.65);">total growth</small></div>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;" class="fi d2">
+      <div class="lift analytics-card" style="box-shadow:0 8px 40px rgba(0,0,0,0.18);">
+        <div style="background:#111;padding:14px 18px 10px;border-radius:16px 16px 0 0;border-bottom:1px solid rgba(255,255,255,0.06);">
+          <p style="font-family:'Space Grotesk',sans-serif;font-size:10px;font-weight:700;color:var(--org);letter-spacing:0.12em;text-transform:uppercase;">Daniel Paul &mdash; Top Performing Posts</p>
+        </div>
+        <img src="./refrence scrrenshorts/Daniel Top Performing Posts.png"
+          style="width:100%;display:block;object-fit:cover;border-radius:0 0 16px 16px;" alt="Daniel Top Performing Posts">
+        <div class="ht-overlay">
+          <div class="ht-label">125K<br><span>Single Post</span><br><small style="font-size:13px;font-weight:500;color:rgba(255,255,255,0.65);">reach record</small></div>
+        </div>
+      </div>
+      <div class="lift analytics-card" style="box-shadow:0 8px 40px rgba(0,0,0,0.18);">
+        <div style="background:#111;padding:14px 18px 10px;border-radius:16px 16px 0 0;border-bottom:1px solid rgba(255,255,255,0.06);">
+          <p style="font-family:'Space Grotesk',sans-serif;font-size:10px;font-weight:700;color:var(--org);letter-spacing:0.12em;text-transform:uppercase;">Muhammad Usman &mdash; 90 Day Followers</p>
+        </div>
+        <img src="./refrence scrrenshorts/Usman Followers Last 90 Days.png"
+          style="width:100%;display:block;object-fit:cover;border-radius:0 0 16px 16px;" alt="Usman Followers Last 90 Days">
+        <div class="ht-overlay">
+          <div class="ht-label">10+<br><span>Leads/Month</span><br><small style="font-size:13px;font-weight:500;color:rgba(255,255,255,0.65);">qualified inbound</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SERVICES -->
+<section id="services" style="background:var(--blk);padding:96px 24px;position:relative;overflow:hidden;">
+  <div class="gridbg" style="position:absolute;inset:0;pointer-events:none;"></div>
+  <div style="max-width:1160px;margin:0 auto;position:relative;z-index:2;">
+    <div style="margin-bottom:64px;" class="fi">
+      <span class="lbl" style="margin-bottom:16px;display:flex;">Services</span>
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px;">
+        <h2 style="font-size:clamp(28px,3.8vw,50px);font-weight:700;line-height:1.12;color:#fff;max-width:480px;">
+          Three ways to work with me.
+        </h2>
+        <p style="font-size:15px;color:rgba(255,255,255,0.38);max-width:300px;line-height:1.75;">
+          I take a limited number of clients at a time. Book a call to check availability.
+        </p>
+      </div>
+    </div>
+    <div class="three-col" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+
+      <!-- 01 -->
+      <div class="lift fi d1" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.09);
+        border-radius:20px;padding:34px;display:flex;flex-direction:column;">
+        <div style="flex:1;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;">
+            <div style="font-size:11px;font-weight:700;letter-spacing:0.12em;color:rgba(255,255,255,0.32);
+              text-transform:uppercase;font-family:'Space Grotesk',sans-serif;">One-Time</div>
+          </div>
+          <h3 style="font-size:22px;font-weight:700;color:#fff;margin-bottom:12px;line-height:1.2;">Profile<br>Optimization</h3>
+          <p style="font-size:14px;color:rgba(255,255,255,0.44);line-height:1.78;margin-bottom:28px;">
+            Your LinkedIn profile transformed from the ground up. Done once. Done properly.
+          </p>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:32px;">
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:rgba(255,255,255,0.52);">
+              <div style="width:14px;height:14px;border:1px solid rgba(244,134,63,0.35);border-radius:50%;
+                display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                <div style="width:5px;height:5px;background:var(--org);border-radius:50%;"></div>
+              </div>Complete profile audit and rewrite
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:rgba(255,255,255,0.52);">
+              <div style="width:14px;height:14px;border:1px solid rgba(244,134,63,0.35);border-radius:50%;
+                display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                <div style="width:5px;height:5px;background:var(--org);border-radius:50%;"></div>
+              </div>Headline, about, and featured sections
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:rgba(255,255,255,0.52);">
+              <div style="width:14px;height:14px;border:1px solid rgba(244,134,63,0.35);border-radius:50%;
+                display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                <div style="width:5px;height:5px;background:var(--org);border-radius:50%;"></div>
+              </div>Keyword optimization for LinkedIn search
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:rgba(255,255,255,0.52);">
+              <div style="width:14px;height:14px;border:1px solid rgba(244,134,63,0.35);border-radius:50%;
+                display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                <div style="width:5px;height:5px;background:var(--org);border-radius:50%;"></div>
+              </div>Positioning brief included
+            </div>
+          </div>
+        </div>
+        <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" class="btn-out" style="justify-content:center;font-size:14px;">Get Started</a>
+      </div>
+
+      <!-- 02 -->
+      <div class="lift fi d2" style="background:rgba(244,134,63,0.055);border:1px solid rgba(244,134,63,0.24);
+        border-radius:20px;padding:34px;display:flex;flex-direction:column;position:relative;
+        box-shadow:0 0 70px rgba(244,134,63,0.06);">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:var(--org);border-radius:2px 2px 0 0;"></div>
+        <div style="position:absolute;top:14px;right:14px;background:var(--org);color:#fff;
+          font-size:10px;font-weight:700;padding:3px 11px;border-radius:100px;
+          font-family:'Space Grotesk',sans-serif;letter-spacing:0.05em;">POPULAR</div>
+        <div style="flex:1;">
+          <div style="margin-bottom:24px;">
+            <div style="font-size:11px;font-weight:700;letter-spacing:0.12em;color:var(--org);
+              text-transform:uppercase;font-family:'Space Grotesk',sans-serif;">Monthly Retainer</div>
+          </div>
+          <h3 style="font-size:22px;font-weight:700;color:#fff;margin-bottom:12px;line-height:1.2;">Content<br>and Design</h3>
+          <p style="font-size:14px;color:rgba(255,255,255,0.57);line-height:1.78;margin-bottom:28px;">
+            Your voice. Your stories. Your brand. Written and designed to show up weekly on LinkedIn without you lifting a finger.
+          </p>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:32px;">
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:rgba(255,255,255,0.65);">
+              <div style="width:14px;height:14px;border:1px solid rgba(244,134,63,0.45);border-radius:50%;
+                display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                <div style="width:5px;height:5px;background:var(--org);border-radius:50%;"></div>
+              </div>Ghostwritten posts in your own voice
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:rgba(255,255,255,0.65);">
+              <div style="width:14px;height:14px;border:1px solid rgba(244,134,63,0.45);border-radius:50%;
+                display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                <div style="width:5px;height:5px;background:var(--org);border-radius:50%;"></div>
+              </div>Branded graphic design for every post
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:rgba(255,255,255,0.65);">
+              <div style="width:14px;height:14px;border:1px solid rgba(244,134,63,0.45);border-radius:50%;
+                display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                <div style="width:5px;height:5px;background:var(--org);border-radius:50%;"></div>
+              </div>Monthly content calendar and strategy
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:rgba(255,255,255,0.65);">
+              <div style="width:14px;height:14px;border:1px solid rgba(244,134,63,0.45);border-radius:50%;
+                display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                <div style="width:5px;height:5px;background:var(--org);border-radius:50%;"></div>
+              </div>Your approval before anything goes live
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:rgba(255,255,255,0.65);">
+              <div style="width:14px;height:14px;border:1px solid rgba(244,134,63,0.45);border-radius:50%;
+                display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                <div style="width:5px;height:5px;background:var(--org);border-radius:50%;"></div>
+              </div>Profile optimization included
+            </div>
+          </div>
+        </div>
+        <a href="https://calendly.com/malikmuzammil/linkedin-discovery-call-1" class="btn-org" style="justify-content:center;font-size:14px;">Book a Strategy Call</a>
+      </div>
+
+      <!-- 03 -->
+      <div class="lift fi d3" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.09);
+        border-radius:20px;padding:34px;display:flex;flex-direction:column;">
+        <div style="flex:1;">
+          <div style="margin-bottom:24px;">
+            <div style="font-size:11px;font-weight:700;letter-spacing:0.12em;color:#FFDE59;
+              text-transform:uppercase;font-family:'Space Grotesk',sans-serif;">Done For You</div>
+          </div>
+          <h3 style="font-size:22px;font-weight:700;color:#fff;margin-bottom:12px;line-height:1.2;">Full Profile<br>Management</h3>
+          <p style="font-size:14px;color:rgba(255,255,255,0.44);line-height:1.78;margin-bottom:28px;">
+            Your entire LinkedIn handled end to end. Content, engagement, outreach. You focus on running your business.
+          </p>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:32px;">
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:rgba(255,255,255,0.52);">
+              <div style="width:14px;height:14px;border:1px solid rgba(255,222,89,0.35);border-radius:50%;
+                display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                <div style="width:5px;height:5px;background:#FFDE59;border-radius:50%;"></div>
+              </div>Everything in Content and Design
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:rgba(255,255,255,0.52);">
+              <div style="width:14px;height:14px;border:1px solid rgba(255,222,89,0.35);border-radius:50%;
+                display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                <div style="width:5px;height:5px;background:#FFDE59;border-radius:50%;"></div>
+              </div>Daily engagement with 50+ target accounts
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:rgba(255,255,255,0.52);">
+              <div style="width:14px;height:14px;border:1px solid rgba(255,222,89,0.35);border-radius:50%;
+                display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                <div style="width:5px;height:5px;background:#FFDE59;border-radius:50%;"></div>
+              </div>Daily outreach and DM strategy
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:rgba(255,255,255,0.52);">
+              <div style="width:14px;height:14px;border:1px solid rgba(255,222,89,0.35);border-radius:50%;
+                display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                <div style="width:5px;height:5px;background:#FFDE59;border-radius:50%;"></div>
+              </div>Weekly performance reports
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:rgba(255,255,255,0.52);">
+              <div style="width:14px;height:14px;border:1px solid rgba(255,222,89,0.35);border-radius:50%;
+                display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                <div style="width:5px;height:5px;background:#FFDE59;border-radius:50%;"></div>
+              </div>Full inbound pipeline engineered for you
+            </div>
+          </div>
+        </div>
+        <a href="https://calendly.com/malikmuzammil/linkedin-discovery-call-1"
+          style="display:flex;align-items:center;justify-content:center;
+          font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:14px;
+          color:#FFDE59;padding:13px 28px;border-radius:9px;
+          border:1.5px solid rgba(255,222,89,0.28);text-decoration:none;
+          transition:background 0.18s,border-color 0.18s;"
+          onmouseover="this.style.background='rgba(255,222,89,0.06)';this.style.borderColor='rgba(255,222,89,0.5)'"
+          onmouseout="this.style.background='transparent';this.style.borderColor='rgba(255,222,89,0.28)'">
+          Book a Strategy Call
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ABOUT / MID-PAGE -->
+<section style="background:var(--cream);padding:96px 24px;overflow:hidden;">
+  <div style="max-width:1160px;margin:0 auto;">
+    <div class="two-col fi" style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;">
+      <div style="position:relative;">
+        <div style="border-radius:20px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,0.13);">
+          <img src="./refrence scrrenshorts/Muzamil - Single Posts (2).png"
+            style="width:100%;display:block;object-fit:cover;" alt="Malik Muzamil">
+        </div>
+        <div class="fi flt-b" style="position:absolute;bottom:-20px;right:-20px;background:#fff;border-radius:14px;
+          padding:18px 22px;box-shadow:0 12px 36px rgba(244,134,63,0.18),0 2px 8px rgba(0,0,0,0.08);border:1px solid rgba(244,134,63,0.15);">
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:28px;color:var(--org);letter-spacing:-0.04em;" class="counter" data-target="4000" data-suffix="+" data-scale="1">4,000+</div>
+          <div style="font-size:12px;color:rgba(0,0,0,0.44);margin-top:3px;">LinkedIn followers</div>
+          <div style="font-size:11px;color:rgba(0,0,0,0.32);margin-top:2px;">Working with Top 1% companies</div>
+        </div>
+      </div>
+      <div>
+        <span class="lbl" style="margin-bottom:18px;display:flex;">About Malik</span>
+        <h2 style="font-size:clamp(26px,3.2vw,44px);font-weight:700;line-height:1.14;color:#000;margin-bottom:20px;">
+          I built Growlioo because I was tired of watching great founders stay invisible.
+        </h2>
+        <p style="font-size:16px;line-height:1.82;color:rgba(0,0,0,0.55);margin-bottom:18px;">
+          I'm Malik Muzamil, founder of <strong style="color:#000;">Growlioo</strong>. I work with founders, CEOs, and
+          service-based business owners who know their value but are not getting the
+          visibility they have earned.
+        </p>
+        <p style="font-size:16px;line-height:1.82;color:rgba(0,0,0,0.55);margin-bottom:34px;">
+          My approach is simple. We position you properly, create content that actually
+          sounds like you, and build the kind of authority that makes your ideal clients
+          come to you first. No vanity metrics. No generic posts.
+        </p>
+        <div style="display:flex;gap:28px;flex-wrap:wrap;">
+          <div>
+            <div class="counter" style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:30px;color:var(--org);letter-spacing:-0.04em;" data-target="2000000" data-suffix=" Million+" data-scale="1000000">2 Million+</div>
+            <div style="font-size:13px;color:rgba(0,0,0,0.44);margin-top:3px;">Client impressions</div>
+          </div>
+          <div style="width:1px;background:rgba(0,0,0,0.1);"></div>
+          <div>
+            <div class="counter" style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:30px;color:var(--org);letter-spacing:-0.04em;" data-target="50" data-suffix="+" data-scale="1">50+</div>
+            <div style="font-size:13px;color:rgba(0,0,0,0.44);margin-top:3px;">Founders helped</div>
+          </div>
+          <div style="width:1px;background:rgba(0,0,0,0.1);"></div>
+          <div>
+            <div class="counter" style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:30px;color:var(--org);letter-spacing:-0.04em;" data-target="8" data-suffix="" data-scale="1">8</div>
+            <div style="font-size:13px;color:rgba(0,0,0,0.44);margin-top:3px;">Industries served</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" style="background:var(--blk);padding:96px 0;overflow:hidden;">
+  <div style="max-width:1160px;margin:0 auto;padding:0 24px;margin-bottom:56px;" class="fi">
+    <span class="lbl" style="margin-bottom:16px;display:flex;">Testimonials</span>
+    <h2 style="font-size:clamp(28px,3.8vw,50px);font-weight:700;line-height:1.12;color:#fff;max-width:400px;">In their own words.</h2>
+  </div>
+
+  <!-- Row 1 — forward 42s: Caden, Tatiani, Smriti, Rabia, Haseeb, Lizzie -->
+  <div style="overflow:hidden;margin-bottom:16px;">
+    <div style="display:flex;width:max-content;align-items:flex-start;animation:mq 42s linear infinite;will-change:transform;">
+      <!-- Set 1 -->
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Caden.png" style="width:100%;display:block;object-fit:cover;" alt="Caden">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Tatiani.png" style="width:100%;display:block;object-fit:cover;" alt="Tatiani">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Smriti.png" style="width:100%;display:block;object-fit:cover;" alt="Smriti">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Rabia.png" style="width:100%;display:block;object-fit:cover;" alt="Rabia">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Haseeb.png" style="width:100%;display:block;object-fit:cover;" alt="Haseeb">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Lizzie.png" style="width:100%;display:block;object-fit:cover;" alt="Lizzie">
+      </div>
+      <!-- Set 2 — duplicate for seamless loop -->
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Caden.png" style="width:100%;display:block;object-fit:cover;" alt="Caden">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Tatiani.png" style="width:100%;display:block;object-fit:cover;" alt="Tatiani">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Smriti.png" style="width:100%;display:block;object-fit:cover;" alt="Smriti">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Rabia.png" style="width:100%;display:block;object-fit:cover;" alt="Rabia">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Haseeb.png" style="width:100%;display:block;object-fit:cover;" alt="Haseeb">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Lizzie.png" style="width:100%;display:block;object-fit:cover;" alt="Lizzie">
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 2 — reverse 34s: Sultan, Charlie, Audie, Ehli, Lara, Luke -->
+  <div style="overflow:hidden;margin-bottom:16px;">
+    <div style="display:flex;width:max-content;align-items:flex-start;animation:mq 34s linear infinite reverse;will-change:transform;">
+      <!-- Set 1 -->
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Sultan.PNG" style="width:100%;display:block;object-fit:cover;" alt="Sultan">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Charlie.PNG" style="width:100%;display:block;object-fit:cover;" alt="Charlie">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Audie.PNG" style="width:100%;display:block;object-fit:cover;" alt="Audie">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Ehli.PNG" style="width:100%;display:block;object-fit:cover;" alt="Ehli">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Lara.PNG" style="width:100%;display:block;object-fit:cover;" alt="Lara">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Luke.PNG" style="width:100%;display:block;object-fit:cover;" alt="Luke">
+      </div>
+      <!-- Set 2 — duplicate for seamless loop -->
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Sultan.PNG" style="width:100%;display:block;object-fit:cover;" alt="Sultan">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Charlie.PNG" style="width:100%;display:block;object-fit:cover;" alt="Charlie">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Audie.PNG" style="width:100%;display:block;object-fit:cover;" alt="Audie">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Ehli.PNG" style="width:100%;display:block;object-fit:cover;" alt="Ehli">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Lara.PNG" style="width:100%;display:block;object-fit:cover;" alt="Lara">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Luke.PNG" style="width:100%;display:block;object-fit:cover;" alt="Luke">
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 3 — forward 50s: Matt, Pierre, Ricchard, Justin -->
+  <div style="overflow:hidden;">
+    <div style="display:flex;width:max-content;align-items:flex-start;animation:mq 50s linear infinite;will-change:transform;">
+      <!-- Set 1 -->
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Matt.png" style="width:100%;display:block;object-fit:cover;" alt="Matt">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Pierre.PNG" style="width:100%;display:block;object-fit:cover;" alt="Pierre">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Ricchard.PNG" style="width:100%;display:block;object-fit:cover;" alt="Ricchard">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Justin.png" style="width:100%;display:block;object-fit:cover;" alt="Justin">
+      </div>
+      <!-- Set 2 — duplicate for seamless loop -->
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Matt.png" style="width:100%;display:block;object-fit:cover;" alt="Matt">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Pierre.PNG" style="width:100%;display:block;object-fit:cover;" alt="Pierre">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Ricchard.PNG" style="width:100%;display:block;object-fit:cover;" alt="Ricchard">
+      </div>
+      <div style="flex-shrink:0;width:360px;margin:0 12px;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+        <img src="./refrence scrrenshorts/Justin.png" style="width:100%;display:block;object-fit:cover;" alt="Justin">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQ -->
+<section id="faq" style="background:var(--cream);padding:96px 24px;">
+  <div style="max-width:680px;margin:0 auto;">
+    <div style="margin-bottom:56px;" class="fi">
+      <span class="lbl" style="margin-bottom:16px;display:flex;">FAQ</span>
+      <h2 style="font-size:clamp(28px,3.8vw,50px);font-weight:700;line-height:1.12;color:#000;">
+        Questions people ask before working with me.
+      </h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px;" class="fi d1">
+
+      <div style="background:#fff;border-radius:13px;overflow:hidden;box-shadow:0 1px 8px rgba(0,0,0,0.05);">
+        <button onclick="faq(this)" style="width:100%;text-align:left;padding:20px 22px;
+          background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+          <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#000;line-height:1.4;">
+            I've tried LinkedIn before and it didn't work for me.
+          </span>
+          <span class="ficon" style="color:var(--org);font-size:20px;flex-shrink:0;font-weight:700;transition:transform 0.25s ease;">+</span>
+        </button>
+        <div class="fans" style="display:none;padding:0 22px 20px;">
+          <p style="font-size:14px;color:rgba(0,0,0,0.55);line-height:1.8;">
+            Most LinkedIn approaches chase followers and likes. What we build chases business outcomes. The strategy is different from what you have seen before, and the results in our case studies back that up.
+          </p>
+        </div>
+      </div>
+
+      <div style="background:#fff;border-radius:13px;overflow:hidden;box-shadow:0 1px 8px rgba(0,0,0,0.05);">
+        <button onclick="faq(this)" style="width:100%;text-align:left;padding:20px 22px;
+          background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+          <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#000;line-height:1.4;">
+            I don't have time to be on LinkedIn every day.
+          </span>
+          <span class="ficon" style="color:var(--org);font-size:20px;flex-shrink:0;font-weight:700;transition:transform 0.25s ease;">+</span>
+        </button>
+        <div class="fans" style="display:none;padding:0 22px 20px;">
+          <p style="font-size:14px;color:rgba(0,0,0,0.55);line-height:1.8;">
+            That is why people hire me. The content gets written. The engagement gets done. The outreach gets sent. You show up as the authority. I do the work behind the scenes.
+          </p>
+        </div>
+      </div>
+
+      <div style="background:#fff;border-radius:13px;overflow:hidden;box-shadow:0 1px 8px rgba(0,0,0,0.05);">
+        <button onclick="faq(this)" style="width:100%;text-align:left;padding:20px 22px;
+          background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+          <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#000;line-height:1.4;">
+            I don't want my content to sound like everyone else on LinkedIn.
+          </span>
+          <span class="ficon" style="color:var(--org);font-size:20px;flex-shrink:0;font-weight:700;transition:transform 0.25s ease;">+</span>
+        </button>
+        <div class="fans" style="display:none;padding:0 22px 20px;">
+          <p style="font-size:14px;color:rgba(0,0,0,0.55);line-height:1.8;">
+            Good. Generic posts are exactly what we avoid. Before anything goes live, I spend time understanding how you think, how you speak, and what makes you different. You review and approve everything.
+          </p>
+        </div>
+      </div>
+
+      <div style="background:#fff;border-radius:13px;overflow:hidden;box-shadow:0 1px 8px rgba(0,0,0,0.05);">
+        <button onclick="faq(this)" style="width:100%;text-align:left;padding:20px 22px;
+          background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+          <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#000;line-height:1.4;">
+            How do I know this will actually drive leads?
+          </span>
+          <span class="ficon" style="color:var(--org);font-size:20px;flex-shrink:0;font-weight:700;transition:transform 0.25s ease;">+</span>
+        </button>
+        <div class="fans" style="display:none;padding:0 22px 20px;">
+          <p style="font-size:14px;color:rgba(0,0,0,0.55);line-height:1.8;">
+            Look at the results section above. Muhammad Usman went from unpredictable referrals to 10+ qualified leads a month. Alex went from invisible to 1.5M impressions in 60 days. Daniel Paul gets daily inbound DMs. That is the work.
+          </p>
+        </div>
+      </div>
+
+      <div style="background:#fff;border-radius:13px;overflow:hidden;box-shadow:0 1px 8px rgba(0,0,0,0.05);">
+        <button onclick="faq(this)" style="width:100%;text-align:left;padding:20px 22px;
+          background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+          <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#000;line-height:1.4;">
+            Is LinkedIn the right platform for my industry?
+          </span>
+          <span class="ficon" style="color:var(--org);font-size:20px;flex-shrink:0;font-weight:700;transition:transform 0.25s ease;">+</span>
+        </button>
+        <div class="fans" style="display:none;padding:0 22px 20px;">
+          <p style="font-size:14px;color:rgba(0,0,0,0.55);line-height:1.8;">
+            I have gotten results in fintech, AI, digital agencies, consulting, and SaaS. The platform is not the variable. The positioning is. And that is the first thing we fix together.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FINAL CTA -->
+<section style="background:var(--blk);padding:96px 24px;position:relative;overflow:hidden;">
+  <div style="position:absolute;top:0;left:0;right:0;bottom:0;
+    background:radial-gradient(ellipse at 50% 50%,rgba(244,134,63,0.1) 0%,transparent 65%);pointer-events:none;"></div>
+  <div class="gridbg" style="position:absolute;inset:0;pointer-events:none;"></div>
+  <div style="max-width:760px;margin:0 auto;text-align:center;position:relative;z-index:2;">
+    <div style="width:72px;height:72px;border-radius:50%;overflow:hidden;margin:0 auto 28px;
+      border:3px solid var(--org);box-shadow:0 0 0 6px rgba(244,134,63,0.1);">
+      <img src="./refrence scrrenshorts/Profile Picture (11).png"
+        style="width:100%;height:100%;object-fit:cover;object-position:top;" alt="Malik Muzamil">
+    </div>
+    <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(244,134,63,0.1);
+      border:1px solid rgba(244,134,63,0.2);border-radius:100px;padding:7px 16px;margin-bottom:28px;">
+      <span style="width:6px;height:6px;background:#22c55e;border-radius:50%;"></span>
+      <span style="font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:600;color:rgba(255,255,255,0.8);">We work with a small group of people each month</span>
+    </div>
+    <h2 style="font-size:clamp(32px,4.5vw,60px);font-weight:700;line-height:1.08;color:#fff;margin-bottom:20px;">
+      Your LinkedIn should be<br>bringing you clients.
+    </h2>
+    <p style="font-size:18px;color:rgba(255,255,255,0.52);margin-bottom:40px;line-height:1.75;
+      max-width:520px;margin-left:auto;margin-right:auto;">
+      Book a free strategy call. No pitch, no pressure.
+      We look at where you are, what is not working, and whether I can help you fix it.
+    </p>
+    <a href="https://calendly.com/malikmuzammil/linkedin-discovery-call-1" class="btn-org" style="font-size:16px;padding:16px 36px;">
+      Book a Free Strategy Call
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <p style="font-size:13px;color:rgba(255,255,255,0.28);margin-top:20px;">Growlioo &mdash; LinkedIn Brand Strategy Agency</p>
+    <p style="font-size:13px;color:rgba(255,255,255,0.22);margin-top:8px;">malik@malikmuzamil.com</p>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer style="background:#0d0d0d;border-top:1px solid rgba(255,255,255,0.06);padding:56px 24px 32px;">
+  <div style="max-width:1160px;margin:0 auto;">
+    <div class="four-col" style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px;">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+          <img src="./refrence scrrenshorts/Profile Picture (10).png"
+            style="width:32px;height:32px;border-radius:50%;object-fit:cover;border:2px solid var(--org);" alt="">
+          <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;color:#fff;">Malik Muzamil</span>
+        </div>
+        <p style="font-size:13px;color:rgba(255,255,255,0.35);line-height:1.75;max-width:240px;margin-bottom:20px;">
+          LinkedIn Brand Strategist. Helping founders build personal brands that generate real business.
+        </p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <a href="https://linkedin.com/in/malikmuzamilai"
+            style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;
+            background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;
+            color:rgba(255,255,255,0.5);text-decoration:none;font-weight:700;font-size:12px;
+            transition:background 0.18s,color 0.18s;"
+            onmouseover="this.style.background='rgba(244,134,63,0.12)';this.style.color='#F4863F'"
+            onmouseout="this.style.background='rgba(255,255,255,0.05)';this.style.color='rgba(255,255,255,0.5)'"
+            title="LinkedIn">in</a>
+          <a href="https://instagram.com/malikmuzamilai"
+            style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;
+            background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;
+            color:rgba(255,255,255,0.5);text-decoration:none;font-size:13px;
+            transition:background 0.18s,color 0.18s;"
+            onmouseover="this.style.background='rgba(244,134,63,0.12)';this.style.color='#F4863F'"
+            onmouseout="this.style.background='rgba(255,255,255,0.05)';this.style.color='rgba(255,255,255,0.5)'"
+            title="Instagram">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://x.com/malikmuzamilai"
+            style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;
+            background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;
+            color:rgba(255,255,255,0.5);text-decoration:none;font-weight:700;font-size:12px;
+            transition:background 0.18s,color 0.18s;"
+            onmouseover="this.style.background='rgba(244,134,63,0.12)';this.style.color='#F4863F'"
+            onmouseout="this.style.background='rgba(255,255,255,0.05)';this.style.color='rgba(255,255,255,0.5)'"
+            title="X / Twitter">𝕏</a>
+          <a href="https://malikmuzamil.substack.com"
+            style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;
+            background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;
+            color:rgba(255,255,255,0.5);text-decoration:none;font-size:11px;font-weight:700;
+            transition:background 0.18s,color 0.18s;"
+            onmouseover="this.style.background='rgba(244,134,63,0.12)';this.style.color='#F4863F'"
+            onmouseout="this.style.background='rgba(255,255,255,0.05)';this.style.color='rgba(255,255,255,0.5)'"
+            title="Substack">S</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:11px;color:#fff;
+          margin-bottom:14px;letter-spacing:0.1em;text-transform:uppercase;">Services</h4>
+        <div style="display:flex;flex-direction:column;gap:9px;">
+          <a href="#services" style="font-size:13px;color:rgba(255,255,255,0.38);text-decoration:none;transition:color 0.18s;"
+            onmouseover="this.style.color='#F4863F'" onmouseout="this.style.color='rgba(255,255,255,0.38)'">Profile Management</a>
+          <a href="#services" style="font-size:13px;color:rgba(255,255,255,0.38);text-decoration:none;transition:color 0.18s;"
+            onmouseover="this.style.color='#F4863F'" onmouseout="this.style.color='rgba(255,255,255,0.38)'">Content and Design</a>
+          <a href="#services" style="font-size:13px;color:rgba(255,255,255,0.38);text-decoration:none;transition:color 0.18s;"
+            onmouseover="this.style.color='#F4863F'" onmouseout="this.style.color='rgba(255,255,255,0.38)'">Profile Optimization</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:11px;color:#fff;
+          margin-bottom:14px;letter-spacing:0.1em;text-transform:uppercase;">Navigate</h4>
+        <div style="display:flex;flex-direction:column;gap:9px;">
+          <a href="#process" style="font-size:13px;color:rgba(255,255,255,0.38);text-decoration:none;transition:color 0.18s;"
+            onmouseover="this.style.color='#F4863F'" onmouseout="this.style.color='rgba(255,255,255,0.38)'">Process</a>
+          <a href="#results" style="font-size:13px;color:rgba(255,255,255,0.38);text-decoration:none;transition:color 0.18s;"
+            onmouseover="this.style.color='#F4863F'" onmouseout="this.style.color='rgba(255,255,255,0.38)'">Results</a>
+          <a href="#faq" style="font-size:13px;color:rgba(255,255,255,0.38);text-decoration:none;transition:color 0.18s;"
+            onmouseover="this.style.color='#F4863F'" onmouseout="this.style.color='rgba(255,255,255,0.38)'">FAQ</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:11px;color:#fff;
+          margin-bottom:14px;letter-spacing:0.1em;text-transform:uppercase;">Contact</h4>
+        <div style="display:flex;flex-direction:column;gap:9px;">
+          <a href="mailto:malik@malikmuzamil.com"
+            style="font-size:12px;color:rgba(255,255,255,0.38);text-decoration:none;transition:color 0.18s;word-break:break-all;"
+            onmouseover="this.style.color='#F4863F'" onmouseout="this.style.color='rgba(255,255,255,0.38)'">malik@malikmuzamil.com</a>
+          <a href="https://malikmuzammil.com"
+            style="font-size:12px;color:rgba(255,255,255,0.38);text-decoration:none;transition:color 0.18s;"
+            onmouseover="this.style.color='#F4863F'" onmouseout="this.style.color='rgba(255,255,255,0.38)'">malikmuzammil.com</a>
+          <span style="font-size:12px;color:rgba(255,255,255,0.38);">Islamabad, Pakistan</span>
+        </div>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,0.06);padding-top:24px;
+      display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+      <p style="font-size:12px;color:rgba(255,255,255,0.22);">2026 Malik Muzamil. All rights reserved.</p>
+      <p style="font-size:12px;color:rgba(255,255,255,0.22);">Malik Muzamil &middot; Islamabad, Pakistan</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+function faq(btn){
+  var ans=btn.nextElementSibling,icon=btn.querySelector('.ficon'),open=ans.style.display==='block';
+  document.querySelectorAll('.fans').forEach(function(a){a.style.display='none';});
+  document.querySelectorAll('.ficon').forEach(function(i){i.textContent='+';});
+  if(!open){ans.style.display='block';icon.textContent='x';}
+}
+
+// Intersection observer for .fi fade-in elements
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in');});},{threshold:0.1});
+document.querySelectorAll('.fi').forEach(function(el){io.observe(el);});
+
+// Intersection observer for phase cards slide-in
+var phaseIO=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in');});},{threshold:0.15});
+document.querySelectorAll('.phase-card.slide-in').forEach(function(el){phaseIO.observe(el);});
+
+// Count-up animation for .counter elements
+function animateCounter(el){
+  var target=parseInt(el.getAttribute('data-target'),10);
+  var suffix=el.getAttribute('data-suffix')||'';
+  var scale=parseFloat(el.getAttribute('data-scale'))||1;
+  var duration=1800;
+  var start=performance.now();
+  function step(now){
+    var progress=Math.min((now-start)/duration,1);
+    var ease=1-Math.pow(1-progress,3);
+    var val=Math.round(target*ease/scale);
+    el.textContent=val.toLocaleString()+suffix;
+    if(progress<1)requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+var counterIO=new IntersectionObserver(function(es){es.forEach(function(e){
+  if(e.isIntersecting&&!e.target.dataset.counted){
+    e.target.dataset.counted='1';
+    animateCounter(e.target);
+  }
+});},{threshold:0.5});
+document.querySelectorAll('.counter').forEach(function(el){counterIO.observe(el);});
+
+var hdr=document.getElementById('hdr');
+window.addEventListener('scroll',function(){
+  hdr.style.background=window.scrollY>24?'rgba(10,10,10,0.96)':'rgba(10,10,10,0.85)';
+},{passive:true});
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var id=a.getAttribute('href').slice(1),el=document.getElementById(id);
+    if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'});}
+  });
+});
+</script>
+</body>
+</html>
