@@ -1,0 +1,4 @@
+.DS_Store
+temporary screenshots/
+*.bak-pre-redesign
+node_modules/
