@@ -2,3 +2,7 @@
 temporary screenshots/
 *.bak-pre-redesign
 node_modules/
+# Unredacted DM screenshots with personal contact info - only the blurred
+# dm-proof-*.png copies in "refrence scrrenshorts/" may be published
+/DM*.png
+/DM *.png
