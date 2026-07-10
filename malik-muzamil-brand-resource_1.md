@@ -1,354 +1,266 @@
-# 🧠 MALIK MUZAMIL — MASTER BRAND RESOURCE FILE v2.0
-> **Purpose:** Complete brand intelligence file + website rebuild spec. Source of truth for Claude Code website update, landing pages, content, copywriting, ads, proposals, and sales assets.
+# 🧠 MALIK MUZAMIL — MASTER BRAND RESOURCE FILE v3.0
+> **Purpose:** Source of truth for the Growlioo website rebuild. This file replaces v2.0.
 > **Brand:** Growlioo | **Founder:** Malik Muzamil
 > **Last Updated:** July 2026
-> **v2.0 Changes:** New two-offer website architecture (LinkedAI System $495 + Done-For-You umbrella), full page-by-page copy spec, design system based on Shoaib Ahmed layout structure with Growlioo brand colors.
+> **v3.0 Changes:** New offer ladder (LinkedAI $495 RETIRED, Foundation/Growth RETIRED). New 4-page architecture: Homepage (high-ticket only) · /inbound · /allbound · /offers. Outcome-based offer names. New lead magnet routing into the Inbound offer. Design system unchanged from v2.0.
 
 ---
 
 ## 📌 TABLE OF CONTENTS
-
-1. [Website Architecture (NEW)](#1-website-architecture)
-2. [Design System (NEW)](#2-design-system)
-3. [Offer 1: LinkedAI System — $495 (NEW)](#3-offer-1-linkedai-system--495)
-4. [Offer 2: Done-For-You LinkedIn Growth (Umbrella)](#4-offer-2-done-for-you-linkedin-growth)
-5. [Homepage Copy Spec (NEW)](#5-homepage-copy-spec)
-6. [LinkedAI Page Copy Spec (NEW)](#6-linkedai-page-copy-spec)
-7. [Done-For-You Page Copy Spec (NEW)](#7-done-for-you-page-copy-spec)
-8. [Brand Identity & Positioning](#8-brand-identity--positioning)
-9. [Founder Bio & Story](#9-founder-bio--story)
-10. [Target Audience (ICP)](#10-target-audience-icp)
-11. [Client Case Studies & Results](#11-client-case-studies--results)
-12. [Testimonials & Recommendations](#12-testimonials--recommendations)
-13. [Social Proof & Credibility Signals](#13-social-proof--credibility-signals)
-14. [Objection Handling Copy](#14-objection-handling-copy)
-15. [CTAs & Conversion Copy](#15-ctas--conversion-copy)
-16. [Contact Information](#16-contact-information)
+1. [Website Architecture v3](#1-website-architecture-v3)
+2. [The Offer Ladder (all offers, canonical)](#2-the-offer-ladder)
+3. [Design System (unchanged)](#3-design-system)
+4. [Homepage Copy Spec](#4-homepage-copy-spec)
+5. [/inbound Page Copy Spec](#5-inbound-page-copy-spec)
+6. [/allbound Page Copy Spec](#6-allbound-page-copy-spec)
+7. [/offers Page Copy Spec](#7-offers-page-copy-spec)
+8. [Lead Magnet Spec](#8-lead-magnet-spec)
+9. [Redirects & Retired Assets](#9-redirects--retired-assets)
+10. [Brand Identity, Bio, ICP, Case Studies, Testimonials, Objections, CTAs, Contact](#10-carried-over-sections)
+11. [Claude Code Build Notes](#11-claude-code-build-notes)
 
 ---
 
-## 1. WEBSITE ARCHITECTURE
+## 1. WEBSITE ARCHITECTURE v3
 
-### The Two-Offer Model
-The website presents TWO distinct ways to work with Growlioo, both visible from the homepage (Marie Olivie / Shoaib Ahmed pattern: one homepage, multiple offer cards, each with a dedicated page).
-
-| Offer | Type | Price | Buyer |
-|---|---|---|---|
-| **LinkedAI System** | Digital product + install call | **$495** one-time | Founders who want the system and will run it themselves |
-| **Done-For-You LinkedIn Growth** | Ongoing umbrella — 2 packages inside (Foundation & Growth) | Call-only, no public pricing | Founders who want it fully handled |
+### The Model
+The public website leads with HIGH TICKET ONLY. Low-ticket and middle-ticket offers are never mentioned on the homepage, /inbound, or /allbound except through one neutral link: **"See All Our Systems →" → /offers**. Low/middle offers each get their own dedicated landing pages LATER (promoted separately via posts, DMs, ads). For now, /offers is the single hub listing everything.
 
 ### Site Map
 ```
-/                → Homepage (both offers, Shoaib-home style)
-/linkedai        → LinkedAI System sales page ($495, dark theme)
-/done-for-you    → DFY umbrella page (3 tiers inside, call-only CTA)
-/case-studies    → Case studies (optional, can be homepage section)
+/            → Homepage. High-ticket only: Inbound + Allbound cards. Lead magnet section. "See All Our Systems" band.
+/inbound     → The LinkedIn Inbound Install — $997/mo (price PUBLIC on this page)
+/allbound    → The LinkedIn Allbound System — call/DM only, "starts at $1,997/mo" softness
+/offers      → ALL offers on one scroll (low → high). Each card has a button that will later
+               point to its own dedicated landing page (wire buttons now, real URLs later).
 ```
+No /case-studies page. Case studies are embedded as sections inside the pages. No /linkedai page. No /done-for-you page (301s below).
 
 ### Navigation (top bar)
-`Home · LinkedAI System · Done-For-You · Case Studies` + pill button: **Get in Touch**
+`Home · Inbound Install · Allbound System · All Systems` + pill button: **Get in Touch**
 
 ### Conversion Logic
-- Homepage hero = category-level promise (not offer-specific)
-- Scroll section "Here's how we can work together" = 2 large offer cards (Shoaib pattern), LinkedAI card FIRST (lower friction, self-serve), DFY card second
-- Anyone landing and scrolling must be able to find the LinkedAI $495 offer within 2 scrolls
-- DFY mentioned on the LinkedAI page as the upgrade path ("Want us to run all of this for you? → Done-For-You")
-- LinkedAI mentioned on the DFY page as the entry path ("Not ready for done-for-you? Start with the system → $495")
-- Cross-linking both directions = no dead ends
+- Homepage hero = category-level promise. Two offer cards = **Inbound Install (light card)** and **Allbound System (dark card, premium)**. Nothing cheaper is named on the homepage.
+- Below the cards, one slim cream band: *"Not ready for done-for-you? We have systems from $17. → See All Our Systems"* → /offers. This is the ONLY low-ticket reference on the homepage.
+- Lead magnet (Section 8) opt-in routes the subscriber INTO the Inbound offer: thank-you page + first email both point to /inbound and its deliverables.
+- /inbound shows its price ($997/mo). /allbound never shows a hard price on a card — "starts at $1,997/mo" appears once in FAQ copy; CTA is Book a Call / DM.
+- Cross-links: /inbound → "Want outbound running daily too? → Allbound". /allbound → "Want inbound only? → Inbound Install". Both → slim "See All Our Systems" band near the footer.
+- /offers is the ladder hub: every offer card, cheapest first, each with its own CTA button (wired later to dedicated landing pages / checkout).
 
 ---
 
-## 2. DESIGN SYSTEM
+## 2. THE OFFER LADDER (canonical — use these names, outcomes, and prices everywhere)
 
-### Theme Direction
-**LIGHT-FIRST SITE** (this replaces the previous all-dark Growlioo website). Base: white + cream `#FAF0E6` alternating sections, Shoaib Ahmed layout structure — clean sectioning, big stat blocks, testimonial-floating hero, "This is for you if..." grids, Before/After comparison table, numbered system rows, case-study feature blocks, pricing cards with checklists, 3-step enquire/onboard/execute flow, FAQ accordion.
+| # | Offer | Price | Type | Outcome line | Page/CTA |
+|---|---|---|---|---|---|
+| 1 | **LinkedAI Starter Plugin** | $17 one-time | DIY digital | Your first 100K impressions + first 10 clients from LinkedIn | /offers card → future landing page (wire button) |
+| 2 | **The Client-Getter Vault** | $47 add-on | DIY bundle (order bump) | Turn views into buyers, faster | Sold at Starter checkout only; listed on /offers |
+| 3 | **Lead Magnet Machine** | $97 | DWY system | The system behind 1M+ impressions & 1000s of leads | /offers card → future landing page |
+| 4 | **Inbound Content Engine** | $147 | DWY system | Consistent inbound leads from LinkedIn every single week | /offers card → future landing page |
+| 5 | **DM-to-Booked-Calls System** | $197 | DWY system | 10+ qualified leads from LinkedIn every week | /offers card → future landing page |
+| 6 | **The LinkedIn Client Stack** | $297 (all 3 systems, save $144) | DWY bundle | Every system that gets clients from LinkedIn — in one stack | /offers featured card |
+| 7 | **The LinkedIn Inbound Install** | **$997/mo** (public) · 90-day min | DFY retainer | Consistent inbound inquiries without writing a single post yourself | /inbound |
+| 8 | **The LinkedIn Allbound System** | Starts at $1,997/mo (call/DM only) · 90-day min | DFY retainer | Inbound + outbound running daily — 10+ qualified conversations booked every week | /allbound |
 
-**Dark `#1A1A1A` used in exactly 3 places** (money-moment contrast):
-1. The results/stats band on the homepage
-2. The **Growth package card** on the DFY page (premium signal — light Foundation card next to dark Growth card, matching the existing package design assets)
-3. The footer
+**Retired:** LinkedAI System $495 · Foundation package · Growth package · the old 3-service menu. Never render these names or the $495/$295 price anywhere.
 
-The LinkedAI page is ALSO light, with one dark pricing card carrying an orange glow. No full-dark pages anywhere — site must feel like one website.
+### Full Deliverables (canonical)
 
-**Color & feel:** Growlioo's own palette (NOT Shoaib's yellow/black, NOT Marie's pink).
+**LinkedAI Starter Plugin — $17**
+- Plug-and-play Claude plugin: post writer + hook generator skills
+- The exact AI system behind 100K impressions for clients
+- 10-minute install + quick-start video
 
-### Growlioo Color Tokens
+**The Client-Getter Vault — $47** (order bump)
+- Advanced skills: carousels, cheatsheets, comment writer
+- Profile optimizer add-on
+- Swipe files + plug-and-run templates
+
+**Lead Magnet Machine — $97**
+- Lead magnet builder plugin · Top-50 proven lead magnet swipe file · Delivery DM templates
+- Proof: 1M+ impressions & thousands of leads generated for clients
+
+**Inbound Content Engine — $147**
+- 30-day content system plugin · Video masterclass (content → inbound leads) · Posting cadence templates
+
+**DM-to-Booked-Calls System — $197**
+- Outreach plugin (voice-note flow) · The DM playbook behind $50K+ closed · Follow-up + reactivation sequences
+
+**The LinkedIn Client Stack — $297** = all three systems above (anchor: $441 value, save $144).
+
+**The LinkedIn Inbound Install — $997/mo**
+- Profile revamp + positioning (ICP, positioning statement, messaging pillars, banned-words list)
+- Monthly content strategy + daily posts written, designed & published for you (16–20 posts/month, your voice, you approve)
+- Lead magnet system installed & run
+- 1 strategy call / month
+- Early Joiner Bonus: free 1:1 90-Day Content Roadmap Call (normally $300)
+- 90-day minimum
+
+**The LinkedIn Allbound System — starts at $1,997/mo**
+- Everything in the Inbound Install, plus:
+- Dedicated account manager, 3–4 hrs daily on your account
+- Daily engagement: 30–50 strategic comments/day inside your industry
+- Daily outreach at higher volume: lead lists, connection requests, strategic DMs
+- KPI tracking: weekly + monthly performance reports (impressions, followers, engagement, outreach results)
+- Bi-monthly strategy calls
+- Early Joiner Bonus: 6-Hour Emergency Content Slot
+- Sold by application: Book a Free Strategy Call / DM only · 90-day minimum
+
+---
+
+## 3. DESIGN SYSTEM (UNCHANGED from v2.0 — restated for the build)
+
+**LIGHT-FIRST SITE.** White + cream `#FAF0E6` alternating sections, Shoaib Ahmed layout structure. Dark `#1A1A1A` in exactly these money-moments: (1) homepage results band, (2) the **Allbound card** (was Growth card) on homepage and the Allbound package card, (3) the footer, (4) one dark pricing/summary card allowed per subpage. No full-dark pages.
+
+### Color Tokens
 | Token | Hex | Usage |
 |---|---|---|
-| `--orange` | `#F47B20` | Primary CTAs, headline accent words, stat numbers, icons, links |
-| `--orange-hover` | `#D9660F` | Button hover states |
+| `--orange` | `#F47B20` | Primary CTAs, headline accent words, stat numbers, icons, links, checkmarks |
+| `--orange-hover` | `#D9660F` | Button hovers |
 | `--cream` | `#FAF0E6` | Light section backgrounds (alternate with white) |
-| `--dark` | `#1A1A1A` | Body text on light, dark section backgrounds |
-| `--near-black` | `#0D0D0D` | Optional deeper shade for footer / dark pricing card gradients |
+| `--dark` | `#1A1A1A` | Body text on light; dark sections |
+| `--near-black` | `#0D0D0D` | Footer / dark card gradients |
 | `--white` | `#FFFFFF` | Light sections, text on dark |
-| `--orange-glow` | `rgba(244,123,32,0.15)` | Glows/gradients behind pricing cards on dark sections |
+| `--orange-glow` | `rgba(244,123,32,0.15)` | Glow behind dark cards |
 
-### Section Rhythm (homepage)
-White → Cream → White → **Dark (#1A1A1A) results band with orange stat numbers** → White → Cream → Dark footer. One dark band only — everything else stays light.
+Orange rules: accent words inside dark headlines; solid orange buttons with WHITE text; thin orange card borders; orange pill eyebrows or 8% tint fills; max ONE full-orange band per page; orange check icons; stat numbers oversized in orange with small grey labels.
 
-### Orange Usage Rules (mirror Shoaib's yellow patterns exactly)
-| Shoaib's yellow usage | Growlioo orange equivalent |
-|---|---|
-| Accent words inside dark headlines | Orange `#F47B20` words inside `#1A1A1A` headlines |
-| Solid CTA buttons, dark text | Solid orange buttons — **white text** (dark text fails contrast on orange) |
-| Thin yellow borders on offer/pricing cards | Thin orange borders |
-| Tag pills / eyebrow labels | Orange pill outline, or soft tint fill `rgba(244,123,32,0.08)` |
-| Glow behind pricing card | `--orange-glow` radial gradient |
-| Checkmarks in feature lists | Orange check icons |
-| Full yellow promo band | ONE full-orange band max per page (e.g. "Build the complete system in one call" on /linkedai) — orange is heavier than yellow, overuse makes pages feel hot |
-| Highlighted card backgrounds | 8–10% orange tint, never solid orange fills for large cards |
+Typography: bold geometric sans (Inter/Figtree class), tight tracking; body 16–18px `#1A1A1A` on light.
 
-### Typography
-- Headings: bold geometric sans (Inter/Figtree/General Sans class), tight tracking
-- Accent words inside headlines colored `#F47B20` (Shoaib pattern: "Make LinkedIn your **#1 source** of leads")
-- Body: 16–18px, `#1A1A1A` on light, `#FAF0E6`-tinted white on dark
-
-### Components to Build
-- Floating testimonial cards around hero (Shoaib home hero)
-- Star row + "100+ happy clients" avatars strip
-- Stat trio blocks (big orange number, small label)
-- Before/After two-column comparison (light left, dark-orange right)
-- Numbered 01–04 system breakdown rows
-- Case study feature cards: photo right, stats grid left, secured-logos strip
-- Dark pricing card with orange glow, checklist, VAT-style price line
-- 3-step "Your next steps": Enquire → Onboarding → Execution
-- FAQ accordion
-- Sticky/exit popup (Marie pattern) — optional: LinkedAI $495 mini-offer card
+Components (already built — reuse): floating testimonial hero cards, star/avatar trust strip, stat trio blocks, before/after table (dark-orange right column), numbered 01–04 rows, case-study feature cards, dark card with orange glow + checklist, 3-step Enquire→Onboarding→Execution, FAQ accordion.
 
 ---
 
-## 3. OFFER 1: LINKEDAI SYSTEM — $495
+## 4. HOMEPAGE COPY SPEC ( / )
 
-### One-Liner
-> Your profile rewritten, a custom AI content engine installed, and a brand kit built — the complete LinkedIn system, live in one call. **$495, one-time.**
+Keep the existing built homepage structure and design. Content changes only where marked.
 
-### What It Is
-A productized install of the Full-Stack AI LinkedIn System. Three things that have to work in sync — and everyone sells them separately. Growlioo builds all three in one call:
-
-1. **Your Profile, Rewritten** — headline, about, banner copy, featured section. Positioned to convert visitors, keyword-optimized for LinkedIn search. (The profile optimization touch.)
-2. **Custom Claude AI Skills That Write Like You** — a personal AI content engine trained on your voice, offers, and ICP. Post writer, hooks, carousels, DMs. You generate a month of content in an hour.
-3. **A Brand Kit That Actually Looks Like a Business** — colors, banner, post templates, visual identity so every post is unmistakably yours. (The brand identity touch.)
-
-### Delivery Format
-- **1-hour install call** — system built live with you
-- ~15 min setup on your side before the call
-- Runs on ~$20/mo of tools after (Claude subscription)
-- Everything documented and handed over — you own the system
-
-### Positioning Angles (from LinkedAI page, reusable)
-- "You've posted for months and still no clients. I got you."
-- "Three things that have to work in sync: your profile, an AI content engine, and a brand kit. We do all of them in one call."
-- "Build the complete system in one call."
-- "One system. Your entire system is built and live."
-- "Everyone sells this separately. We give it all together."
-- "Focus on your business. This handles LinkedIn."
-- Trusted by 50+ founders across 6 industries
-
-### Price Framing
-- **$495 one-time** (updated from $295 — all assets referencing $295 must be changed)
-- Anchor against the alternatives: a ghostwriter ($1,500+/mo), a profile rewrite ($300–500 alone), a brand designer ($500+), a content strategist ($1,000+). Stack value, then land: all of it, one call, $495.
-
-### Ideal Buyer
-Solo founders, consultants, and early-stage service business owners who: want the system, not the retainer; are willing to press the buttons themselves; have posted inconsistently or without results; can't yet justify done-for-you pricing.
-
-### Upgrade Path
-LinkedAI buyers → DFY pipeline. Every LinkedAI page and delivery doc includes: *"Want us to run the whole thing for you? That's our Done-For-You service → book a call."*
-
----
-
-## 4. OFFER 2: DONE-FOR-YOU LINKEDIN GROWTH
-
-### Umbrella Positioning
-One offer on the surface, **two packages inside: Foundation and Growth**. Public-facing framing: **"Done-For-You LinkedIn Growth — your presence, fully handled."** Pricing is **call-only** — no numbers on the site.
-
-**Outcome line (use under packages):** A steady flow of conversations, not just content.
-**Compliance line (small print):** Results vary by niche, offer, and consistency.
-
-### Package 1 — FOUNDATION *(light card: white/cream, orange headings)*
-
-**What's Included:**
-- **Brand Foundation & Positioning** — ICP definition, positioning statement, messaging pillars, and a banned-words list
-- **Full LinkedIn Profile Rebranding** — headline, About, banner, featured, experience rewrites
-- **Content Strategy (Month 1 + Ongoing)** — first month fully planned: hooks, angles, topics mapped to your positioning and your ICP's actual pain points
-- **16–20 Posts & Designs Per Month** — written in your voice: text, image posts, carousels, infographics. You approve. We publish.
-- **Daily Outreach** — building your lead list, sending connection requests, and daily strategic DMs
-
-**Early Joiner Bonus:** Free 1:1 90-Day Content Roadmap Call *(normally $300)* — a live session mapping your next 90 days of content: topics, angles, and conversion goals before we write a single word. The strategy most agencies skip.
-
-### Package 2 — GROWTH *(dark card #1A1A1A, orange headings — premium signal)*
-
-**Everything in Foundation, plus:**
-- **Dedicated Account Manager** — one operator owns your LinkedIn. They know your voice, your niche, your goals.
-- **Engagement: 30–50 Comments Per Day** — your account manager engages daily inside your industry, positioning you as the person worth following before they even see your profile
-- **Daily Outreach (higher volume)** — lead list building, connection requests, and daily strategic DMs at a higher volume than Foundation
-- **Weekly & Monthly Performance Reports** — impressions, follower growth, engagement rate, outreach results. You always know exactly what your investment is returning.
-
-**Early Joiner Bonus:** 6-Hour Emergency Content Slot — big announcement, press feature, or time-sensitive opportunity? We turn it into a live post within 6 hours.
-
-### DFY Page CTA
-> **Book a Free Strategy Call** — we'll map your goals, pick the right package, and show you exactly what your first 90 days look like.
-
-### Entry Path Cross-Sell
-On the DFY page, below packages: *"Not ready for done-for-you? Install the system yourself with LinkedAI — $495, one call."*
-
-### Note on Legacy Services
-The previous 3-way menu (Profile Management / Content & Design / Profile Optimization) is retired on the new site. Profile optimization is now covered by LinkedAI ($495 entry point); ongoing work lives inside Foundation and Growth. Ladder: **LinkedAI $495 → Foundation → Growth.**
-
----
-
-## 5. HOMEPAGE COPY SPEC
-
-### Hero (dark or white, floating testimonial cards Shoaib-style)
+### Hero (unchanged layout: floating stat chips + photo)
 **Eyebrow:** For founders, executives and consultants.
-**Headline:** Turn Your LinkedIn Into an **Inbound Revenue Machine.** *(orange accent on bolded words)*
-**Sub:** Whether you want the complete AI system installed in one call, or your entire LinkedIn presence fully managed — Growlioo builds LinkedIn that generates clients, not just followers.
-**CTAs (two buttons, Shoaib home pattern):**
-- `Get the LinkedAI System — $495` (orange, primary)
-- `Explore Done-For-You` (outline, secondary)
-**Trust strip:** ★★★★★ avatar row + "2M+ impressions generated for clients · $40–50M in contracts influenced"
+**Headline:** Turn your LinkedIn into an **inbound revenue machine.** *(orange accents — unchanged)*
+**Sub (UPDATED):** Your entire LinkedIn presence — content, engagement, and outreach — fully handled by us. You show up as the authority. Your pipeline fills with qualified conversations.
+**CTAs (UPDATED):**
+- `Explore the Inbound Install` (orange, primary → /inbound)
+- `Explore the Allbound System` (outline, secondary → /allbound)
+**Trust strip:** ★★★★★ avatars + "2M+ impressions generated for clients · 50+ founders served across 6 industries"
 
-### Section: Trusted By / Proof Bar (cream)
-**Headline:** Trusted by founders across fintech, AI, agencies & consulting
-Pull quote card: *"I was the best-kept secret in my industry. Now, governments are reaching out to partner with us."* — Mehsum Sayani, CEO, Propellus
+### Section: Trusted By / Proof Bar (dark band — unchanged)
+Daniel Paul pull quote + logo strip. No changes.
 
-### Section: I Help You... (3 icon cards, Shoaib pattern)
-1. **Get in front of the right people — fast.** Stop posting into the void. A system that puts you in front of your exact ICP consistently.
-2. **Become the go-to authority in your niche.** Positioning that makes less-talented competitors irrelevant.
-3. **Turn views into paying clients.** Not vanity metrics. Inbound DMs, booked calls, closed deals.
+### Section: Here's How We Can Work Together (2 cards — UPDATED, core change)
+**Card 1 — The LinkedIn Inbound Install** *(light/cream card, orange headings)*
+Tag: `Done-For-You · $997/mo`
+> Consistent inbound inquiries without writing a single post yourself. Profile revamp, monthly strategy, daily posts written and published for you, lead magnet system installed and run.
+Button: `Explore the Inbound Install →` → /inbound
 
-### Section: Here's How We Can Work Together (2 big offer cards — CORE SECTION)
+**Card 2 — The LinkedIn Allbound System** *(dark #1A1A1A card, orange glow — premium signal)*
+Tag: `Done-For-You · Inbound + Outbound`
+> Inbound + outbound running daily — 10+ qualified conversations booked every week. Everything in the Inbound Install plus a dedicated account manager engaging and reaching out for you, every day.
+Button: `Explore the Allbound System →` → /allbound
 
-**Card 1 — LinkedAI System** *(dark card, orange glow — visually distinct)*
-Icon: ⚡ | Tag: `One-time · $495`
-> Your profile rewritten, a custom AI content engine that writes like you, and a brand kit — the complete system built live in one call. You run it. You own it.
-Button: `Explore LinkedAI →`
+**Slim band directly under the cards (cream, small text — the ONLY low-ticket reference on this page):**
+*"Not ready for done-for-you? We have DIY and done-with-you systems from $17."* `See All Our Systems →` → /offers
 
-**Card 2 — Done-For-You LinkedIn Growth** *(cream card)*
-Icon: 👑 | Tag: `Ongoing · Fully managed`
-> Content, design, engagement, and outreach — your entire LinkedIn presence handled by us. You show up as the authority. We do the work.
-Button: `Explore Done-For-You →`
+### Section: I Help You... (3 cards — unchanged)
+Visibility. Authority. Revenue. (keep existing copy)
 
-### Section: Results (dark band, orange stat numbers)
-**Headline:** Real Founders. **Real Results.**
-- **1.5M+** impressions in 60 days — Mehsum Sayani, Propellus
-- **461K** impressions & **21K+** followers in 90 days — Daniel Paul
-- **10+** qualified leads/month — Muhammad Usman, Zaptus Ventures
-- **$40–50M** in government contracts influenced via LinkedIn
+### Section: Results (dark band — unchanged)
+Keep existing stat set (700K+, 5K+, 10+, 1,000+) and scrolling proof ticker.
 
-### Section: Case Study Feature Blocks (Shoaib "Learn the playbook" pattern — 3 blocks)
-Each block: title, client photo, stat grid, quote. Use full case studies from Section 11.
+### Section: Case Study Feature Blocks (keep — absorbs the retired /case-studies page)
+All 3 full case studies from Section 10 (Daniel Paul, Mehsum Sayani, Muhammad Usman) in feature-block layout.
 
-### Section: About Malik (photo left, copy right, stat trio)
-**Headline:** The strategist behind **2M+ client impressions.**
-Short version of long bio (Section 9). Stat trio: `2M+ impressions generated` · `$40–50M contracts influenced` · `+4,421% highest growth rate`
+### Section: Free Lead Magnet (UPDATED — see Section 8)
+**Headline:** Steal the exact system behind our clients' inbound pipelines.
+**Sub:** The LinkedIn Inbound Blueprint — the 90-day system we install for clients at $997/mo, mapped out free. See every deliverable, every step, and why it works.
+Form: Name + Email. Button: `Send Me the Blueprint →`
+(Thank-you + email #1 route to /inbound.)
 
-### Section: Free Lead Magnet (optional, Shoaib/Marie pattern)
-Placeholder — plug existing lead magnet or LinkedAI mini-training. Name + email form.
+### Section: About Malik (unchanged) · Testimonial Wall (unchanged) · FAQ (update any answer that referenced $495/Foundation/Growth)
 
-### Section: Testimonial Wall (cream)
-Pull 4–5 from Section 12.
-
-### Section: FAQ + Final CTA (dark footer band)
+### Final CTA (dark band — UPDATED buttons)
 **Headline:** Ready to turn LinkedIn into your #1 client source?
-Two buttons again: `Get LinkedAI — $495` + `Book a Strategy Call`
+Buttons: `Explore the Inbound Install` + `Book a Strategy Call`
 
 ---
 
-## 6. LINKEDAI PAGE COPY SPEC (/linkedai — light theme like rest of site; ONE dark pricing card with orange glow)
+## 5. /INBOUND PAGE COPY SPEC — The LinkedIn Inbound Install · $997/mo (price PUBLIC)
+
+Light theme. One dark pricing card with orange glow allowed.
 
 ### Hero
-**Headline:** You've posted for months and **still no clients.** I got you.
-**Sub:** Your profile rewritten. A custom AI content engine that writes like you. A brand kit that looks like a real business. All three, built live in one call.
-**CTA:** `Get The System — $495` (orange)
-**Trust line:** Trusted by 50+ founders across 6 industries
-**Stat strip:** `10X faster content` · `15 min setup` · `$495 one-time` · `~$20/mo to run`
+**Eyebrow:** For founders who are done writing their own posts.
+**Headline:** Consistent inbound inquiries. **Without writing a single post yourself.**
+**Sub:** We revamp your profile, plan your strategy, and write, design, and publish your content daily — with a lead magnet system running underneath. You approve. We handle everything else.
+**CTA:** `Book a Free Strategy Call` (orange) · secondary text link: `See exactly what's included ↓`
+**Stat chips:** `461K impressions in 90 days` · `10+ qualified leads/mo` · `16–20 posts/mo done for you`
 
-### Section: The Problem (3–4 pain cards)
-- You spend hours on a post that gets 12 likes and zero clients.
-- Generic ChatGPT content sounds like everyone else's.
-- Your profile doesn't convert the views your posts create.
-- You've bought courses. You needed a system.
+### Section: This Is For You If... (6-grid, reuse component)
+Growth flattened despite real expertise · Wasting hours on content that isn't converting · Competitors dominate a space you know better · Relying on referrals and unpredictable outbound · Zero time to write, design, engage daily · Best-kept secret in your industry.
 
-### Section: Orange Band — The Promise
-**Headline:** Build the complete system **in one call.**
-`1 hr install call` · `15 min prep` · `$495`
-CTA: `Get The System — $495`
+### Section: Before / After table (reuse component, dark-orange right column)
+Posting endlessly without results → Content engineered for inbound · Invisible despite expertise → Recognized authority · Referral-dependent pipeline → Consistent inbound inquiries · No strategy → Monthly calendar tied to revenue goals · Views that go nowhere → A profile that converts visitors to calls.
 
-### Section: The Three Things (numbered rows, LinkedAI page pattern)
-**Intro:** Three things that have to work in sync: your profile, an AI content engine, and a brand kit. **We do all of them in one call.**
-1. **Your Profile, Rewritten** — headline, about, featured, banner copy. Positioned to convert and rank in LinkedIn search.
-2. **Custom Claude AI Skills That Write Like You** — trained on your voice, offers, and ICP. Posts, hooks, carousels, DMs. A month of content in an hour.
-3. **A Brand Kit That Actually Looks Like a Business** — colors, templates, visual identity. Every post unmistakably yours.
-
-### Section: One System, Built Live (checklist card)
-Everything included: profile rewrite (all sections) · custom AI skill install · voice DNA extraction · brand kit (colors, banner, templates) · content workflow walkthrough · handover doc · 7-day post-call support.
-
-### Section: Value Stack / "Everyone sells this separately"
-**Headline:** Everyone sells this separately. **We give it all together.**
-Table: Ghostwriter $1,500+/mo · Profile rewrite $300–500 · Brand designer $500+ · Content strategist $1,000+ → **LinkedAI System: $495, once.**
-
-### Section: Testimonials + Real Account Screenshots
-Reuse LinkedAI page testimonials/screenshots assets; supplement from Section 12.
+### Section: What's Included (numbered 01–05 rows)
+01 **Profile Revamp + Positioning** — ICP, positioning statement, messaging pillars, banned-words list, full profile rewrite (headline, About, banner, featured, experience).
+02 **Monthly Content Strategy** — first month fully planned: hooks, angles, topics mapped to your ICP's actual pain points.
+03 **16–20 Posts & Designs / Month** — written in your voice: text, image posts, carousels, infographics. You approve. We publish daily.
+04 **Lead Magnet System, Installed & Run** — the same engine behind 1,000+ leads from lead magnets for clients.
+05 **1 Strategy Call / Month** — direction, review, and the numbers.
 
 ### Section: Pricing Card (dark card, orange glow)
-**$495** one-time · everything listed · CTA `Get The System — $495`
-Under card: *"Want us to run all of this for you instead? That's [Done-For-You] →"*
+**$997/mo** · 90-day minimum · full checklist of the five rows above · Early Joiner Bonus strip: *Free 1:1 90-Day Content Roadmap Call (normally $300)* · CTA `Book a Free Strategy Call`
+Small print: Results vary by niche, offer, and consistency.
 
-### Section: FAQ
-- Do I need to be technical? (No — if you can use a chat window, you can run this.)
-- How is this different from ChatGPT? (Trained on YOUR voice, your offers, your ICP — plus profile + brand, not just words.)
-- How fast do I see results? · What happens after the call? · Do you offer payment plans? · What if I already have a good profile?
+### Section: Case Studies (embed 2)
+Daniel Paul (461K/90 days, workshops selling through LinkedIn) + Muhammad Usman (10+ qualified leads/month, LinkedIn = #1 lead source), feature-block layout + analytics screenshots.
 
-### Final CTA Band
-**Headline:** Focus on your business. **This handles LinkedIn.**
-CTA: `Get The System — $495`
+### Section: Your Next Steps (3-step) · Testimonials · FAQ
+FAQ additions: "Why $997 when others charge $2–3K?" / "How much of my time does this take?" (≈30 min/week approvals) / "How soon do leads show up?" / "Do you need my LinkedIn password?"
+
+### Cross-sell bands
+Upper (after pricing): *"Want engagement and outreach running daily on top of this? → The Allbound System"* → /allbound
+Footer band: *"Prefer to run it yourself? We have systems from $17. → See All Our Systems"* → /offers
+
+### Final CTA
+**Headline:** Your pipeline shouldn't depend on you posting today.
+CTA: `Book Your Free Strategy Call →`
 
 ---
 
-## 7. DONE-FOR-YOU PAGE COPY SPEC (/done-for-you — light theme, cream/white)
+## 6. /ALLBOUND PAGE COPY SPEC — The LinkedIn Allbound System · call/DM only
+
+Light theme. The package/summary card on this page is the dark premium card.
 
 ### Hero
-**Eyebrow:** For founders & executives who are done doing it themselves.
-**Headline:** Your LinkedIn, **fully handled.** You show up as the authority. We do the work.
-**Sub:** Content, design, engagement, and outreach — engineered to build your authority and fill your pipeline with inbound leads.
-**CTA:** `Book a Free Strategy Call`
+**Eyebrow:** For founders who want the whole pipeline run for them.
+**Headline:** Inbound + outbound, running daily. **10+ qualified conversations booked every week.**
+**Sub (defines "allbound" in one line):** Allbound = your content pulling buyers in while a dedicated account manager pushes outreach and engagement out — both, every single day, done for you.
+**CTA:** `Book a Free Strategy Call` · secondary: `DM "ALLBOUND" on LinkedIn`
+**Stat chips:** `1.5M impressions in 60 days` · `$40–50M contracts influenced` · `30–50 comments/day for you`
 
-### Section: This Is For You If... (6-item grid, Shoaib pattern)
-- Your growth has flattened despite real expertise.
-- You're wasting hours on content that isn't converting.
-- Your competitors dominate a space you know better.
-- You're relying on referrals and unpredictable outbound.
-- You have zero time to write, design, and engage daily.
-- You're the best-kept secret in your industry.
+### Section: This Is For You If... (6-grid)
+You want conversations, not just content · Your calendar should fill without you prospecting · You've outgrown referrals · You want one team owning the whole channel · You value time over money · You're scaling and can handle 10+ conversations/week.
 
-### Section: Before / After Table (Shoaib pattern, dark-orange right column)
-| Before | After |
-|---|---|
-| Posting endlessly without results | Content engineered for inbound |
-| Invisible despite your expertise | Recognized authority in your niche |
-| Referral-dependent, unpredictable pipeline | 10+ qualified inbound leads/month |
-| No strategy, random posting | Monthly calendar tied to revenue goals |
-| Profile views that go nowhere | A profile that converts visitors to calls |
+### Section: What's Included (dark premium card + numbered rows)
+**Everything in the Inbound Install** (link the five rows) **plus:**
+01 **Dedicated Account Manager** — one operator, 3–4 hours daily on your account. Knows your voice, niche, goals.
+02 **Daily Engagement** — 30–50 strategic comments/day inside your industry; you become the person worth following before they ever hit your profile.
+03 **Daily Outreach, Higher Volume** — lead lists built, connection requests, strategic DMs every day.
+04 **Weekly + Monthly Reports** — impressions, follower growth, engagement rate, outreach results. You always know the return.
+05 **Bi-Monthly Strategy Calls.**
+Early Joiner Bonus: *6-Hour Emergency Content Slot* — press feature or big announcement live within 6 hours.
+**No price on the card.** CTA: `Book a Free Strategy Call`. FAQ contains the only price line: *"Allbound engagements start at $1,997/mo with a 90-day minimum — final scope is set on the call."*
 
-### Section: The Packages (side-by-side cards — CORE SECTION)
-**Headline:** Two ways we run it. **One outcome.**
-Two cards side by side (stack on mobile, Growth first on mobile):
-- **Foundation** — light card (white/cream bg, orange headings), full checklist from Section 4, Early Joiner Bonus strip in soft orange tint at card bottom
-- **Growth** — dark card (`#1A1A1A` bg, orange headings, subtle orange glow border), "Everything in Foundation plus" eyebrow in orange, checklist, Early Joiner Bonus strip in dark-gold tint
-No pricing on either card. Both CTAs: `Book a Free Strategy Call`
-Under both cards: **"Outcome: a steady flow of conversations, not just content."** + small print: *Results vary by niche, offer, and consistency.*
+### Section: Case Study (embed 1, full)
+Mehsum Sayani — 1.53M impressions in 60 days, +4,421%, $40–50M in government contracts. This is THE allbound proof story.
 
-### Section: Case Studies (full 3 from Section 11, feature-block layout)
+### Section: Before/After · 3 Steps · Testimonials · FAQ
+FAQ: What's the difference vs Inbound Install? / Who does the outreach and does it sound like me? / How do you measure it? / Why is there no price on this page? / How fast can you start?
 
-### Section: Your Next Steps (3-step Shoaib pattern)
-1. **Enquire** — book your free strategy call.
-2. **Onboarding** — deep-dive into your story, voice, ICP, and goals.
-3. **Execution** — we build, publish, engage, and report. You watch the pipeline fill.
-
-### Section: Testimonials + FAQ
-
-### Cross-sell band (bottom)
-*"Not ready for done-for-you? Install the system yourself → [LinkedAI System — $495]"*
+### Cross-sell bands
+*"Only need the inbound side handled? → The Inbound Install ($997/mo)"* → /inbound
+Footer band: *"See every system we offer, from $17 up. → See All Our Systems"* → /offers
 
 ### Final CTA
 **Headline:** Ready to become impossible to ignore?
@@ -356,289 +268,101 @@ CTA: `Book Your Free Strategy Call →`
 
 ---
 
-## 8. BRAND IDENTITY & POSITIONING
+## 7. /OFFERS PAGE COPY SPEC — All Our Systems (the ladder hub)
 
-### Brand Name
-**Growlioo**
+Light theme, cream/white alternating. Cheapest → biggest, one scroll. Every card gets a CTA button; low/middle buttons are WIRED PLACEHOLDERS for now (each will later point to its own dedicated landing page — use `href="#"` with `data-offer` attributes so links are swappable in one place).
 
-### Tagline Options
-- *"LinkedIn Strategy That Actually Builds Business, Not Just Followers"*
-- *"Real Results. Real Founders. Real LinkedIn Growth."*
-- *"Turn Your LinkedIn Into a Lead Generation Machine"*
+### Hero
+**Eyebrow:** Every Growlioo system, one page.
+**Headline:** Pick your speed. **Same destination: clients from LinkedIn.**
+**Sub:** DIY plugins from $17. Done-with-you systems from $97. Or hand us the keys and we run everything. Every tier is built on the same engine behind 2M+ client impressions.
 
-### Brand Mission
-Help Founders and Executives build their personal brand on LinkedIn — turning their profile into their #1 inbound revenue channel.
+### Tier 1 band — Do It Yourself (white)
+**Card: LinkedAI Starter Plugin — $17 one-time**
+Outcome: Your first 100K impressions + first 10 clients from LinkedIn.
+Bullets: plug-and-play Claude plugin (post writer + hooks) · the exact system behind 100K impressions · 10-min install + quick-start video.
+Button: `Get the Starter Plugin — $17 →` *(placeholder link)*
+Small note on card: *At checkout: add The Client-Getter Vault ($47) — advanced skills, profile optimizer, swipe files & templates.*
 
-### Brand Voice / Tone
-- Direct, data-driven, confident
-- Business-first (not vanity metrics)
-- Empathetic to founder pain points
-- Proof-heavy — every claim backed by numbers
-- Anti-fluff: says what others won't
+### Tier 2 band — Done With You: The Growth Systems (cream)
+Three cards side by side:
+- **Lead Magnet Machine — $97** · Outcome: the system behind 1M+ impressions & 1000s of leads · bullets per Section 2 · `Get the Machine →`
+- **Inbound Content Engine — $147** · Outcome: consistent inbound leads every single week · bullets · `Get the Engine →`
+- **DM-to-Booked-Calls System — $197** · Outcome: 10+ qualified leads from LinkedIn every week · bullets · `Get the System →`
+**Featured bundle card (orange thin border, 8% tint):** **The LinkedIn Client Stack — all 3 for $297** (value $441 — save $144). Button: `Get the Client Stack — $297 →` *(placeholder link)*
 
-### Brand Colors
-- **Primary Orange:** `#F47B20` (CTAs, headings, accents)
-- **Warm Cream/Sand:** `#FAF0E6` (backgrounds)
-- **Dark Text / Dark Sections:** `#1A1A1A`
-- **Near-Black (LinkedAI page):** `#0D0D0D`
-- **White:** `#FFFFFF`
+### Tier 3 band — Done For You (white; Inbound light card + Allbound dark card side by side, reuse package-card components)
+- **The LinkedIn Inbound Install — $997/mo** · outcome line · 5 key deliverables · `Explore the Inbound Install →` → /inbound
+- **The LinkedIn Allbound System — by application** · outcome line · "Everything in Inbound plus dedicated manager, daily engagement + outreach, reports" · `Explore the Allbound System →` → /allbound
 
-### Logo
-**Growlioo** — crown-icon wordmark (crown above the "o")
+### Section: Which one is right for me? (simple 3-column pointer)
+"I'll run it myself" → Starter Plugin · "I want the systems + guidance" → Client Stack · "I want it fully handled" → Inbound / Allbound.
+
+### Section: mini-FAQ + Final CTA
+FAQ: What's the difference between DIY and DWY? / Can I upgrade later and get credit? (yes — Stack buyers get $297 credited against their first Inbound month) / What do I need to run the plugins? (a Claude subscription, ~$20/mo).
+Final CTA band: `Not sure? Book a free strategy call →`
 
 ---
 
-## 9. FOUNDER BIO & STORY
+## 8. LEAD MAGNET SPEC (NEW)
 
-### Short Bio (1 sentence)
-Malik Muzamil is the founder of Growlioo, a LinkedIn growth and personal branding agency helping founders and executives turn LinkedIn into their primary lead generation channel.
+**Name:** The LinkedIn Inbound Blueprint
+**Format:** Free training/PDF — the exact 90-day inbound system Growlioo installs for clients at $997/mo, fully mapped: every deliverable, the posting cadence, the lead magnet engine, and the KPI targets.
+**Why this asset:** It is a free preview OF the Inbound Install. Anyone who consumes it has effectively read the /inbound sales page in value-first form.
+**Placement:** Homepage lead magnet section + top-bar link optional + exit intent (optional, Marie pattern).
+**Routing (the "new opening"):**
+1. Opt-in form (name + email) →
+2. Thank-you page: "Your Blueprint is in your inbox. Want us to install all of this for you? → Explore the Inbound Install ($997/mo)" →
+3. Email #1 delivers the Blueprint + links to /inbound →
+4. Emails #2–4 (pre-purchase rail) walk through Blueprint highlights, case studies (Usman, Daniel), and end on the strategy-call CTA.
+All lead magnet CTAs and copy reference INBOUND deliverables only — never low-ticket, never Allbound (Allbound is introduced on the call or on /inbound's cross-sell).
 
-### Medium Bio (3–4 sentences)
-Malik Muzamil is the founder of Growlioo — a LinkedIn growth and personal branding agency built specifically for founders, executives, and service-based business owners. Having worked with clients across fintech, AI, government contracts, digital agencies, and consulting, Malik brings a data-driven, business-first approach to LinkedIn strategy. Growlioo doesn't chase vanity metrics. The work is designed to build authority, attract inbound leads, and convert your LinkedIn presence into a revenue-generating asset.
+---
 
-### Long Bio / About Section
-Malik Muzamil is a LinkedIn Brand Strategist and founder of Growlioo. He helps founders, CEOs, and executives who are tired of posting endlessly without results — those who feel invisible despite their expertise, watching less-talented competitors dominate their space.
+## 9. REDIRECTS & RETIRED ASSETS
 
-His proprietary system — the Full-Stack AI LinkedIn System — combines voice-authentic AI content, strategic brand positioning, and viral comment strategy to build true authority, not vanity metrics.
-
-He is the creator of a proven framework that has:
-- Generated **1.5M+ impressions** for a fintech CEO in 60 days
-- Grown an AI expert to **21K+ followers** with **461K impressions** in 90 days
-- Built a **10+ qualified leads/month pipeline** for a digital agency founder
-- Helped clients unlock **$40–50M in government contracts** via LinkedIn visibility
-
-### Current Roles
-| Role | Company | Since |
+**Page transformation map (1-to-1 — each old page becomes one new page):**
+| Old page | Becomes | Redirect |
 |---|---|---|
-| Founder | Growlioo | March 2025 |
-| Brand Ambassador | Retrax | June 2025 |
-| LinkedIn System Strategist | Malik AI | May 2025 |
-| AI Content Strategist | LinkedIn | March 2024 |
+| `/` (homepage) | `/` — stays, copy-only changes | none needed |
+| `/linkedai` | `/inbound` (UI kept, copy swapped) | `/linkedai` → 301 → `/inbound` |
+| `/done-for-you` | `/allbound` (UI kept, copy swapped) | `/done-for-you` → 301 → `/allbound` |
+| `/case-studies` | `/offers` (page slot reused; case-study content moves into homepage + /inbound + /allbound sections) | `/case-studies` → 301 → `/offers` |
 
-### Education
-- **COMSATS University Islamabad** — AAS, Artificial Intelligence (2025–2029)
-- **Virtual University of Pakistan** — BBA (2023–2027)
-- **Coursera** — BBA (June–October 2023)
-- **Master in LinkedIn & Social Selling** — Writing & Personal Branding (April–May 2022)
-- **Punjab Danish School Harnoli Mianwali** — FSc, Pre-Medical (2016–2023)
-
-### Location
-Islamabad, Pakistan
+- Global purge: `$495`, `$295`, "LinkedAI System" (as a $495 offer), "Foundation", "Growth" (as package names), the old 3-service menu. The word "LinkedAI" survives ONLY inside "LinkedAI Starter Plugin" ($17).
 
 ---
 
-## 10. TARGET AUDIENCE (ICP)
-
-### ICP by Offer
-| Offer | ICP |
-|---|---|
-| **LinkedAI System ($495)** | Solo founders, consultants, early-stage service owners — hands-on, budget-conscious, want the system not the retainer |
-| **Done-For-You** | Funded/established founders, CEOs & executives, high-ticket coaches & consultants — value time over money |
-
-### ICP Pain Points (exact language)
-- "Posting endlessly without results"
-- "Feeling invisible despite your expertise"
-- "Watching less-talented competitors dominate your space"
-- "No consistent lead flow"
-- "LinkedIn not converting profile views"
-- "No content strategy"
-- "No predictable revenue pipeline"
-- "Relying on referrals and outbound"
-- "Growth is unpredictable"
-- "Being the best-kept secret in your industry"
-
-### ICP Industries Served (proven)
-Fintech & Government Contracts · AI & Technology · Digital Agencies / Tech Services · Consulting & Coaching · SaaS & Web Products
+## 10. CARRIED-OVER SECTIONS (unchanged from v2.0 — keep verbatim)
+The following v2.0 sections remain the canonical source and are carried over without change. Claude Code: reuse them exactly as previously implemented.
+- **Brand Identity & Positioning** (name, mission, voice, colors, crown wordmark)
+- **Founder Bio & Story** (short / medium / long bios, roles, education, Islamabad)
+- **Target Audience (ICP)** — update the offer→ICP table: $17–$297 offers = hands-on solo founders/consultants; $997 Inbound = established founders who value time; Allbound = funded/scaling founders & execs.
+- **Client Case Studies** — Daniel Paul (461,838 impressions / +242.3% / 21,607 followers / 125,314 top post), Mehsum Sayani (1,533,600 impressions / +4,421% / $40–50M contracts / Top 1% reach), Muhammad Usman (10+ qualified leads/mo / #1 inbound source / +43.1% impressions). Full tables and quotes as in v2.0.
+- **Testimonials** (Tatiana Latartseva, Shehzadi Rabia, ETCHIFY founder, Akash Parvez, Abdul Haseeb, Smriti Maan)
+- **Social Proof stat bank** (2M+ impressions · 1.5M/60 days · +260% · +4,421% · 10+ leads/mo · $40–50M · 50+ founders / 6 industries)
+- **Objection Handling** — update two answers: replace the "$495" objection with *"Why is the Inbound Install $997 when agencies charge $2–3K?"* (answer: productized system, no bloated retainer, 90-day minimum keeps us accountable) and add *"What does 'Allbound' mean?"* (answer: inbound content pulling buyers in + daily outbound engagement/outreach pushing out — one team, both directions).
+- **CTAs:** Inbound → `Book a Free Strategy Call →` · Allbound → `Book a Free Strategy Call →` / `DM "ALLBOUND"` · Offers page low-ticket → `Get the [name] — $X →`
+- **Contact Information** (phone, email, LinkedIn, Islamabad)
 
 ---
 
-## 11. CLIENT CASE STUDIES & RESULTS
-
-### Case Study 01: Daniel Paul
-**Title:** From AI Enthusiast to LinkedIn's Most Viral AI Voice
-**Client:** Daniel Paul — AI Expert, International Speaker, Founder of Purely Personal (danielpaul.ai)
-**Industry:** AI & Technology | **Focus:** LinkedIn Growth + Inbound Sales | **Timeframe:** 90 Days
-
-**The Challenge:** Despite deep AI expertise, Daniel's LinkedIn wasn't generating visibility, inbound leads, or workshop sales matching his knowledge level.
-
-| Metric | Number |
-|---|---|
-| Total Impressions | **461,838** |
-| Growth vs Prior 90 Days | **+242.3%** |
-| Total Followers | **21,607** |
-| Follower Growth | **+35.9%** |
-| #1 Post Impressions | **125,314** |
-| Members Reached | **168,527** |
-| Comments on Top Post | **4,260** |
-| Peak Day Impressions | **35,927** |
-
-**Business Impact:** Consistent workshop sales via LinkedIn · Multiple DFY clients/month · Daily inbound DMs · Top Creator LinkedIn Reach Ranking
-
-> *"The strategy turned my LinkedIn into an inbound machine. Clients reach out daily after seeing my posts. My workshops sell out, and done-for-you inquiries come in every week."* — **Daniel Paul**
+## 11. CLAUDE CODE BUILD NOTES
+1. **Do not redesign.** The three existing pages (home, old LinkedAI page, old DFY page) carry the correct design system. This is a content-architecture refactor: restructure, rename, rewire. **The homepage layout is FROZEN — copy-only changes.** Every section keeps its exact structure, spacing, components, and visual rhythm; only text, tags, and link targets change where Section 4 says so.
+2. **Transform map (UI-preserving):**
+   - Old `/linkedai` page → **becomes `/inbound`**. Keep the entire page UI intact section by section (hero + floating cards, stat chip strip, pain cards, orange promise band, numbered rows, checklist card, value-stack section, screenshots section, dark pricing card with orange glow, FAQ, final band). Swap copy per Section 5: hero → Inbound Install promise; stat chips → Inbound stats; numbered rows → the 5 Inbound deliverables; orange band → "Your entire LinkedIn, handled — live in 30 days"; value-stack table → "A ghostwriter $1,500+/mo · engagement manager $800+/mo · outreach VA $600+/mo → Inbound Install: $997/mo, one team"; dark pricing card → **$997/mo**, 90-day minimum, Early Joiner Bonus strip. Where a section genuinely doesn't map (e.g., "$20/mo to run" chip), replace its content with the nearest Inbound equivalent — never delete the section's UI.
+   - Old `/done-for-you` page → **becomes `/allbound`**. Keep its UI (this-is-for-you grid, before/after table, package cards, case-study blocks, 3-step, FAQ). The dark Growth card becomes the Allbound premium card (Section 6); the light Foundation card is removed from this page and its component is reused on `/offers` for the Inbound card.
+   - Old `/case-studies` page → **becomes `/offers`** (the page slot/route is reused). Assemble it from existing components only (offer cards, checklists, stat chips, FAQ accordion) per Section 7. Its case-study content is not lost — the full case studies already live as embedded sections on the homepage, /inbound, and /allbound. No new component designs.
+3. Homepage: only the two offer cards, their tags/copy/links, the slim "See All Our Systems" band, the lead magnet section copy, hero sub + CTA labels, and final CTA buttons change. Everything else stays. **Zero layout, spacing, or component changes on the homepage.**
+4. Dark usage stays sanctioned: homepage results band + proof bar, Allbound dark cards, one dark pricing card per subpage, footer.
+5. All stat numbers oversized orange with small grey labels (existing pattern).
+6. Low/middle-ticket buttons on /offers: `href="#"` + `data-offer="starter-plugin|vault|lead-magnet-machine|content-engine|dm-system|client-stack"` and a single JS config object mapping offer → URL, so future landing pages/checkouts are wired in one edit.
+7. Mobile: homepage cards stack Inbound first; /offers tiers stack top-down; Allbound dark card first on /allbound.
+8. 301s per Section 9. Update sitemap.xml and nav everywhere.
+9. Global find/purge per Section 9 retired-assets list. Grep for `495`, `295`, `Foundation`, `Growth` before shipping.
+10. Keep all existing imagery, analytics screenshots, testimonial walls — restyle only where a section moved from dark to light.
+11. **Copywriting standard:** every rewritten line must be world-class direct-response copy — outcome-first, specific numbers over adjectives, the ICP's exact pain language (Section 10 ICP list), zero AI-sounding filler (no "unlock", "elevate", "seamless", "game-changer", "in today's digital landscape"). Headlines follow the existing pattern: dark headline + orange accent on the money words. When in doubt, shorter.
+12. **Design skill:** whenever building or visually adjusting anything (the /offers page assembly, the Allbound dark card, any component that must be adapted), read and apply the frontend-design skill first so spacing, hierarchy, and polish match the existing pages instead of defaulting to generic component styling.
 
 ---
-
-### Case Study 02: Mehsum Sayani
-**Title:** From the Best-Kept Secret to $40–50M in Government Contracts
-**Client:** Mehsum Sayani — Founder & CEO, Propellus (propellus.co, Singapore)
-**Industry:** Fintech & Government Contracts | **Timeframe:** 60 Days
-
-**The Challenge:** Non-existent LinkedIn presence despite decades of senior roles at Standard Chartered Bank. Governments had no way to discover him — costing Propellus millions in missed opportunities.
-
-| Metric | Number |
-|---|---|
-| Total Impressions | **1,533,600** |
-| Growth vs Prior 90 Days | **+4,421%** |
-| Total Followers | **12,250** (grew to 14,120) |
-| Follower Growth | **+260%** |
-| Worldwide Reach Ranking | **Top 1%** |
-| Investor Inquiries | **15** |
-| Partnership Conversations | **20+** |
-
-**Viral Post (7 days):** 133,516 members reached · 195,116 impressions · +9,909% reach
-
-**Business Outcomes:** Multiple investor deals closed · 3 speaking engagements booked · 10 potential clients identified · **$40–50M in government contracts** attributed to LinkedIn visibility
-
-> *"I was the best-kept secret in my industry. Now, governments are reaching out to partner with us."* — **Mehsum Sayani**
-
----
-
-### Case Study 03: Muhammad Usman
-**Title:** From Inconsistent Pipeline to 10+ Qualified Leads Every Month
-**Client:** Muhammad Usman — Founder & CEO, Zaptus Ventures / Cygneus Ventures
-**Industry:** Digital Agency / Tech Services
-
-**The Challenge:** Strong delivery, zero consistent inbound. Agency relied on referrals and outbound — unpredictable growth.
-
-| Metric | Number |
-|---|---|
-| Qualified Leads Per Month | **10+** |
-| LinkedIn Status | **#1 Inbound Lead Source** |
-| Total Followers | **4,513** (+15.5%) |
-| Content Impressions | **20,768** (+43.1%) |
-| Members Reached | **4,395** (+94.4%) |
-
-| Before | After |
-|---|---|
-| Relied on referrals and outbound | 10+ qualified inbound leads every month |
-| Inconsistent lead flow | Predictable, scalable pipeline |
-| LinkedIn not converting | Profile converting visitors |
-| No content strategy | Weekly authority-driving content |
-
-> *"Working with Malik Muzamil turned LinkedIn into our #1 lead source. We now get 10+ qualified prospects reaching out every month — founders who already understand our value before they even message us."* — **Muhammad Usman**
-
----
-
-## 12. TESTIMONIALS & RECOMMENDATIONS
-
-**Tatiana Latartseva** — Founder, Tyana.app *(client, Mar 2026)*
-> Malik did an excellent job updating my LinkedIn profile. He is professional, responsive, and truly understands what recruiters are looking for. I'm very happy with the final result and would definitely recommend his services to anyone!
-
-**Shehzadi Rabia** — Founder | Writing + Profile Management *(teammate, Feb 2026)*
-> I've had the pleasure of collaborating with Muzamil on a recent project, and was thoroughly impressed by his creativity, professionalism, and deep understanding of brand voice. The real story is that one day I posted, and then a comment with insane humor popped up on my screen... post after post, his comments always made me laugh.
-
-**Founder of ETCHIFY** *(client)*
-> Working with Malik Muzamil has been one of the easiest and most enjoyable collaborations I've had. He's incredibly open-minded, easy to communicate with, and somehow has a talent for turning my rough or half-baked ideas into things that look and feel genuinely impressive. The banner and featured section images... are clean, polished, and 100x better than what I was previously working with.
-
-**Akash Parvez** — Building TCR Media *(teammate, May 2025)*
-> I was just doing the normal scrolling on LinkedIn to drop some comments. Suddenly, while scanning through the comment section of a LinkedIn whale... I saw a hilarious & humorous...
-
-**Abdul Haseeb** — Founder @ Niblox Solutions *(client, May 2025)*
-> [Malik helped with] completely revamping our LinkedIn presence from visuals to voice. He designed a fresh, on-brand banner and profile picture and rewrote our entire profile with compelling, strategic copy that truly reflects our business and positioning. But that was just the beginning...
-
-**Smriti Maan** *(teammate, Apr 2025)*
-> Malik is a COMMENT and CONTENT king on LinkedIn. If you're serious about your LinkedIn growth, I'd highly recommend working with him. His comments and writing are both outstanding — always on the point without fluff.
-
----
-
-## 13. SOCIAL PROOF & CREDIBILITY SIGNALS
-
-### Numbers That Matter (site-wide stat bank)
-| Stat | Number |
-|---|---|
-| Total client impressions generated | **2M+** |
-| Largest single client milestone | **1.5M impressions (60 days)** |
-| Highest follower growth rate | **+260%** |
-| Highest impression growth rate | **+4,421%** |
-| Leads generated monthly (per client) | **10+** |
-| Government contracts influenced | **$40–50M** |
-| LinkedAI founders served | **50+ across 6 industries** |
-
-### Certifications
-Content Creation & Strategy · SEO Copywriting (LinkedIn) · Personal Branding & Fundamentals · Ghostwriting · Master in LinkedIn & Social Selling · Copywriting Master Class (Udemy) · Marketing Strategy (Coursera)
-
-### Skills (Endorsed)
-AI-Driven Content · Personal Branding · Copywriting · Ghostwriting · LinkedIn System Strategy · Lead Generation · Brand Strategy
-
----
-
-## 14. OBJECTION HANDLING COPY
-
-### "I've tried LinkedIn before, it didn't work."
-> That's exactly why founders come to Growlioo. Most LinkedIn strategies focus on vanity metrics — followers and likes. Our system is built around one thing: business outcomes. Leads. Contracts. Clients. Not applause.
-
-### "I don't have time to be on LinkedIn."
-> That's the point. With Done-For-You, everything is handled — content, design, engagement, outreach. With LinkedAI, the system generates a month of content in an hour. Either way, you get your time back.
-
-### "I'm not sure LinkedIn is right for my industry."
-> We've delivered results in fintech, AI, digital agencies, government contracts, and consulting. The strategy is industry-agnostic. What matters is your positioning — and that's what we fix first.
-
-### "I don't want to sound like everyone else on LinkedIn."
-> We don't write generic posts — and neither does your AI system. Every piece of content is built on your voice, your story, and your positioning. LinkedAI skills are trained on how YOU actually write. You approve everything.
-
-### "Why is LinkedAI only $495 when agencies charge thousands?"
-> Because you're doing the executing. We build the machine — profile, AI engine, brand kit — in one call. You press the buttons. If you'd rather never press a button, that's what Done-For-You is for.
-
-### "How do I know this will actually drive leads?"
-> Muhammad Usman went from zero inbound to 10+ qualified leads/month. Mehsum Sayani went from invisible to $40–50M in government contracts. Daniel Paul gets daily inbound DMs. The proof is in the case studies.
-
----
-
-## 15. CTAs & CONVERSION COPY
-
-### Primary CTAs by Offer
-| Offer | CTA |
-|---|---|
-| LinkedAI | **Get The System — $495 →** |
-| Done-For-You | **Book Your Free Strategy Call →** |
-
-### Supporting CTAs
-- "DM 'Grow' to get started"
-- "Ready to turn your LinkedIn into a lead generation machine?"
-- "Focus on your business. This handles LinkedIn."
-- "Let's fix your LinkedIn — properly, once, and for good."
-
-### Urgency / Scarcity Lines
-- "We only take a limited number of DFY clients each month."
-- "LinkedAI install calls are capped weekly — grab your slot."
-- "The founders who act fast are the ones who dominate their niche."
-
----
-
-## 16. CONTACT INFORMATION
-
-| Channel | Details |
-|---|---|
-| Phone | +92 370 438 7117 |
-| Email | managemuzamil72@gmail.com |
-| LinkedIn | linkedin.com/in/malikmuzamilai |
-| Company | Growlioo |
-| Location | Islamabad, Pakistan |
-
----
-
-## ⚙️ CLAUDE CODE BUILD NOTES
-
-1. **Global find/replace:** any `$295` → `$495` on LinkedAI assets.
-2. **Do NOT use** Shoaib's yellow (`#F2C230`-range) or Marie's pink anywhere — orange `#F47B20` is the only accent.
-3. **Theme flip:** the old site was fully dark — the new site is LIGHT-FIRST (white/cream). Dark `#1A1A1A` appears only in: homepage results band, the Growth package card, dark pricing card on /linkedai, and the footer.
-4. Homepage two-offer cards section is the highest-priority build — it must appear within the first 2 scroll depths.
-5. DFY page = 2 packages only (Foundation light card, Growth dark card). The old 3-service menu (Profile Mgmt / Content & Design / Profile Optimization) is retired.
-6. Cross-link both offer pages to each other (upgrade path / entry path bands).
-7. All stat numbers render in orange, oversized, with small grey labels underneath (Shoaib stat-trio pattern).
-8. Mobile: offer cards stack vertically, LinkedAI card first on homepage; Growth card first on DFY page.
-9. Reuse existing site assets where possible: hero photo, floating stat chips (10+ qualified leads, 2M+ impressions, +4,421%), analytics screenshots, testimonial screenshot wall — restyled onto light backgrounds.
-
----
-
-*End of Master Brand Resource File v2.0 · Created for Malik Muzamil / Growlioo · July 2026*
+*End of Master Brand Resource File v3.0 · Malik Muzamil / Growlioo · July 2026*

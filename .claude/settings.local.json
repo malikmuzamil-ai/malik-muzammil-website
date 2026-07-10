@@ -1,8 +1,11 @@
 {
   "permissions": {
+    "defaultMode": "auto",
     "allow": [
       "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless=new '--screenshot=/Users/apple/Downloads/Malik Muzamil Landing Page/temporary screenshots/screenshot-4-full.png' --window-size=1440,8000 --no-sandbox --disable-gpu file:///Users/apple/Downloads/Malik%20Muzamil%20Landing%20Page/screenshot-temp.html)",
-      "WebFetch(domain:www.shoaibahmed.co.uk)"
+      "WebFetch(domain:www.shoaibahmed.co.uk)",
+      "Bash(agent-browser *)",
+      "Bash(python3 -m http.server *)"
     ]
   }
 }
