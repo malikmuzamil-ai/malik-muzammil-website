@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <meta name="theme-color" content="#FAF0E6">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The LinkedIn Client Stack, $297 | Attract, Capture, Close</title>
+  <meta name="description" content="All three client-getting systems in one stack: Lead Magnet Machine, Inbound Content Engine, and DM-to-Booked-Calls. $441 separately, $297 together.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://malik.growlioo.com/client-stack.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The LinkedIn Client Stack, $297">
+  <meta property="og:description" content="Attract, capture, close: the full client path in one stack. $297.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:opsz,wght@14..32,400..600&display=swap" rel="stylesheet">
+  <style>
+    :root{--org:#F47B20;--orgh:#D9660F;--cream:#FAF0E6;--ink:#1A1A1A;--near:#0D0D0D;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+    h1,h2,h3{font-family:'Plus Jakarta Sans',sans-serif;letter-spacing:-0.03em;}
+    ::selection{background:rgba(244,123,32,0.25);}
+    .wrap{max-width:760px;margin:0 auto;padding:0 24px;}
+    .btn{display:inline-flex;align-items:center;gap:9px;background:var(--org);color:#fff;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:16.5px;padding:17px 40px;border-radius:100px;text-decoration:none;box-shadow:0 10px 28px rgba(244,123,32,0.45),0 2px 6px rgba(244,123,32,0.3);transition:transform 0.22s cubic-bezier(0.16,1,0.3,1),box-shadow 0.22s ease,background 0.18s;}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 14px 38px rgba(244,123,32,0.55);background:var(--orgh);}
+    .btn:active{transform:translateY(0);}
+    .btn:focus-visible{outline:2px solid var(--ink);outline-offset:3px;}
+    .lbl{display:inline-flex;align-items:center;gap:8px;font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:800;letter-spacing:0.15em;text-transform:uppercase;color:var(--org);}
+    .fi{opacity:0;transform:translateY(16px) scale(0.99);transition:opacity 0.8s cubic-bezier(0.16,1,0.3,1),transform 0.8s cubic-bezier(0.16,1,0.3,1);}
+    .fi.in{opacity:1;transform:translateY(0) scale(1);}
+    .halo{position:absolute;border-radius:50%;filter:blur(60px);pointer-events:none;}
+    .gridbg-l{background-image:linear-gradient(rgba(26,26,26,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(26,26,26,0.03) 1px,transparent 1px);background-size:72px 72px;}
+    .gridbg-d{background-image:linear-gradient(rgba(255,255,255,0.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.035) 1px,transparent 1px);background-size:72px 72px;}
+    .fadeup{opacity:0;transform:translateY(16px);animation:fadeUp 0.85s cubic-bezier(0.16,1,0.3,1) forwards;}
+    .fadeup.fu0{animation-delay:0s;}
+    .fadeup.fu1{animation-delay:0.12s;}
+    .fadeup.fu2{animation-delay:0.3s;}
+    .fadeup.fu3{animation-delay:0.45s;}
+    .fadeup.fu4{animation-delay:0.6s;}
+    @keyframes fadeUp{to{opacity:1;transform:translateY(0);}}
+    .draw-line{stroke-dasharray:100;stroke-dashoffset:100;animation:drawLine 0.7s cubic-bezier(0.6,0,0.3,1) 0.9s forwards;}
+    @keyframes drawLine{to{stroke-dashoffset:0;}}
+    .pop{opacity:0;animation:popIn 0.8s cubic-bezier(0.34,1.4,0.64,1) forwards;}
+    .pop.pq1{animation-delay:0.9s;}
+    .pop.pq2{animation-delay:1.05s;}
+    .pop.pq3{animation-delay:1s;}
+    .pop.pq4{animation-delay:1.2s;}
+    @keyframes popIn{from{opacity:0;transform:translateY(16px) scale(0.92);}to{opacity:1;transform:translateY(0) scale(1);}}
+    .fq-wrap{position:absolute;transition:transform 0.45s cubic-bezier(0.34,1.4,0.5,1),opacity 0.35s ease;z-index:2;}
+    .fq-wrap:hover{transform:rotate(0deg)!important;opacity:1!important;z-index:5;}
+    .fq-card{width:270px;background:#fff;border:1px solid rgba(26,26,26,0.08);border-radius:18px;padding:20px 22px;position:relative;cursor:default;text-align:left;
+      box-shadow:0 2px 4px rgba(26,26,26,0.04),0 22px 48px -14px rgba(26,26,26,0.14);
+      transition:transform 0.5s cubic-bezier(0.34,1.45,0.5,1),box-shadow 0.5s ease,border-color 0.3s ease;}
+    .fq-wrap:hover .fq-card{transform:scale(1.08);border-color:rgba(244,123,32,0.4);box-shadow:0 6px 12px rgba(26,26,26,0.06),0 38px 76px -16px rgba(244,123,32,0.35);}
+    .fq-card::after{content:'”';position:absolute;top:8px;right:16px;font-family:'Plus Jakarta Sans',sans-serif;font-size:34px;font-weight:800;color:rgba(244,123,32,0.35);line-height:1;}
+    .fq-card p{font-size:13.5px;color:rgba(26,26,26,0.75);line-height:1.6;margin-bottom:9px;}
+    .fq-card span{font-size:12px;font-weight:700;color:rgba(26,26,26,0.55);}
+    @media(max-width:1240px){.fq-wrap{display:none!important;}}
+    .check{display:flex;gap:11px;align-items:flex-start;font-size:15px;color:rgba(26,26,26,0.72);line-height:1.65;}
+    .check svg{flex-shrink:0;margin-top:3px;}
+    .dark-sec h2{color:#fff;}
+    .dark-sec .check{color:rgba(255,255,255,0.75);}
+    .dark-sec .check strong{color:#fff;}
+    .dark-sec p{color:rgba(255,255,255,0.6);}
+    .shot{background:#fff;border:1px solid rgba(26,26,26,0.08);border-radius:18px;overflow:hidden;
+      box-shadow:0 2px 4px rgba(26,26,26,0.04),0 16px 34px -12px rgba(244,123,32,0.24),0 30px 60px -24px rgba(26,26,26,0.16);
+      transform:var(--rr,none);transition:transform 0.5s cubic-bezier(0.34,1.45,0.5,1),box-shadow 0.5s ease,border-color 0.3s ease;}
+    .shot:hover{transform:rotate(0deg) translateY(-5px) scale(1.02);border-color:rgba(244,123,32,0.4);
+      box-shadow:0 6px 12px rgba(26,26,26,0.05),0 26px 52px -12px rgba(244,123,32,0.4),0 40px 80px -26px rgba(26,26,26,0.2);}
+    .shot img{width:100%;display:block;}
+    .shot-chrome{background:#111;padding:13px 17px 10px;display:flex;justify-content:space-between;align-items:center;gap:10px;border-bottom:1px solid rgba(255,255,255,0.06);}
+    .shot-chrome p{font-family:'Plus Jakarta Sans',sans-serif;font-size:10px;font-weight:700;color:var(--org);letter-spacing:0.12em;text-transform:uppercase;}
+    .live{display:inline-flex;align-items:center;gap:5px;font-family:'Plus Jakarta Sans',sans-serif;font-size:10px;font-weight:700;color:#4ade80;white-space:nowrap;}
+    .live::before{content:"";width:6px;height:6px;background:#4ade80;border-radius:50%;}
+    .step{display:flex;gap:20px;align-items:flex-start;background:linear-gradient(150deg,#FFFFFF 0%,#FFF8F1 100%);border:1px solid rgba(244,123,32,0.12);border-radius:20px;padding:28px 30px;position:relative;
+      box-shadow:0 1px 2px rgba(26,26,26,0.04),0 10px 30px -14px rgba(244,123,32,0.16),0 24px 54px -30px rgba(26,26,26,0.12);
+      transition:transform 0.3s cubic-bezier(0.16,1,0.3,1),box-shadow 0.3s ease,border-color 0.25s ease;}
+    .step:hover{transform:translateY(-4px);border-color:rgba(244,123,32,0.3);box-shadow:0 2px 4px rgba(26,26,26,0.04),0 20px 46px -14px rgba(244,123,32,0.26),0 34px 70px -30px rgba(26,26,26,0.16);}
+    .step-num{flex-shrink:0;width:42px;height:42px;border-radius:13px;background:linear-gradient(150deg,#F98A38,var(--org));color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:17px;box-shadow:0 8px 18px rgba(244,123,32,0.45),inset 0 1px 0 rgba(255,255,255,0.3);}
+    .faq-item{background:#fff;border:1px solid rgba(26,26,26,0.06);border-radius:16px;overflow:hidden;box-shadow:0 2px 6px rgba(26,26,26,0.03),0 12px 30px -18px rgba(244,123,32,0.12);transition:border-color 0.25s ease;}
+    .faq-item:hover{border-color:rgba(244,123,32,0.3);}
+    .faq-item button{width:100%;text-align:left;padding:21px 24px;background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;}
+    .faq-item button:focus-visible{outline:2px solid var(--org);outline-offset:-2px;}
+    .faq-item button span.q{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;color:var(--ink);line-height:1.4;}
+    .ficon{display:flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:rgba(244,123,32,0.1);color:var(--org);font-size:17px;flex-shrink:0;font-weight:700;}
+    .fans{display:none;padding:0 24px 22px;}
+    .fans p{font-size:14px;color:rgba(26,26,26,0.6);line-height:1.8;}
+    .tst{border-radius:16px;overflow:hidden;border:1px solid rgba(26,26,26,0.07);background:#fff;transform:var(--rr,none);
+      box-shadow:0 2px 4px rgba(26,26,26,0.03),0 16px 34px -16px rgba(244,123,32,0.18),0 24px 50px -26px rgba(26,26,26,0.16);
+      transition:transform 0.4s cubic-bezier(0.34,1.45,0.5,1),box-shadow 0.4s ease;}
+    .tst:hover{transform:rotate(0deg) translateY(-4px);box-shadow:0 4px 8px rgba(26,26,26,0.04),0 24px 48px -16px rgba(244,123,32,0.3);}
+    .tst:nth-child(odd){--rr:rotate(-0.5deg);}
+    .tst:nth-child(even){--rr:rotate(0.6deg);}
+    .tst img{width:100%;display:block;}
+    @media (prefers-reduced-motion: reduce){
+      .fi{transition:none;opacity:1;transform:none;}
+      .fadeup,.pop{animation:none!important;opacity:1!important;transform:none!important;}
+      .draw-line{animation:none!important;stroke-dashoffset:0!important;}
+      .shot,.step,.tst,.faq-item{transition:none;}
+    }
+    @media(max-width:640px){
+      .statgrid{grid-template-columns:1fr 1fr!important;}
+      .shotgrid{grid-template-columns:1fr!important;}
+      .shot{--rr:none!important;}
+      .tst{--rr:none!important;}
+      h1{font-size:clamp(30px,8.6vw,38px)!important;}
+      header span span{font-size:13.5px!important;}
+      header .btn{font-size:12px!important;padding:9px 16px!important;}
+    }
+    .btn-wht{display:inline-flex;align-items:center;gap:9px;background:#fff;color:var(--ink);font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:16px;padding:16px 36px;border-radius:100px;text-decoration:none;box-shadow:0 14px 36px -8px rgba(120,50,0,0.42),0 3px 10px rgba(120,50,0,0.24);transition:transform 0.22s cubic-bezier(0.16,1,0.3,1),box-shadow 0.22s ease;}
+    .btn-wht:hover{transform:translateY(-2px);box-shadow:0 20px 44px -8px rgba(120,50,0,0.5);}
+    .btn-wht:focus-visible{outline:2px solid #fff;outline-offset:3px;}
+    .pain{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid rgba(244,123,32,0.1);border-radius:18px;padding:22px 24px;
+      box-shadow:0 1px 2px rgba(26,26,26,0.04),0 10px 30px -14px rgba(244,123,32,0.14),0 24px 54px -30px rgba(26,26,26,0.12);
+      transition:transform 0.3s cubic-bezier(0.16,1,0.3,1),box-shadow 0.3s ease,border-color 0.25s ease;}
+    .pain:hover{transform:translateY(-3px);border-color:rgba(244,123,32,0.3);box-shadow:0 2px 4px rgba(26,26,26,0.04),0 18px 42px -14px rgba(244,123,32,0.24);}
+    .pain-icn{flex-shrink:0;width:38px;height:38px;border-radius:12px;background:rgba(244,123,32,0.1);border:1px solid rgba(244,123,32,0.22);display:flex;align-items:center;justify-content:center;}
+    .pain p{font-size:14.5px;color:rgba(26,26,26,0.72);line-height:1.65;margin:0;}
+    .dgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+    .dcard{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.09);border-radius:16px;padding:20px 22px;transition:transform 0.3s cubic-bezier(0.16,1,0.3,1),border-color 0.25s ease,background 0.25s ease;}
+    .dcard:hover{transform:translateY(-3px);border-color:rgba(244,123,32,0.4);background:rgba(244,123,32,0.06);}
+    .dchk{flex-shrink:0;width:30px;height:30px;border-radius:10px;background:linear-gradient(150deg,#F98A38,var(--org));display:flex;align-items:center;justify-content:center;box-shadow:0 6px 14px rgba(244,123,32,0.4);}
+    .dcard h4{font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:800;color:#fff;letter-spacing:-0.01em;margin-bottom:5px;}
+    .dcard p{font-size:13.5px;color:rgba(255,255,255,0.6)!important;line-height:1.65;margin:0;}
+    .pchip{position:absolute;z-index:3;top:-26px;left:50%;transform:translateX(-50%) rotate(2deg);background:#fff;border:1px solid rgba(244,123,32,0.24);border-radius:14px;padding:13px 20px;display:flex;flex-direction:column;gap:2px;box-shadow:0 2px 4px rgba(26,26,26,0.06),0 20px 44px -14px rgba(26,26,26,0.28);transition:transform 0.28s cubic-bezier(0.16,1,0.3,1);}
+    .pchip:hover{transform:translateX(-50%) rotate(0deg) translateY(-3px);}
+    .pchip strong{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:21px;color:var(--ink);letter-spacing:-0.02em;line-height:1.1;}
+    .pchip span{font-size:12px;color:rgba(26,26,26,0.55);white-space:nowrap;}
+    .faq-wrap{background:#fff;border-radius:20px;box-shadow:0 2px 6px rgba(26,26,26,0.04),0 16px 40px rgba(244,123,32,0.06);overflow:hidden;display:flex;flex-direction:column;}
+    .faq-wrap .faq-item{background:none;border:none;border-radius:0;box-shadow:none;}
+    .faq-wrap .faq-item + .faq-item{border-top:1px solid rgba(26,26,26,0.07);}
+    @media(max-width:700px){.dgrid{grid-template-columns:1fr;}.pchip{display:none;}}
+  </style>
+</head>
+<body>
+
+<!-- Minimal bar: standalone funnel page, no site nav -->
+<header style="position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(26,26,26,0.07);">
+  <div style="max-width:1040px;margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;">
+    <span style="display:flex;align-items:center;gap:9px;">
+      <img src="./refrence scrrenshorts/Profile Picture (10).png" width="30" height="30" style="width:30px;height:30px;border-radius:50%;object-fit:cover;border:2px solid var(--org);" alt="Malik Muzamil">
+      <span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:16px;letter-spacing:-0.02em;">The Client Stack</span>
+    </span>
+    <a href="#buy" class="btn" style="font-size:13.5px;padding:10px 22px;">Get it for $297</a>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="gridbg-l" style="background:#fff;padding:88px 0 80px;position:relative;overflow:hidden;text-align:center;">
+  
+  <div class="halo" style="top:-120px;right:-100px;width:640px;height:640px;background:radial-gradient(circle,rgba(244,123,32,0.14) 0%,transparent 65%);"></div>
+  <div class="halo" style="bottom:-160px;left:-100px;width:520px;height:520px;background:radial-gradient(circle,rgba(244,123,32,0.07) 0%,transparent 65%);"></div>
+  <div class="fq-wrap" style="top:120px;left:36px;transform:rotate(-1deg);opacity:1;">
+    <div class="fq-card pop pq1"><p>Turned LinkedIn into our #1 lead source. 10+ qualified prospects a month.</p><span>&ndash; Muhammad Usman</span></div>
+  </div>
+  <div class="fq-wrap" style="top:352px;left:14px;transform:rotate(2deg);opacity:0.7;">
+    <div class="fq-card pop pq2"><p>My workshops sell out through LinkedIn now.</p><span>&ndash; Daniel Paul</span></div>
+  </div>
+  <div class="fq-wrap" style="top:132px;right:36px;transform:rotate(1deg);opacity:1;">
+    <div class="fq-card pop pq3"><p>If you don&rsquo;t know where to start, he moves you in the right direction fast.</p><span>&ndash; Arjun Panchal, CFO</span></div>
+  </div>
+  <div class="fq-wrap" style="top:368px;right:14px;transform:rotate(-2deg);opacity:0.7;">
+    <div class="fq-card pop pq4"><p>His writing is outstanding. Always on point, zero fluff.</p><span>&ndash; Smriti Maan</span></div>
+  </div>
+  <div class="wrap" style="position:relative;z-index:3;">
+    <div class="fadeup fu0" style="display:flex;flex-direction:column;align-items:center;gap:8px;margin-bottom:28px;">
+      <div style="display:flex;align-items:center;">
+        <img src="./refrence scrrenshorts/Daniel.jpeg" width="36" height="36" alt="Daniel Paul" style="width:36px;height:36px;border-radius:50%;border:2px solid #fff;object-fit:cover;z-index:4;margin-right:-9px;box-shadow:0 2px 8px rgba(26,26,26,0.15);" loading="eager">
+        <img src="./refrence scrrenshorts/Usman.jpeg" width="36" height="36" alt="Muhammad Usman" style="width:36px;height:36px;border-radius:50%;border:2px solid #fff;object-fit:cover;z-index:3;margin-right:-9px;box-shadow:0 2px 8px rgba(26,26,26,0.15);" loading="eager">
+        <img src="./refrence scrrenshorts/Tatiana.jpeg" width="36" height="36" alt="Tatiana Latartseva" style="width:36px;height:36px;border-radius:50%;border:2px solid #fff;object-fit:cover;z-index:2;margin-right:-9px;box-shadow:0 2px 8px rgba(26,26,26,0.15);" loading="eager">
+        <img src="./refrence scrrenshorts/Caden.jpeg" width="36" height="36" alt="Caden Knebel" style="width:36px;height:36px;border-radius:50%;border:2px solid #fff;object-fit:cover;z-index:1;box-shadow:0 2px 8px rgba(26,26,26,0.15);" loading="eager">
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <span style="display:flex;gap:2px;" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="#F47B20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#F47B20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#F47B20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#F47B20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="#F47B20"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg></span>
+        <span style="font-size:13px;font-weight:600;color:rgba(26,26,26,0.55);">50+ happy founders</span>
+      </div>
+    </div>
+    <span class="fadeup fu1" style="display:inline-flex;align-items:center;gap:8px;background:rgba(244,123,32,0.1);border:1px solid rgba(244,123,32,0.28);border-radius:100px;padding:8px 18px;font-family:'Plus Jakarta Sans',sans-serif;font-size:12.5px;font-weight:700;color:var(--orgh);margin-bottom:26px;">All three systems &middot; $441 bought separately</span>
+    <h1 class="fadeup fu2" style="font-size:clamp(34px,5.6vw,58px);font-weight:800;line-height:1.12;letter-spacing:-0.035em;margin-bottom:22px;">Attract. Capture. Close.<br><span style="position:relative;display:inline-block;"><span style="color:var(--org);">The full path, one stack.</span><svg viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true" style="position:absolute;left:2%;bottom:-0.12em;width:96%;height:0.2em;overflow:visible;"><path class="draw-line" pathLength="100" d="M4 10 C 70 3, 180 2, 296 7" fill="none" stroke="#F47B20" stroke-width="5" stroke-linecap="round" opacity="0.5"/></svg></span></h1>
+    <p class="fadeup fu3" style="font-size:17px;line-height:1.75;color:rgba(26,26,26,0.62);max-width:560px;margin:0 auto 34px;">The three systems we run on client accounts, together: the Inbound Content Engine attracts buyers, the Lead Magnet Machine captures them, and the DM-to-Booked-Calls System puts them on your calendar.</p>
+    <a href="#buy" class="btn fadeup fu4" style="font-size:17px;">Get the Client Stack, $297
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <p class="fadeup fu4" style="font-size:12.5px;color:rgba(26,26,26,0.45);margin-top:14px;">One-time. Yours forever. $441 bought separately. You save $144.</p>
+  </div>
+  <!-- Stat bar -->
+  <div class="wrap fadeup fu4" style="max-width:900px;margin-top:60px;position:relative;z-index:3;">
+    <div class="statgrid" style="display:grid;grid-template-columns:repeat(4,1fr);background:linear-gradient(178deg,#161412 0%,#0B0B0B 60%);border:1px solid rgba(244,123,32,0.22);border-radius:24px;overflow:hidden;position:relative;box-shadow:inset 0 1px 0 rgba(255,255,255,0.07),0 2px 4px rgba(0,0,0,0.2),0 34px 70px -22px rgba(0,0,0,0.45);"><div aria-hidden="true" style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:min(380px,75%);height:1px;background:linear-gradient(90deg,transparent,rgba(244,123,32,0.75),transparent);"></div><div style="padding:30px 16px;text-align:center;border-right:1px solid rgba(255,255,255,0.06);"><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:28px;color:var(--org);letter-spacing:-0.02em;text-shadow:0 0 26px rgba(244,123,32,0.35);">1M+</div><div style="font-size:12px;color:rgba(255,255,255,0.55);margin-top:4px;">Impressions from lead magnets</div></div><div style="padding:30px 16px;text-align:center;border-right:1px solid rgba(255,255,255,0.06);"><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:28px;color:var(--org);letter-spacing:-0.02em;text-shadow:0 0 26px rgba(244,123,32,0.35);">$50K+</div><div style="font-size:12px;color:rgba(255,255,255,0.55);margin-top:4px;">Closed with the DM playbook</div></div><div style="padding:30px 16px;text-align:center;border-right:1px solid rgba(255,255,255,0.06);"><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:28px;color:var(--org);letter-spacing:-0.02em;text-shadow:0 0 26px rgba(244,123,32,0.35);">10+</div><div style="font-size:12px;color:rgba(255,255,255,0.55);margin-top:4px;">Qualified leads per week</div></div><div style="padding:30px 16px;text-align:center;"><div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:28px;color:var(--org);letter-spacing:-0.02em;text-shadow:0 0 26px rgba(244,123,32,0.35);">$297</div><div style="font-size:12px;color:rgba(255,255,255,0.55);margin-top:4px;">Save $144 vs. separate</div></div></div></div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section style="background:var(--cream);padding:104px 0 96px;position:relative;">
+  <div class="wrap fi">
+    <span class="lbl" style="margin-bottom:14px;display:flex;">Sound Familiar?</span>
+    <h2 style="font-size:clamp(26px,3.6vw,38px);font-weight:800;line-height:1.18;margin-bottom:18px;">One system alone<br><span style="color:var(--org);">is a leaky pipeline.</span></h2>
+    <p style="font-size:15.5px;color:rgba(26,26,26,0.62);line-height:1.8;margin-bottom:26px;">Content without capture entertains people who never buy. Capture without conversation collects emails that never book. DMs without content pitch strangers who never warm up. The founders who get clients from LinkedIn run all three, connected.</p>
+    <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:26px;">
+      <div class="pain"><div class="pain-icn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#F47B20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></div><p>Posts attract the reader; without a magnet, the reader leaves nothing behind</p></div>
+      <div class="pain"><div class="pain-icn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#F47B20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></div><p>Downloads without a DM flow become a list of names that never buy</p></div>
+      <div class="pain"><div class="pain-icn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#F47B20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></div><p>Cold DMs without warm content behind them read like spam, and get treated like it</p></div>
+    </div>
+    <div style="background:#fff;border-left:4px solid var(--org);border-radius:0 14px 14px 0;padding:18px 22px;box-shadow:0 10px 26px -14px rgba(26,26,26,0.14);">
+      <p style="font-size:15px;color:rgba(26,26,26,0.72);line-height:1.75;"><strong>The stack is the strategy:</strong> each system feeds the next. Content pulls them in, the magnet captures them, the DMs book them. One purchase, the whole path.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section style="padding:100px 0;background:#fff;">
+  <div class="wrap">
+    <div class="fi" style="text-align:center;margin-bottom:40px;">
+      <span class="lbl" style="justify-content:center;display:flex;margin-bottom:12px;">This Is How It Works</span>
+      <h2 style="font-size:clamp(26px,3.6vw,38px);font-weight:800;line-height:1.18;">Three systems. One path.</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <div class="step fi">
+        <div class="step-num">1</div>
+        <div>
+          <h3 style="font-size:16.5px;font-weight:800;margin-bottom:5px;">Attract: the Inbound Content Engine ($147 alone)</h3>
+          <p style="font-size:14px;color:rgba(26,26,26,0.6);line-height:1.7;">Your 30-day calendar mapped in one sitting, drafts written with the plugin, and a masterclass on turning posts into inquiries. Every day has a job to do.</p>
+        </div>
+      </div>
+      <div class="step fi">
+        <div class="step-num">2</div>
+        <div>
+          <h3 style="font-size:16.5px;font-weight:800;margin-bottom:5px;">Capture: the Lead Magnet Machine ($97 alone)</h3>
+          <p style="font-size:14px;color:rgba(26,26,26,0.6);line-height:1.7;">Pick from the top-50 swipe file, build the asset with the plugin, and deliver it with DM templates that start conversations. The system behind 1M+ impressions and thousands of leads.</p>
+        </div>
+      </div>
+      <div class="step fi">
+        <div class="step-num">3</div>
+        <div>
+          <h3 style="font-size:16.5px;font-weight:800;margin-bottom:5px;">Close: the DM-to-Booked-Calls System ($197 alone)</h3>
+          <p style="font-size:14px;color:rgba(26,26,26,0.6);line-height:1.7;">The playbook behind $50K+ closed: human openers, the voice-note flow, and follow-up plus reactivation sequences for every silence. Warm readers become booked calls.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ORANGE BAND -->
+<section style="background:linear-gradient(150deg,#F98A38 0%,var(--org) 55%,#E06A10 100%);padding:88px 24px;position:relative;overflow:hidden;text-align:center;">
+  <div aria-hidden="true" style="position:absolute;top:-140px;left:-120px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,0.14) 0%,transparent 65%);pointer-events:none;"></div>
+  <div aria-hidden="true" style="position:absolute;bottom:-180px;right:-140px;width:520px;height:520px;border-radius:50%;border:1.5px solid rgba(255,255,255,0.12);pointer-events:none;"></div>
+  <div aria-hidden="true" style="position:absolute;bottom:-120px;right:-80px;width:340px;height:340px;border-radius:50%;border:1.5px solid rgba(255,255,255,0.09);pointer-events:none;"></div>
+  <div class="fi" style="max-width:640px;margin:0 auto;position:relative;z-index:1;">
+    <h2 style="font-size:clamp(28px,4.4vw,46px);font-weight:800;line-height:1.14;color:#fff;margin-bottom:14px;text-shadow:0 2px 20px rgba(160,70,0,0.25);">Attract. Capture. Close.<br>Together.</h2>
+    <p style="font-size:15.5px;color:rgba(255,255,255,0.9);line-height:1.7;margin-bottom:28px;">The whole path costs less than two of the three systems alone.</p>
+    <a href="#buy" class="btn-wht">Get the Client Stack, $297 &rarr;</a>
+  </div>
+</section>
+
+<!-- WHAT'S INSIDE -->
+<section class="dark-sec gridbg-d" style="background:linear-gradient(178deg,#161412 0%,#0B0B0B 60%);padding:104px 0;position:relative;overflow:hidden;">
+  <div aria-hidden="true" style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:min(460px,80%);height:1px;background:linear-gradient(90deg,transparent,rgba(244,123,32,0.75),transparent);"></div>
+  <div aria-hidden="true" style="position:absolute;top:-1px;left:50%;transform:translateX(-50%);width:min(360px,70%);height:130px;background:radial-gradient(ellipse at 50% 0%,rgba(244,123,32,0.13) 0%,transparent 70%);pointer-events:none;"></div>
+  <div class="fi" style="max-width:960px;margin:0 auto;padding:0 24px;">
+    <span class="lbl" style="margin-bottom:14px;display:flex;">What's Inside</span>
+    <h2 style="font-size:clamp(26px,3.6vw,38px);font-weight:800;line-height:1.18;margin-bottom:26px;">Everything in all three, <span style="color:var(--org);">nothing held back.</span></h2>
+    <div class="dgrid">
+      <div class="dcard"><div class="dchk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div><h4>Inbound Content Engine</h4><p>30-day system plugin, inbound masterclass, cadence templates</p></div></div>
+      <div class="dcard"><div class="dchk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div><h4>Lead Magnet Machine</h4><p>builder plugin, top-50 swipe file, delivery DM templates</p></div></div>
+      <div class="dcard"><div class="dchk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div><h4>DM-to-Booked-Calls System</h4><p>outreach plugin, voice-note flow, follow-up + reactivation sequences</p></div></div>
+      <div class="dcard"><div class="dchk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div><h4>Every future update included</h4><p>Buy once, keep forever.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section style="padding:104px 0;background:linear-gradient(180deg,#FFFFFF 0%,#FDF4EA 100%);position:relative;"><div class="halo" style="top:50%;left:50%;transform:translate(-50%,-50%);width:900px;height:600px;background:radial-gradient(ellipse,rgba(244,123,32,0.1) 0%,transparent 65%);"></div>
+  <div style="max-width:1080px;margin:0 auto;padding:0 24px;position:relative;z-index:1;">
+    <div class="fi" style="text-align:center;max-width:560px;margin:0 auto 44px;">
+      <span class="lbl" style="justify-content:center;display:flex;margin-bottom:12px;">Receipts, Not Promises</span>
+      <h2 style="font-size:clamp(26px,3.6vw,38px);font-weight:800;line-height:1.18;margin-bottom:12px;">The same engine, <span style="color:var(--org);">on live accounts.</span></h2>
+      <p style="font-size:15px;color:rgba(26,26,26,0.58);line-height:1.75;">Dashboards and DM replies from client accounts running the stack. Names and contact details blurred. This is what the connected path produces.</p>
+    </div>
+    <div class="shotgrid" style="display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start;position:relative;"><div class="pchip"><strong>10+</strong><span>qualified leads a week</span></div>
+      <div class="shot fi" style="--rr:rotate(-0.8deg);">
+        <div class="shot-chrome"><p>Last 90 Days &middot; 450,005 Impressions</p><span class="live">Real Data</span></div>
+        <img src="./refrence scrrenshorts/nm-90d.png" width="838" height="730" alt="LinkedIn analytics: 450,005 impressions across 90 days" loading="lazy">
+      </div>
+      <div style="display:flex;flex-direction:column;gap:26px;">
+        <div class="shot fi" style="--rr:rotate(0.9deg);">
+          <div class="shot-chrome"><p>Reply &middot; Time Proposed</p><span class="live">Real DM</span></div>
+          <img src="./refrence scrrenshorts/dm-proof-2.png" width="910" height="346" alt="LinkedIn DM reply confirming a Tuesday 3pm call and asking for a calendar invite, name blurred" loading="lazy">
+        </div>
+        <div class="shot fi" style="--rr:rotate(-0.7deg);">
+          <div class="shot-chrome"><p>Discovery &middot; 330,613 Members Reached</p><span class="live">Real Data</span></div>
+          <img src="./refrence scrrenshorts/proof-discovery.png" width="850" height="380" alt="LinkedIn discovery panel: 1,273,287 impressions and 330,613 members reached" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section style="background:#fff;padding:100px 0;">
+  <div class="wrap">
+    <div class="fi" style="text-align:center;margin-bottom:36px;">
+      <span class="lbl" style="justify-content:center;display:flex;margin-bottom:12px;">From The DMs</span>
+      <h2 style="font-size:clamp(26px,3.6vw,38px);font-weight:800;line-height:1.18;">What people say <span style="color:var(--org);">after using the systems.</span></h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <div class="tst fi"><img src="./refrence scrrenshorts/Caden.png" width="1526" height="410" alt="Caden Knebel testimonial for the LinkedIn systems" loading="lazy"></div>
+      <div class="tst fi"><img src="./refrence scrrenshorts/Matt.png" width="798" height="278" alt="Matt testimonial for the LinkedIn systems" loading="lazy"></div>
+      <div class="tst fi"><img src="./refrence scrrenshorts/Lizzie.png" width="1526" height="314" alt="Lizzie testimonial for the LinkedIn systems" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- BUY -->
+<section id="buy" style="background:var(--cream);padding:96px 0 100px;scroll-margin-top:70px;position:relative;"><div class="halo" style="top:50%;left:50%;transform:translate(-50%,-50%);width:760px;height:520px;background:radial-gradient(ellipse,rgba(244,123,32,0.14) 0%,transparent 65%);"></div>
+  <div class="wrap" style="position:relative;z-index:1;">
+    <div class="fi" style="background:linear-gradient(178deg,#161412 0%,#0B0B0B 55%,#0E0C0A 100%);border:1px solid rgba(244,123,32,0.22);border-radius:28px;padding:52px 44px 48px;position:relative;overflow:hidden;text-align:center;box-shadow:inset 0 1px 0 rgba(255,255,255,0.07),0 2px 4px rgba(0,0,0,0.2),0 44px 96px -22px rgba(0,0,0,0.5);">
+      <div aria-hidden="true" style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:min(400px,80%);height:1px;background:linear-gradient(90deg,transparent,rgba(244,123,32,0.75),transparent);"></div>
+      <div aria-hidden="true" style="position:absolute;top:-1px;left:50%;transform:translateX(-50%);width:min(320px,70%);height:110px;background:radial-gradient(ellipse at 50% 0%,rgba(244,123,32,0.13) 0%,transparent 70%);pointer-events:none;"></div>
+      <div style="position:relative;z-index:1;">
+        <span style="font-family:'Plus Jakarta Sans',sans-serif;font-size:11.5px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--org);">The LinkedIn Client Stack</span>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(56px,9vw,76px);color:#fff;letter-spacing:-0.04em;line-height:1;margin:18px 0 6px;">$297</div>
+        <p style="font-size:13.5px;color:rgba(255,255,255,0.6);margin-bottom:24px;">one-time &middot; $441 separately, save $144 &middot; yours forever</p>
+        <div style="display:flex;flex-direction:column;gap:10px;max-width:400px;margin:0 auto 26px;text-align:left;">
+          <div class="check" style="color:rgba(255,255,255,0.78);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F47B20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span style="color:rgba(255,255,255,0.78);font-size:14px;">All three systems, complete</span></div>
+          <div class="check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F47B20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span style="color:rgba(255,255,255,0.78);font-size:14px;">Every plugin, playbook, swipe file, and template</span></div>
+          <div class="check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F47B20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span style="color:rgba(255,255,255,0.78);font-size:14px;">Every future update to all three included</span></div>
+        </div>
+        <a href="#" data-buy class="btn" style="width:100%;max-width:400px;justify-content:center;">Get the Client Stack, $297
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <p style="font-size:12px;color:rgba(255,255,255,0.45);margin-top:14px;">Upgrade later and the full $297 is credited toward your first month of done-for-you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background:var(--cream);padding:100px 0 104px;">
+  <div class="wrap">
+    <div class="fi" style="margin-bottom:34px;">
+      <span class="lbl" style="margin-bottom:12px;display:flex;">Got Questions?</span>
+      <h2 style="font-size:clamp(26px,3.6vw,38px);font-weight:800;line-height:1.18;">Fair ones. Quick answers.</h2>
+    </div>
+    <div class="faq-wrap fi">
+      <div class="faq-item">
+        <button onclick="faq(this)" aria-expanded="false"><span class="q">What do I need to run it?</span><span class="ficon">+</span></button>
+        <div class="fans"><p>A Claude subscription, about $20/mo, and nothing else. No API keys, no code, no extra tools. If you can type in a chat window, you can run this.</p></div>
+      </div>
+      <div class="faq-item">
+        <button onclick="faq(this)" aria-expanded="false"><span class="q">How is this different from prompting ChatGPT?</span><span class="ficon">+</span></button>
+        <div class="fans"><p>Buying one system fixes one stage of the pipeline; the leak just moves. The stack connects all three stages, which is how it works on client accounts. And at $297 it costs less than two of the three bought alone.</p></div>
+      </div>
+      <div class="faq-item">
+        <button onclick="faq(this)" aria-expanded="false"><span class="q">What if I later want it done for me?</span><span class="ficon">+</span></button>
+        <div class="fans"><p>Then the ladder pays you back: the full $297 you spend on the stack is credited toward your first month of our done-for-you service. Prove the system on your own profile, then hand it off without losing a dollar.</p></div>
+      </div>
+      <div class="faq-item">
+        <button onclick="faq(this)" aria-expanded="false"><span class="q">Is this a subscription?</span><span class="ficon">+</span></button>
+        <div class="fans"><p>No. $297 once, yours forever, updates to all three systems included. The only recurring cost is your own Claude subscription, which you'd pay Anthropic anyway.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section style="background:linear-gradient(178deg,#161412 0%,#0B0B0B 60%);padding:84px 24px;text-align:center;position:relative;overflow:hidden;">
+  <div aria-hidden="true" style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:min(420px,80%);height:1px;background:linear-gradient(90deg,transparent,rgba(244,123,32,0.75),transparent);"></div>
+  <div style="max-width:600px;margin:0 auto;position:relative;z-index:1;">
+    <h2 style="font-size:clamp(26px,4vw,40px);font-weight:800;line-height:1.16;color:#fff;margin-bottom:14px;">One client covers the stack many times over.</h2>
+    <p style="font-size:15px;color:rgba(255,255,255,0.55);line-height:1.7;margin-bottom:28px;">Attract, capture, close. Start the whole path this week.</p>
+    <a href="#buy" class="btn">Get the Client Stack, $297</a>
+  </div>
+</section>
+
+</main>
+
+<footer style="background:var(--near);padding:22px 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+  <p style="font-size:12px;color:rgba(255,255,255,0.3);"><span id="cur-year"></span> Malik Muzamil &middot; Growlioo. All rights reserved.</p>
+  <a href="mailto:managemuzamil72@gmail.com" style="font-size:12px;color:rgba(255,255,255,0.4);text-decoration:none;">managemuzamil72@gmail.com</a>
+</footer>
+
+<script>
+// Set the checkout URL here when it goes live; until then buttons scroll to the buy card.
+var BUY_LINK = '#';
+document.querySelectorAll('[data-buy]').forEach(function(a){
+  if (BUY_LINK !== '#') a.href = BUY_LINK;
+  else a.addEventListener('click', function(e){ e.preventDefault(); window.location.href='mailto:managemuzamil72@gmail.com?subject='+encodeURIComponent('The LinkedIn Client Stack ($297)')+'&body='+encodeURIComponent('I want the Client Stack. Send me the checkout link.'); });
+});
+function faq(btn){
+  var ans=btn.nextElementSibling,icon=btn.querySelector('.ficon'),open=ans.style.display==='block';
+  document.querySelectorAll('.fans').forEach(function(a){a.style.display='none';});
+  document.querySelectorAll('.ficon').forEach(function(i){i.textContent='+';});
+  document.querySelectorAll('[aria-expanded]').forEach(function(b){b.setAttribute('aria-expanded','false');});
+  if(!open){ans.style.display='block';icon.textContent='×';btn.setAttribute('aria-expanded','true');}
+}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in');});},{threshold:0.1});
+document.querySelectorAll('.fi').forEach(function(el){io.observe(el);});
+document.getElementById('cur-year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
