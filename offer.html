@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>From best kept secret to booked out · Growlioo</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+:root{
+  --cream:#FDF8F1;
+  --cream-2:#F8EFE2;
+  --white:#FFFFFF;
+  --ink:#120F0C;
+  --ink-2:#1A1613;
+  --o:#F4863F;
+  --o-dk:#D0641E;
+  --o-lt:#FFB280;
+  --o-wash:#FEF0E4;
+  --y:#FFDE59;
+  --t1:#120F0C;
+  --t2:#5D544A;
+  --t3:#978C7E;
+  --lt1:#FFFFFF;
+  --lt2:rgba(255,255,255,.68);
+  --lt3:rgba(255,255,255,.38);
+  --line:#EDE2D2;
+  --line-d:rgba(255,255,255,.10);
+  --good:#3D9A5C;
+  --sh:0 1px 2px rgba(18,15,12,.03),0 8px 26px rgba(18,15,12,.05);
+  --sh-lg:0 2px 6px rgba(18,15,12,.04),0 24px 60px rgba(18,15,12,.09);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--t1);font-family:'Poppins',system-ui,sans-serif;font-size:17px;line-height:1.72;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:780px;margin:0 auto;padding:0 26px}
+.wide{max-width:1080px;margin:0 auto;padding:0 26px}
+section{padding:88px 0;position:relative}
+h1,h2,h3,h4{font-weight:800;letter-spacing:-.038em;line-height:1.08;color:var(--t1)}
+h2{font-size:clamp(30px,4.7vw,46px);margin-bottom:20px}
+h3{font-size:22px;letter-spacing:-.028em;margin-bottom:9px}
+h4{font-size:17.5px;letter-spacing:-.02em;margin-bottom:6px}
+.ser{font-family:'Poppins','Agrandir',system-ui,sans-serif;font-weight:400;font-style:italic;letter-spacing:-.02em}
+p{color:var(--t2);margin-bottom:18px}
+strong{color:var(--t1);font-weight:700}
+.o{color:var(--o-dk)}
+.lbl{display:block;font-size:10.5px;font-weight:800;letter-spacing:.23em;text-transform:uppercase;color:var(--o-dk);margin-bottom:18px}
+.lead{font-size:20px;line-height:1.6;color:var(--t2)}
+.center{text-align:center}
+ul{list-style:none;margin-bottom:18px}
+li{padding:8px 0 8px 30px;position:relative;font-size:16.5px;color:var(--t2)}
+.tick li::before{content:"";position:absolute;left:0;top:17px;width:9px;height:9px;border-radius:50%;background:var(--good)}
+.cross li::before{content:"";position:absolute;left:0;top:17px;width:9px;height:9px;border-radius:50%;background:#C9483E}
+.arr li::before{content:"";position:absolute;left:0;top:19px;width:14px;height:1.5px;background:var(--o)}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:60;background:rgba(253,248,241,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .wide{display:flex;align-items:center;justify-content:space-between;height:62px;gap:18px}
+.logo{font-weight:900;font-size:16px;letter-spacing:-.03em}
+.logo span{color:var(--o)}
+.navlinks{display:flex;gap:22px}
+@media(max-width:760px){.navlinks{display:none}}
+.navlinks a{color:var(--t2);text-decoration:none;font-size:13.5px;font-weight:600}
+.navlinks a:hover{color:var(--o-dk)}
+.navbtn{background:var(--ink);color:#fff;padding:10px 20px;border-radius:100px;font-size:13.5px;font-weight:700;text-decoration:none}
+
+/* HERO */
+.hero{padding:76px 0 66px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-260px;left:50%;transform:translateX(-50%);width:1000px;height:640px;background:radial-gradient(ellipse,rgba(244,134,63,.16),transparent 66%)}
+.hero .wide{position:relative}
+.tagpill{display:inline-block;background:var(--o-wash);border:1px solid #F6CDAA;color:var(--o-dk);font-size:12px;font-weight:700;letter-spacing:.05em;padding:7px 16px;border-radius:100px;margin-bottom:26px}
+.hero h1{font-size:clamp(36px,6.6vw,68px);letter-spacing:-.048em;line-height:1.02;max-width:900px;margin:0 auto}
+.hero h1 em{font-family:'Poppins','Agrandir',system-ui,sans-serif;font-style:italic;font-weight:400;color:var(--o);letter-spacing:-.035em}
+.hero .sub{max-width:580px;margin:26px auto 0;font-size:18.5px;color:var(--t2)}
+.hero .btns{margin-top:34px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:16px 34px;border-radius:100px;font-weight:800;font-size:16.5px;text-decoration:none;transition:transform .25s cubic-bezier(.22,1,.36,1),box-shadow .25s}
+.btn.p{background:var(--o);color:#fff}
+.btn.p:hover{transform:translateY(-3px);box-shadow:0 14px 36px rgba(244,134,63,.34)}
+.btn.s{background:transparent;border:1.5px solid var(--line);color:var(--t1)}
+.btn.s:hover{border-color:var(--t3)}
+
+/* word cloud strip */
+.cloud{margin-top:52px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 14px;max-width:820px;margin-left:auto;margin-right:auto}
+.cloud span{font-size:13.5px;font-weight:600;color:var(--t3);background:var(--white);border:1px solid var(--line);padding:7px 15px;border-radius:100px;opacity:0;transform:translateY(10px);animation:pop .8s cubic-bezier(.22,1,.36,1) forwards}
+.cloud span.hot{background:var(--ink);border-color:var(--ink);color:var(--y);font-weight:700}
+@keyframes pop{to{opacity:1;transform:none}}
+
+/* STAT BAR */
+.statbar{margin-top:52px;background:var(--ink);border-radius:20px;display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden;box-shadow:var(--sh-lg)}
+@media(max-width:760px){.statbar{grid-template-columns:1fr 1fr}}
+.statbar div{padding:26px 18px;border-right:1px solid var(--line-d);border-bottom:1px solid var(--line-d)}
+.statbar b{display:block;font-size:28px;font-weight:800;color:var(--o);letter-spacing:-.04em}
+.statbar span{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--lt3);font-weight:700}
+
+/* ORANGE BAND */
+.band{background:var(--o);color:#fff;padding:78px 0;position:relative;overflow:hidden}
+.band::before{content:"BOOKED OUT";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:clamp(120px,20vw,260px);font-weight:900;letter-spacing:-.06em;color:rgba(255,255,255,.11);white-space:nowrap;pointer-events:none}
+.band .wide{position:relative;z-index:1;text-align:center}
+.band h2{color:#fff;margin-bottom:14px}
+.band p{color:rgba(255,255,255,.85);max-width:560px;margin:0 auto}
+.bandstats{margin-top:44px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:760px;margin-left:auto;margin-right:auto}
+@media(max-width:700px){.bandstats{grid-template-columns:1fr}}
+.bandstats div{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.24);border-radius:16px;padding:22px}
+.bandstats b{display:block;font-size:30px;font-weight:800;letter-spacing:-.04em}
+.bandstats span{font-size:12.5px;color:rgba(255,255,255,.8);font-weight:600}
+
+/* DARK SECTION */
+.dark{background:var(--ink);color:var(--lt1)}
+.dark h2,.dark h3,.dark h4{color:#fff}
+.dark p{color:var(--lt2)}
+.dark li{color:var(--lt2)}
+.dark strong{color:#fff}
+.dark .lbl{color:var(--y)}
+.dark .lead{color:var(--lt2)}
+
+/* TRIANGLE */
+.tri-stage{max-width:720px;margin:0 auto}
+.tri-svg{width:100%;height:auto;display:block;overflow:visible}
+.tri-poly{fill:none;stroke:var(--o);stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:1700;stroke-dashoffset:1700;transition:stroke-dashoffset 2.3s cubic-bezier(.4,0,.2,1)}
+.in .tri-poly{stroke-dashoffset:0}
+.tri-fill{fill:url(#tg);opacity:0;transition:opacity 1.3s ease .85s}
+.in .tri-fill{opacity:1}
+.tn{opacity:0;transform:translateY(8px);transition:opacity .7s ease,transform .7s cubic-bezier(.22,1,.36,1)}
+.in .tn{opacity:1;transform:none}
+.in .n1{transition-delay:1.05s}.in .n2{transition-delay:1.3s}.in .n3{transition-delay:1.55s}.in .n4{transition-delay:1.85s}
+.trileg{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:46px}
+@media(max-width:860px){.trileg{grid-template-columns:1fr}}
+.leg{border-top:1px solid var(--line-d);padding-top:18px}
+.leg .k{font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;margin-bottom:8px}
+.leg.p .k{color:#EE8B77}.leg.s .k{color:var(--y)}.leg.o .k{color:#63C486}
+.leg p{font-size:14.5px;margin:0;color:var(--lt2)}
+
+/* DELIVERABLE CARDS */
+.dgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px}
+@media(max-width:820px){.dgrid{grid-template-columns:1fr}}
+.dcard{background:var(--white);border:1px solid var(--line);border-left:3px solid var(--o);border-radius:16px;padding:26px 28px;box-shadow:var(--sh)}
+.dcard .n{font-family:'Poppins','Agrandir',system-ui,sans-serif;font-style:italic;font-size:15px;color:var(--o-dk);margin-bottom:8px;display:block}
+.dcard p{font-size:15px;margin-bottom:12px}
+.dcard ul{margin:0}
+.dcard li{font-size:14.5px;padding:4px 0 4px 24px}
+.dcard.full{grid-column:1/-1}
+/* white cards keep dark text even inside dark sections */
+.dark .dcard{background:var(--white);border-color:var(--line)}
+.dark .dcard h4{color:var(--t1)}
+.dark .dcard p,.dark .dcard li{color:var(--t2)}
+.dark .dcard .n{color:var(--o-dk)}
+
+/* PROGRAM CARDS */
+.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:42px}
+@media(max-width:900px){.pgrid{grid-template-columns:1fr}}
+.pcard{border-radius:24px;padding:38px 34px;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.pcard.one{background:var(--white);border:1px solid var(--line);box-shadow:var(--sh)}
+.pcard.two{background:var(--ink);color:#fff;box-shadow:var(--sh-lg)}
+.pcard.two::before{content:"";position:absolute;top:-55%;right:-38%;width:440px;height:440px;background:radial-gradient(circle,rgba(244,134,63,.3),transparent 66%)}
+.pcard>*{position:relative;z-index:1}
+.ptype{font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;color:var(--t3)}
+.pcard.two .ptype{color:var(--y)}
+.pname{font-size:clamp(36px,5.2vw,52px);font-weight:900;letter-spacing:-.055em;line-height:.94;margin:16px 0 5px}
+.pcard.two .pname{color:#fff}
+.pdesc{font-size:15px;color:var(--t3);margin-bottom:22px}
+.pcard.two .pdesc{color:var(--lt3)}
+.pprice{font-size:34px;font-weight:900;letter-spacing:-.04em;color:var(--o-dk)}
+.pcard.two .pprice{color:var(--o)}
+.pprice small{display:block;font-size:13px;font-weight:600;letter-spacing:0;color:var(--t3);margin-top:4px}
+.pcard.two .pprice small{color:var(--lt3)}
+.pbody{margin-top:22px;padding-top:22px;border-top:1px solid var(--line);flex:1}
+.pcard.two .pbody{border-top-color:var(--line-d)}
+.pbody p{font-size:15.5px}
+.pcard.two .pbody p{color:var(--lt2)}
+
+/* PHASES */
+.ph{display:grid;grid-template-columns:76px 1fr;gap:26px;padding:32px 0;border-top:1px solid var(--line)}
+@media(max-width:700px){.ph{grid-template-columns:1fr;gap:10px}}
+.ph .idx{font-family:'Poppins','Agrandir',system-ui,sans-serif;font-style:italic;font-size:44px;color:var(--o);line-height:.9}
+.ph p{font-size:16.5px;margin-bottom:11px}
+.ph ul{margin:0}
+.ph li{font-size:15.5px;padding:5px 0 5px 26px}
+
+/* MATH */
+.mtable{margin-top:32px;border:1px solid var(--line-d);border-radius:18px;overflow:hidden}
+.mrow{display:flex;justify-content:space-between;align-items:baseline;gap:18px;padding:18px 26px;border-bottom:1px solid var(--line-d);font-size:16.5px;color:var(--lt2)}
+.mrow:last-child{border-bottom:none}
+.mrow b{color:#fff;font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap;font-size:19px}
+.mrow.sum{background:rgba(255,255,255,.04)}
+.mrow.win{background:rgba(244,134,63,.14)}
+.mrow.win b{color:var(--y);font-size:25px}
+
+/* MISC */
+.quote{font-family:'Poppins','Agrandir',system-ui,sans-serif;font-style:italic;font-size:clamp(24px,3.5vw,35px);line-height:1.32;letter-spacing:-.02em;color:var(--t1)}
+.dark .quote{color:#fff}
+.box{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:26px 28px;margin-bottom:15px;box-shadow:var(--sh)}
+.dark .box{background:rgba(255,255,255,.04);border-color:var(--line-d);box-shadow:none}
+.guar{border:1px solid #F3C6A2;background:linear-gradient(135deg,var(--o-wash),rgba(255,222,89,.12));border-radius:18px;padding:26px 28px;margin:22px 0}
+.dark .guar{border-color:rgba(244,134,63,.45);background:linear-gradient(135deg,rgba(244,134,63,.13),rgba(255,222,89,.04))}
+.guar h4{color:var(--o-dk)}
+.dark .guar h4{color:var(--o)}
+.guar p{margin:0;font-size:16.5px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+@media(max-width:820px){.split{grid-template-columns:1fr;gap:32px}}
+.faq{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin-bottom:10px;box-shadow:var(--sh)}
+.faq h4{margin-bottom:5px}
+.faq p{font-size:15.5px;margin:0}
+.sig{font-family:'Poppins','Agrandir',system-ui,sans-serif;font-style:italic;font-size:32px;letter-spacing:-.02em;margin-top:28px}
+.sig span{display:block;font-family:'Poppins';font-style:normal;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--t3);margin-top:8px}
+.ps{border-left:2px solid var(--o);padding:6px 0 6px 24px;margin-top:32px;font-size:16.5px}
+footer{background:var(--ink);color:var(--lt3);padding:52px 0;text-align:center;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .9s cubic-bezier(.22,1,.36,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .rv,.cloud span{opacity:1!important;transform:none!important;animation:none!important}
+  .tri-poly{stroke-dashoffset:0}.tri-fill,.tn{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+@media print{nav{display:none}section{padding:34px 0}.rv{opacity:1;transform:none}}
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap">
+</head>
+<body>
+
+<nav><div class="wide">
+  <span class="logo">GROW<span>LIOO</span></span>
+  <div class="navlinks">
+    <a href="#model">The model</a>
+    <a href="#relaunch">Relaunch</a>
+    <a href="#bookedout">Booked Out</a>
+    <a href="#investment">Investment</a>
+  </div>
+  <a class="navbtn" href="#call">Book a Call</a>
+</div></nav>
+
+<!-- HERO -->
+<div class="hero"><div class="wide">
+  <span class="tagpill">For executive, leadership and business coaches</span>
+  <h1>From best kept secret to <em>booked out.</em></h1>
+  <p class="sub">We relaunch your coaching business on LinkedIn in 30 days. Then we keep your calendar full, without you writing a post or sending a single message.</p>
+  <div class="btns">
+    <a class="btn p" href="#investment">See the investment</a>
+    <a class="btn s" href="#call">Book a call</a>
+  </div>
+
+  <div class="cloud" id="cloud">
+    <span>invisible online</span><span>referral roulette</span><span>best kept secret</span><span>a CV, not a profile</span>
+    <span>feast and famine</span><span>eleven likes</span><span class="hot">booked out</span><span>posting in bursts</span>
+    <span>empty Featured section</span><span>where is next quarter</span><span>my work should speak for itself</span><span>the room is too small</span>
+  </div>
+
+  <div class="statbar">
+    <div><b>2M+</b><span>Impressions generated</span></div>
+    <div><b>1,000+</b><span>Leads from magnets</span></div>
+    <div><b>50+</b><span>Founders served</span></div>
+    <div><b>700K</b><span>In 90 days, one client</span></div>
+  </div>
+</div></div>
+
+<!-- OPENING -->
+<section><div class="wrap">
+  <p class="quote rv">You are very good at what you do. Twenty years of it. Clients tell you the hour they spend with you is the most useful hour of their month.</p>
+  <p class="rv" style="margin-top:32px">And almost nobody outside your referral network knows you exist.</p>
+  <p class="rv">That is the entire problem, and it is the only thing I fix. My team relaunches your coaching business on LinkedIn in 30 days, then keeps your calendar full so you never have to wonder where next quarter comes from.</p>
+  <p class="rv"><strong>Two programs. RELAUNCH builds it. BOOKED OUT keeps it running.</strong></p>
+</div></section>
+
+<!-- ORANGE BAND -->
+<div class="band"><div class="wide">
+  <h2>Your entire LinkedIn, handled.<br>Live in 30 days.</h2>
+  <p>Profile, positioning, content, magnets and every conversation. You approve. We do the rest.</p>
+  <div class="bandstats">
+    <div><b>2</b><span>Calls from you during the whole build</span></div>
+    <div><b>30</b><span>Days from kickoff to live</span></div>
+    <div><b>10</b><span>Qualified conversations a month by day 90</span></div>
+  </div>
+</div></div>
+
+<!-- MODEL / TRIANGLE -->
+<section class="dark" id="model"><div class="wide">
+  <span class="lbl rv">The model</span>
+  <h2 class="rv" style="max-width:640px">One problem. Three moves.<br><span class="ser" style="color:var(--o)">One outcome.</span></h2>
+  <p class="lead rv" style="max-width:600px;margin-bottom:54px">Everything we do sits inside this shape. If a piece of work does not belong somewhere on it, we do not do it.</p>
+
+  <div class="tri-stage rv" id="triWrap">
+    <svg class="tri-svg" viewBox="0 0 720 470" role="img" aria-label="The model: problem, three moves, outcome">
+      <defs><linearGradient id="tg" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#F4863F" stop-opacity=".17"/>
+        <stop offset="1" stop-color="#FFDE59" stop-opacity=".03"/>
+      </linearGradient></defs>
+      <polygon class="tri-fill" points="360,44 60,392 660,392"/>
+      <polygon class="tri-poly" points="360,44 60,392 660,392"/>
+      <g class="tn n1">
+        <circle cx="360" cy="44" r="7" fill="#FFDE59"/>
+        <text x="360" y="22" text-anchor="middle" font-family="Inter" font-size="10.5" font-weight="700" fill="#FFDE59" letter-spacing="2.6">THE OUTCOME</text>
+      </g>
+      <g class="tn n2">
+        <circle cx="60" cy="392" r="7" fill="#EE8B77"/>
+        <text x="60" y="422" text-anchor="middle" font-family="Inter" font-size="10.5" font-weight="700" fill="#EE8B77" letter-spacing="2.2">THE PROBLEM</text>
+        <text x="60" y="444" text-anchor="middle" font-family="Instrument Serif" font-style="italic" font-size="19" fill="rgba(255,255,255,.75)">Invisible</text>
+      </g>
+      <g class="tn n3">
+        <circle cx="660" cy="392" r="7" fill="#63C486"/>
+        <text x="660" y="422" text-anchor="middle" font-family="Inter" font-size="10.5" font-weight="700" fill="#63C486" letter-spacing="2.2">THE MOVES</text>
+        <text x="660" y="444" text-anchor="middle" font-family="Instrument Serif" font-style="italic" font-size="19" fill="rgba(255,255,255,.75)">Brand · Demand · Clients</text>
+      </g>
+      <g class="tn n4">
+        <text x="360" y="190" text-anchor="middle" font-family="Instrument Serif" font-style="italic" font-size="34" fill="#FFFFFF">A calendar that fills</text>
+        <text x="360" y="230" text-anchor="middle" font-family="Instrument Serif" font-style="italic" font-size="34" fill="#F4863F">without chasing anyone.</text>
+        <line x1="292" y1="258" x2="428" y2="258" stroke="rgba(255,255,255,.16)" stroke-width="1"/>
+        <text x="360" y="292" text-anchor="middle" font-family="Inter" font-size="13" fill="rgba(255,255,255,.5)">Ten qualified conversations a month</text>
+        <text x="360" y="314" text-anchor="middle" font-family="Inter" font-size="13" fill="rgba(255,255,255,.5)">by day 90. Never impressions.</text>
+      </g>
+      <text x="185" y="205" text-anchor="middle" font-family="Inter" font-size="9.5" font-weight="700" fill="rgba(255,255,255,.3)" letter-spacing="2.4" transform="rotate(-49 185 205)">WHAT HURTS NOW</text>
+      <text x="537" y="205" text-anchor="middle" font-family="Inter" font-size="9.5" font-weight="700" fill="rgba(255,255,255,.3)" letter-spacing="2.4" transform="rotate(49 537 205)">WHAT WE INSTALL</text>
+      <text x="360" y="378" text-anchor="middle" font-family="Inter" font-size="9.5" font-weight="700" fill="rgba(255,255,255,.24)" letter-spacing="2.4">BASE: PROOF YOU ALREADY EARNED</text>
+    </svg>
+  </div>
+
+  <div class="trileg">
+    <div class="leg p rv"><div class="k">The problem</div><h4>Invisible expertise</h4><p>The gap between how good you are and how many of the right people know it. Referral roulette, feast and famine and marketing burnout are all symptoms of this one thing.</p></div>
+    <div class="leg s rv"><div class="k">The three moves</div><h4>Brand. Demand. Clients.</h4><p>Brand is who you are for and what you look like. Demand is content that makes the right people pay attention. Clients is the conversations that turn attention into signed work.</p></div>
+    <div class="leg o rv"><div class="k">The outcome</div><h4>A calendar that fills</h4><p>Ten qualified conversations a month by day 90, with buyers who match the client you actually want, that you did nothing to chase.</p></div>
+  </div>
+</div></section>
+
+<!-- THE PLAN -->
+<section><div class="wrap">
+  <span class="lbl rv">Here is the plan</span>
+  <h2 class="rv">I work with six coaches at a time.</h2>
+  <p class="rv">That is the whole roster, and it is deliberate.</p>
+  <p class="rv">The goal is simple. Three things, running every week:</p>
+  <ul class="arr rv">
+    <li>The right people find you instead of you chasing them</li>
+    <li>Real conversations with buyers who can actually pay your fee</li>
+    <li>Clients who arrive already knowing what you are worth</li>
+  </ul>
+  <p class="rv">When those three run, the rest takes care of itself. The referral panic stops. You stop quietly discounting to get a yes. And you get your evenings back, because none of this happens on your desk.</p>
+</div></section>
+
+<!-- CREDIBILITY -->
+<section class="dark"><div class="wrap">
+  <span class="lbl rv">Why I can do this</span>
+  <h2 class="rv">I have spent four years building <span class="ser" style="color:var(--o)">one thing.</span></h2>
+  <p class="rv">Over 2 million impressions generated for clients. More than 1,000 leads pulled in from lead magnets. Fifty plus founders served across fintech, AI, agencies and consulting. One client went from a quiet profile to 700,000 impressions in 90 days.</p>
+  <p class="rv">But the number I actually care about is smaller.</p>
+  <p class="rv">In my own inbox, six people said yes to a profile audit in a single stretch. One was a surgeon who replied <em class="ser" style="color:#fff">"OK. Let's see what you can do."</em> Another was a CEO who wrote <em class="ser" style="color:#fff">"You got my attention."</em> Those became conversations. Those conversations became work.</p>
+  <p class="rv">That is the whole business, and it is what I am handing you.</p>
+  <p class="rv">There are four of us. Rabia writes. Arooj builds the assets. Umar handles the lists. Kifayat runs every conversation that comes in. You get all four.</p>
+</div></section>
+
+<!-- FIT -->
+<section><div class="wide">
+  <div class="split">
+    <div class="rv"><span class="lbl">Not for you if</span>
+      <ul class="cross">
+        <li>You charge under $2,000 per client. The numbers do not work for either of us</li>
+        <li>You want followers and impressions rather than clients</li>
+        <li>You have no results yet. I amplify proof, I do not invent it</li>
+        <li>You want someone to run your sales calls and close for you</li>
+        <li>You want to try it for a month and see. This compounds over 90 days</li>
+      </ul>
+    </div>
+    <div class="rv"><span class="lbl">For you if</span>
+      <ul class="tick">
+        <li>You are an executive, leadership or business coach charging $2,000 or more</li>
+        <li>You have real proof that nobody outside your network has ever seen</li>
+        <li>Referrals carry most of your revenue and you know that is a risk</li>
+        <li>You will show up as yourself. Your face, your name, your point of view</li>
+      </ul>
+    </div>
+  </div>
+  <div class="split" style="margin-top:42px">
+    <div class="box rv"><h4>Relaunching</h4><p style="margin:0;font-size:15.5px">You left a corporate role in the last year or two. Twenty years of credibility, and a profile that still reads like your old job description. Every piece of advice on getting clients assumes you already sorted your positioning. You have not, and nobody has helped you.</p></div>
+    <div class="box rv"><h4>Already running</h4><p style="margin:0;font-size:15.5px">You have clients and revenue. You are also the reason none of it scales, because every post, every follow up and every conversation runs through you. You need the front half of your pipeline off your desk without hiring anybody.</p></div>
+  </div>
+</div></section>
+
+<!-- TWO PROGRAMS -->
+<section><div class="wide">
+  <span class="lbl rv">The offer</span>
+  <h2 class="rv">Two programs. <span class="ser o">That is the whole menu.</span></h2>
+  <p class="lead rv" style="max-width:600px">One you pay once. One runs every month. No bronze, silver and gold. Nothing to deliberate over.</p>
+  <div class="pgrid">
+    <div class="pcard one rv">
+      <div class="ptype">Step one · paid once</div>
+      <div class="pname">RELAUNCH</div>
+      <div class="pdesc">The build. 30 days. Done for you.</div>
+      <div class="pprice">$1,950<small>One payment, before we start</small></div>
+      <div class="pbody">
+        <p>Everything that makes you findable, built and live in a month. Positioning, your look, a rewritten profile, your first lead magnet and your first 30 days of content.</p>
+        <p style="color:var(--t3);font-size:14.5px;margin:0">You show up for two calls and approve the work. My team does the rest.</p>
+      </div>
+    </div>
+    <div class="pcard two rv">
+      <div class="ptype">Step two · every month</div>
+      <div class="pname">BOOKED OUT</div>
+      <div class="pdesc">The engine. Ongoing. 90 day minimum.</div>
+      <div class="pprice">$2,900<small>Per month</small></div>
+      <div class="pbody">
+        <p>Content, engagement, outreach and every conversation, run daily by my team. Ten qualified conversations a month on your calendar by day 90.</p>
+        <p style="color:var(--lt3);font-size:14.5px;margin:0">Your workload drops to one call a month and a yes or no on content.</p>
+      </div>
+    </div>
+  </div>
+  <p class="rv" style="margin-top:24px;font-size:16px">You can take RELAUNCH on its own. Most people do not, because a rebuilt profile with nothing running behind it goes quiet inside six weeks, and I would rather tell you that now than sell you half a system.</p>
+</div></section>
+
+<!-- RELAUNCH -->
+<section id="relaunch"><div class="wrap">
+  <span class="lbl rv">Inside RELAUNCH</span>
+  <h2 class="rv">What we build in <span class="ser o">30 days.</span></h2>
+
+  <div class="ph rv"><div class="idx">01</div><div>
+    <h3>Strategy and discovery</h3>
+    <p>We build the business before we build the brand. Nothing gets designed until this is signed off.</p>
+    <ul class="arr">
+      <li>Niche clarity: the one buyer you own</li>
+      <li>Full client profile and buyer map</li>
+      <li>Offer structure and a straight conversation about your pricing</li>
+      <li>A 1:1 call on messaging and positioning</li>
+      <li>Competitor analysis and what actually makes you different</li>
+      <li>Voice extraction, so everything after this sounds like you and not like a LinkedIn person</li>
+    </ul>
+  </div></div>
+
+  <div class="ph rv"><div class="idx">02</div><div>
+    <h3>Your look</h3>
+    <p>Colour, type and templates, so every surface a buyer touches looks like the same serious business.</p>
+    <ul class="arr">
+      <li>Brand colour palette and typography</li>
+      <li>Social template pack for posts and carousels</li>
+      <li>Email signature</li>
+      <li>A short style guide your VA or designer can follow without asking you questions</li>
+    </ul>
+  </div></div>
+
+  <div class="ph rv"><div class="idx">03</div><div>
+    <h3>The profile rebuild</h3>
+    <p>We rewrite the whole thing so it stops being a CV and starts being a door.</p>
+    <ul class="arr">
+      <li>Headline, About and experience, fully rewritten</li>
+      <li>Custom banner design</li>
+      <li>Featured section built around one clear next step</li>
+      <li>One lead magnet, written and designed</li>
+      <li>Keyword and search visibility setup, so you appear when a buyer goes looking</li>
+    </ul>
+  </div></div>
+
+  <div class="ph rv"><div class="idx">04</div><div>
+    <h3>Your first month of content</h3>
+    <p>You launch with momentum instead of a blank page and a good intention.</p>
+    <ul class="arr">
+      <li>30 day content plan</li>
+      <li>12 posts written in your voice</li>
+      <li>3 carousels designed and ready</li>
+      <li>The launch post that reintroduces you to your own network</li>
+    </ul>
+  </div></div>
+
+  <div class="ph rv"><div class="idx">05</div><div>
+    <h3>Go live</h3>
+    <p>We turn it on with you, then hand over something you can actually run.</p>
+    <ul class="arr">
+      <li>Profile goes live with the new positioning</li>
+      <li>Scheduling and tracking set up</li>
+      <li>A short walkthrough for you or your VA</li>
+      <li>30 days of support after launch</li>
+    </ul>
+  </div></div>
+
+  <div class="guar rv"><h4>The guarantee on RELAUNCH</h4><p>If your build is not live inside 30 days, you do not pay for it. The timeline is mine to control, so the risk is mine to carry.</p></div>
+</div></section>
+
+<!-- BOOKED OUT -->
+<section class="dark" id="bookedout"><div class="wide">
+  <span class="lbl rv">Inside BOOKED OUT</span>
+  <h2 class="rv">What runs <span class="ser" style="color:var(--o)">every week.</span></h2>
+
+  <div class="dgrid">
+    <div class="dcard rv"><span class="n">Content</span><h4>16 to 20 posts a month</h4><p style="margin:0">Written in your voice from material we extract once, then published for you on schedule. You approve, you never write.</p></div>
+    <div class="dcard rv"><span class="n">Visibility</span><h4>Daily engagement</h4><p style="margin:0">Comments on the feeds of the exact buyers you want, so your name is familiar to them before they ever need you.</p></div>
+    <div class="dcard rv"><span class="n">Outreach</span><h4>Daily targeted outreach</h4><p style="margin:0">A list we build fresh and clean every fortnight, worked in temperature order. Warm signals first, always.</p></div>
+    <div class="dcard rv"><span class="n">Conversations</span><h4>Every message handled</h4><p style="margin:0">Kifayat runs each thread from the first message to a booked call on your calendar. You meet people who are already warm.</p></div>
+    <div class="dcard rv"><span class="n">Conversion</span><h4>The personalised audit</h4><p style="margin:0">Sent to warm prospects. Proof of work rather than a promise of work, and the single thing that converts best in my own inbox.</p></div>
+    <div class="dcard rv"><span class="n">Capture</span><h4>A new lead magnet each quarter</h4><p style="margin:0">So the list keeps growing while you sleep, and every launch you run starts warmer than the last.</p></div>
+    <div class="dcard full rv"><span class="n">Reporting</span><h4>A weekly one page report, and a monthly call with me</h4><p style="margin:0">Conversations started, calls booked, list growth, pipeline value. It reads in sixty seconds. Impressions never appear on it, because you cannot do anything with them.</p></div>
+  </div>
+
+  <div class="box rv" style="margin-top:22px"><h4>Your total workload</h4><p style="margin:0;font-size:16px">One 30 minute call a month, and a yes or no on content before it goes out. That is it. If this ever costs you more time than that, I have built it wrong and I will fix it.</p></div>
+  <div class="guar rv"><h4>The guarantee on BOOKED OUT</h4><p>If you do not have ten qualified conversations by day 90, I work the following month free until you do.</p></div>
+  <p class="rv">What I will not promise is signed contracts. Corporate coaching runs a two to six month buying cycle, and anybody guaranteeing you closed deals faster than that is selling you their guarantee rather than your outcome. I own everything up to the booked conversation. You own the call, the proposal and the close. That line goes in the agreement before either of us starts.</p>
+</div></section>
+
+<!-- BONUSES -->
+<section><div class="wrap">
+  <span class="lbl rv">The bonuses</span>
+  <h2 class="rv">Two things for the first three coaches.</h2>
+  <div class="box rv"><h4>A launch teardown before day one</h4><p style="margin:0;font-size:16px">Before we start, my team reviews everything you already have. Profile, website, offer, past content. You get a recorded walkthrough of exactly what is costing you clients right now. Most people find one fix in it worth more than the build.</p></div>
+  <div class="box rv"><h4>Your first launch campaign, included</h4><p style="margin:0;font-size:16px">If you run cohorts, masterminds or paid workshops, we will build and run one campaign for you at no extra cost. Announcement sequence, registration, reminders, and the path from attendee to booked call. Normally quoted separately.</p></div>
+</div></section>
+
+<!-- MATH -->
+<section class="dark" id="investment"><div class="wrap">
+  <span class="lbl rv">The investment</span>
+  <h2 class="rv">So let's do <span class="ser" style="color:var(--o)">the math.</span></h2>
+  <p class="lead rv">Coaching runs above 80% gross margin. That means the arithmetic either works on paper or it does not, and I will tell you which before you pay me anything.</p>
+  <div class="mtable rv">
+    <div class="mrow"><span>RELAUNCH, the build</span><b>$1,950</b></div>
+    <div class="mrow"><span>BOOKED OUT, three months</span><b>$8,700</b></div>
+    <div class="mrow sum"><span>Total, first 90 days</span><b>$10,650</b></div>
+    <div class="mrow win"><span><strong>Three clients at $5,000</strong></span><b>$15,000</b></div>
+  </div>
+  <p class="rv" style="margin-top:24px">Three clients and you are ahead. Everything after that is profit.</p>
+  <p class="rv">And the profile, the magnet, the templates and the content are yours to keep, whatever happens next.</p>
+</div></section>
+
+<!-- FAQ -->
+<section><div class="wrap">
+  <span class="lbl rv">Questions coaches ask</span>
+  <h2 class="rv">Before they say yes.</h2>
+  <div class="faq rv"><h4>I tried posting before and nothing happened.</h4><p>That tracks. Posting on its own is one of six moving parts. The other five are positioning, a profile that converts, a magnet, engagement and actual conversations. You tested one part and got the result one part produces.</p></div>
+  <div class="faq rv"><h4>Will it actually sound like me?</h4><p>Voice extraction happens in phase one, before a single word gets written. Your first batch comes back for approval, and we rewrite until it sounds like you rather than like a LinkedIn person.</p></div>
+  <div class="faq rv"><h4>I paid an agency before and got posts, not clients.</h4><p>Then you already know the right question, which is what number we get judged on. Ours is conversations and calls booked. Impressions never appear on your report.</p></div>
+  <div class="faq rv"><h4>My clients are not on LinkedIn.</h4><p>Your clients might not be. Your buyers are. HR directors, VPs, CPOs and founders. Which of those signs off on your programs?</p></div>
+  <div class="faq rv"><h4>How quickly will I see results?</h4><p>Live in 30 days. Inbound conversations typically start in weeks four to eight and compound from there. Anyone promising signed corporate contracts faster than that is selling you their guarantee rather than your outcome.</p></div>
+  <div class="faq rv"><h4>Do I need a big following to start?</h4><p>No. One client of mine had 900 connections and booked three discovery calls in her first 33 days. The size of the audience matters far less than whether the right two hundred people are in it.</p></div>
+</div></section>
+
+<!-- WHY NOW -->
+<section><div class="wrap">
+  <span class="lbl rv">Why now</span>
+  <h2 class="rv">Six seats, and I am slow about filling them.</h2>
+  <p class="rv">Six is the number my team can serve without the writing going generic, and generic is the one thing that would sink a coach like you. When they are gone, the next intake is the following month.</p>
+  <p class="rv">There is a second reason, and it is the more important one.</p>
+  <p class="rv">LinkedIn compounds. The coach who starts in September is a full quarter ahead of the coach who starts in December, permanently, because the audience built in month one is still working in month twelve. That gap never closes. It only widens.</p>
+  <p class="quote rv" style="margin-top:32px">Right now, decision makers are searching for somebody exactly like you. They are finding somebody else first.</p>
+</div></section>
+
+<!-- CTA -->
+<section class="dark" id="call"><div class="wrap center">
+  <span class="lbl rv">Next step</span>
+  <h2 class="rv">Let's find out <span class="ser" style="color:var(--o)">if this fits.</span></h2>
+  <p class="lead rv" style="max-width:540px;margin:0 auto 36px">Thirty minutes on a call. I will look at your profile, your last quarter of pipeline, and tell you honestly whether this is worth doing. If it is not, I will say so and we will part as friends. I have six seats and no interest in filling one badly.</p>
+  <div class="rv"><a class="btn p" href="#">Book a Call</a></div>
+  <p class="rv" style="margin-top:20px;font-size:14px;color:var(--lt3)">Or reply to this document and we will find a time.</p>
+</div></section>
+
+<!-- CLOSE -->
+<section><div class="wrap">
+  <p class="rv">You already have the part that matters. Twenty years of it. The results, the credential, the clients who tell you it was the most useful hour of their month.</p>
+  <p class="rv">What you do not have is a way for the right people to find that out.</p>
+  <p class="rv"><strong>That is the only thing I am here to build.</strong></p>
+  <div class="sig rv">Malik<span>Founder, Growlioo</span></div>
+  <div class="ps rv"><strong>P.S.</strong> One coach told me the hardest part was never the marketing. It was admitting she needed it. She had spent twenty five years believing good work speaks for itself. It does, eventually, to the people already in the room. The problem was never the work. It was the size of the room.</div>
+</div></section>
+
+<footer>Growlioo · From best kept secret to booked out</footer>
+
+<script>
+document.querySelectorAll('#cloud span').forEach((el,i)=>{el.style.animationDelay=(0.35+i*0.07)+'s'});
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.13,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=((i%4)*70)+'ms';io.observe(el)});
+const tw=document.getElementById('triWrap');
+if(tw){new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in')}})},{threshold:.3}).observe(tw)}
+</script>
+</body>
+</html>
